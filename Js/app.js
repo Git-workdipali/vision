@@ -98,8 +98,7 @@ document.addEventListener("click", function (t) {
 }, !1);
 // Toggle end
 
-
-// list view grid view js
+//=====Change View Css======= 
 // const listViewButton = document.querySelector('.list-view-button');
 // const gridViewButton = document.querySelector('.grid-view-button');
 // const tableViewButton = document.querySelector('.table-view-button');
@@ -120,7 +119,7 @@ document.addEventListener("click", function (t) {
 //   list.classList.remove('grid-view-filter');
 //   list.classList.add('table-view-filter');
 // }
-// list view grid view css end
+//==========Change View Css End=========
 
 
 // navbar hide icon v logo

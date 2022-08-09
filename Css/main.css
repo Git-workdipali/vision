@@ -130,16 +130,6 @@
   width: 100%;
 }
 
-.col-1-section {
-  width: 4%;
-  background: rgb(255 255 255 / 49%);
-  border-radius: 12px;
-  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
 .card {
   background: #fff;
   border-radius: 12px;
@@ -170,7 +160,6 @@
   display: flex;
   margin-top: 13px;
   padding: 5px 5px;
-  /* justify-content: space-around; */
 }
 
 #flex {
@@ -780,6 +769,11 @@ label {
   right: -232px;
 }
 
+.mt-5,
+m-5 {
+  margin: 5px;
+}
+
 /* alert.html ends */
 /* chips,html starts */
 .chips {
@@ -849,7 +843,93 @@ label {
   font-size: 13px;
 }
 
+#color-green {
+  background: #72C862;
+  color: #fff;
+  padding: 6px 1px;
+  height: 25px;
+  width: 29px;
+  align-items: center;
+  text-align: center;
+  border-radius: 17px;
+  font-size: 13px;
+}
+
+#color-yellow {
+  background: #F1CA39;
+  color: #fff;
+  padding: 6px 1px;
+  height: 25px;
+  width: 29px;
+  align-items: center;
+  text-align: center;
+  border-radius: 17px;
+  font-size: 13px;
+}
+
+#color-blue {
+  background: #4C75D3;
+  color: #fff;
+  padding: 6px 1px;
+  height: 25px;
+  width: 29px;
+  align-items: center;
+  text-align: center;
+  border-radius: 17px;
+  font-size: 13px;
+}
+
+#color-red {
+  background: #D1443D;
+  color: #fff;
+  padding: 6px 1px;
+  height: 25px;
+  width: 29px;
+  align-items: center;
+  text-align: center;
+  border-radius: 17px;
+  font-size: 13px;
+}
+
+#color-orange {
+  background: #FA6904;
+  color: #fff;
+  padding: 6px 1px;
+  height: 25px;
+  width: 29px;
+  align-items: center;
+  text-align: center;
+  border-radius: 17px;
+  font-size: 13px;
+}
+
 /* Badges.html ends */
+
+/* Colors.html starts*/
+#co {
+  height: 54px;
+  width: 56px;
+  border-radius: 12px;
+}
+
+.font-11 {
+  font-size: 11px;
+}
+
+.fdd6d6 {
+  background: #FDD6D6;
+}
+
+.color-block {
+  text-align: center;
+}
+
+#colors {
+  justify-content: space-evenly;
+}
+
+
+/* Colors.html ends */
 /* media query */
 @media screen and (min-width: 320px) and (max-width:870px) {
   body {
@@ -896,3 +976,6 @@ label {
 }
 
 /* dashbaord pages media ends media query */
+/* =====Dashboard HomePage Css======== */
+
+/* =====Dashbaord Homepage css end==== */

@@ -176,10 +176,11 @@ body {
 
 /* Popup start */
 .pop-up {
-  padding: 5px 5px;
+  padding: 8px 5px;
   margin: 5px;
   background: #f1f1f1;
   cursor: pointer;
+  border-radius: 6px;
 }
 
 /* Popup End */
@@ -549,9 +550,14 @@ a {
 }
 
 .regular-color {
-  color: #3b4a45;
+  color: var(--svg-color);
   font-weight: 500;
   font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 22px);
+  align-items: center;
+  margin: 12px 0px;
 }
 
 .material-symbols-rounded {
@@ -566,17 +572,16 @@ a {
 .collapsed-menu {
   position: relative;
   overflow: hidden;
-  max-height: 26px;
+  max-height: 36px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   transition: max-height 0.2s ease;
   border-radius: 4px;
-  padding: 9px 0;
-  margin: 2px 0;
-  width: 100%;
-
+  padding: 3px 0;
+  margin: 5px 0px;
+  width: calc(100% - 14px);
 }
 
 .collapsed-menu.toggled {
@@ -610,6 +615,7 @@ a {
   gap: 0.2em;
   padding: 0 0.8em;
   text-decoration: none;
+  width: 100%;
 }
 
 .styled-link:before {
@@ -623,6 +629,7 @@ a {
   content: " ";
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
+  width: calc(100% - 20px);
 }
 
 .styled-link:hover:before {
@@ -651,11 +658,19 @@ a {
 .styled-link p,
 .styled-link span {
   vertical-align: middle;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--font-color);
 }
 
 .styled-link p {
   opacity: 0.8;
   position: relative;
+  width: calc(100% - 32px);
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+
 }
 
 .styled-link p:before {
@@ -684,7 +699,7 @@ div.col-8-main {
 }
 
 .col-8-main {
-  width: 77%;
+  width: 76.33%;
   background: #efefef;
   height: 100%;
 }
@@ -693,6 +708,7 @@ div.col-1-main {
   overflow: hidden;
   position: fixed;
   right: 0;
+  width: 3.33%;
 }
 
 .col-8-top {
@@ -925,7 +941,7 @@ li {
   height: 36px;
   margin: 0px -1px;
   align-items: center;
-  width: calc(21% - 29px);
+  width: calc(21% - 32px);
   padding: 0 7px;
   background: #dddddd;
   position: fixed;
@@ -940,7 +956,7 @@ li {
   padding: 5px 11px;
   position: fixed;
   bottom: 0;
-  width: calc(100% - 334px);
+  width: calc(100% - 347px);
 }
 
 #number {
