@@ -8,9 +8,13 @@
 }
 
 :root {
-  --primary: #3c3c3e;
-  --secondary: #8a8a90;
-  --background: #d9edfc;
+  --peach: #fb9898;
+  --primary: #687285;
+  --secondary: #efefef;
+  --active-tabs: #fff7d4;
+  --font-color: #1e3264;
+  --svg-color: #8e98b1;
+  --active-side-tab: #afafaf;
 }
 
 ::-webkit-scrollbar {
