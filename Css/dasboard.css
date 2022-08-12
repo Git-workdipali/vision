@@ -63,14 +63,14 @@
 
 .flex {
     display: flex;
-    margin-top: 14px;
     padding: 5px 5px;
+    justify-content: space-around;
 
 }
 
 #flex {
     display: flex;
-    justify-content: space-around;
+
 }
 
 .btn-dash {
@@ -928,7 +928,7 @@ m-5 {
         margin-top: 20px;
     }
 
-    #flex {
+    .flex {
         display: block;
         margin-top: 24px;
     }
