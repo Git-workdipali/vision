@@ -1,23 +1,3 @@
-var coll = document.getElementsByClassName("collapsible");
-var i;
-var icon = document.getElementsByClassName("svg-icon");
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    var carrate = document.getElementsByClassName("rotate");
-
-    if (content.style.display === "block") {
-      content.style.display = "none";
-      carrate.style.color = "red";
-    } else {
-      content.style.display = "block";
-      icon.style.zoom = 200;
-    }
-
-  });
-}
 
 function hideCol() {
   var x = document.getElementById("myDIV");
@@ -80,22 +60,22 @@ function closeNav() {
 
 
 // search scope popup pannel start
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
+// var modal = document.getElementById("myModal");
+// var btn = document.getElementById("myBtn");
+// var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function () {
-  modal.style.display = "block";
-}
-span.onclick = function () {
-  modal.style.display = "none";
-}
+// btn.onclick = function () {
+//   modal.style.display = "block";
+// }
+// span.onclick = function () {
+//   modal.style.display = "none";
+// }
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
 // search scope popup pannel end
 
 
@@ -118,8 +98,7 @@ document.addEventListener("click", function (t) {
 }, !1);
 // Toggle end
 
-
-// list view grid view js
+//=====Change View Css======= 
 // const listViewButton = document.querySelector('.list-view-button');
 // const gridViewButton = document.querySelector('.grid-view-button');
 // const tableViewButton = document.querySelector('.table-view-button');
@@ -140,7 +119,7 @@ document.addEventListener("click", function (t) {
 //   list.classList.remove('grid-view-filter');
 //   list.classList.add('table-view-filter');
 // }
-// list view grid view css end
+//==========Change View Css End=========
 
 
 // navbar hide icon v logo
