@@ -315,23 +315,27 @@
 
 /* input forms start*/
 .floating-form {
-    width: 320px;
+    width: 354px;
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
-    padding: 16px 20px;
+    padding: 38px 20px;
     border-radius: 8px;
 }
 
 .floating-label {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 34px;
+    display: flex;
+    width: 100%;
 }
 
 .floating-input,
 .floating-select {
     font-size: 14px;
-    padding: 4px 4px;
+    padding: 0;
     display: block;
-    width: 100%;
+    width: calc(100% - 22px);
+    position: relative;
+    left: 8px;
     height: 30px;
     background-color: transparent;
     border: none;
@@ -341,7 +345,7 @@
 .floating-input:focus,
 .floating-select:focus {
     outline: none;
-    border-bottom: 2px solid #5264AE;
+    border-bottom: 2px solid #4B4B4F;
 }
 
 label {
@@ -350,7 +354,7 @@ label {
     font-weight: normal;
     position: absolute;
     pointer-events: none;
-    left: 5px;
+    padding: 0 8px;
     top: 5px;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
@@ -361,14 +365,14 @@ label {
 .floating-input:not(:placeholder-shown)~label {
     top: -18px;
     font-size: 14px;
-    color: #5264AE;
+    color: #4B4B4F;
 }
 
 .floating-select:focus~label,
 .floating-select:not([value=""]):valid~label {
     top: -18px;
     font-size: 14px;
-    color: #5264AE;
+    color: #4B4B4F;
 }
 
 .floating-input:focus~.bar:before,
@@ -410,6 +414,17 @@ label {
     animation: inputHighlighter 0.3s ease;
 }
 
+#icons-bg {
+    background: #4edcb7;
+    width: 34px;
+    height: 28px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+}
+
 /* icons css starts */
 .icons {
     display: flex;
@@ -420,7 +435,7 @@ label {
 /* icons css ends */
 @-webkit-keyframes inputHighlighter {
     from {
-        background: #5264AE;
+        background: #4B4B4F;
     }
 
     to {
@@ -431,7 +446,7 @@ label {
 
 @-moz-keyframes inputHighlighter {
     from {
-        background: #5264AE;
+        background: #4B4B4F;
     }
 
     to {
@@ -442,7 +457,7 @@ label {
 
 @keyframes inputHighlighter {
     from {
-        background: #5264AE;
+        background: #4B4B4F;
     }
 
     to {
