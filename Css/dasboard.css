@@ -932,6 +932,23 @@ m-5 {
         display: block;
         margin-top: 24px;
     }
+
+    #table {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .col-4-table {
+        margin: 0 0 0 36px;
+    }
+
+    .header {
+        font-size: 12px;
+    }
+
+    .head-sub-title {
+        font-size: 8px;
+    }
 }
 
 @media screen and (max-width: 425px) {
