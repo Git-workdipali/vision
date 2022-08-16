@@ -60,22 +60,22 @@ function closeNav() {
 
 
 // search scope popup pannel start
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
+// var modal = document.getElementById("myModal");
+// var btn = document.getElementById("myBtn");
+// var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function () {
-  modal.style.display = "block";
-}
-span.onclick = function () {
-  modal.style.display = "none";
-}
+// btn.onclick = function () {
+//   modal.style.display = "block";
+// }
+// span.onclick = function () {
+//   modal.style.display = "none";
+// }
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
 // search scope popup pannel end
 
 
@@ -163,6 +163,33 @@ function hideUser() {
 
 // dropdown button for col-3 main
 
-// slider.html js starts
+// =======Dashbord js========
+// form validation
+function validateform() {
+  var username = document.myform.name.value;
+  var lastname = document.myform.lastname.value;
+  var password = document.myform.password.value;
 
-// slider.html js ends
+  if (username == null || username == "") {
+    document.getElementById("user-error-tick").style.display = "none";
+    document.getElementById("user-error").innerHTML = "Username can not be empty";
+  } else {
+    document.getElementById("user-error-tick").style.display = "block";
+    document.getElementById("user-error").style.display = "none";
+  }
+
+  if (lastname == null || lastname == "") {
+    document.getElementById("tick-lastname").style.display = "none";
+    document.getElementById("last-error").innerHTML = "Lastname can not be empty";
+  } else {
+    document.getElementById("tick-lastname").style.display = "block";
+    document.getElementById("last-error").style.display = "none";
+  }
+
+  if (password.length < 6) {
+    document.getElementById("password-error").innerHTML = "Password must be at least 6 characters long";
+
+  }
+  return false;
+
+}
