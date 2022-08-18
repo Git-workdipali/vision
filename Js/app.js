@@ -163,7 +163,38 @@ function hideUser() {
 
 // dropdown button for col-3 main
 
-// slider.html js starts
+// =======Dashbord js========
+// form validation
+function validateform() {
+  var username = document.myform.name.value;
+  var lastname = document.myform.lastname.value;
+  var password = document.myform.password.value;
 
+<<<<<<< HEAD
 // slider.html js ends
 
+=======
+  if (username == null || username == "") {
+    document.getElementById("user-error-tick").style.display = "none";
+    document.getElementById("user-error").innerHTML = "Username can not be empty";
+  } else {
+    document.getElementById("user-error-tick").style.display = "block";
+    document.getElementById("user-error").style.display = "none";
+  }
+
+  if (lastname == null || lastname == "") {
+    document.getElementById("tick-lastname").style.display = "none";
+    document.getElementById("last-error").innerHTML = "Lastname can not be empty";
+  } else {
+    document.getElementById("tick-lastname").style.display = "block";
+    document.getElementById("last-error").style.display = "none";
+  }
+
+  if (password.length < 6) {
+    document.getElementById("password-error").innerHTML = "Password must be at least 6 characters long";
+
+  }
+  return false;
+
+}
+>>>>>>> d40794b74d5aa00ea236553c8cb39d66b53ec9a2

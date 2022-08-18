@@ -13,7 +13,7 @@
     --primary: #687285;
     --secondary: #efefef;
     --active-tabs: #fff7d4;
-    --font-color: #1e3264;
+    --font-color: #202020;
     --svg-color: #8e98b1;
     --active-side-tab: #afafaf;
 }
@@ -64,14 +64,14 @@
 
 .flex {
     display: flex;
-    margin-top: 13px;
     padding: 5px 5px;
+    justify-content: space-around;
 
 }
 
 #flex {
     display: flex;
-    justify-content: space-around;
+
 }
 
 .btn-dash {
@@ -327,7 +327,7 @@
 .floating-label {
     position: relative;
     margin-bottom: 34px;
-    display: flex;
+    /* display: flex; */
     width: 100%;
 }
 
@@ -336,9 +336,8 @@
     font-size: 14px;
     padding: 0;
     display: block;
-    width: calc(100% - 22px);
+    width: 100%;
     position: relative;
-    left: 8px;
     height: 30px;
     background-color: transparent;
     border: none;
@@ -357,7 +356,7 @@ label {
     font-weight: normal;
     position: absolute;
     pointer-events: none;
-    padding: 0 8px;
+    padding: 0;
     top: 5px;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
@@ -593,7 +592,8 @@ m-5 {
 }
 
 .small-font {
-    font-size: 13px;
+    font-size: 14px;
+    color: var(--font-color);
 }
 
 #color-green {
@@ -878,6 +878,71 @@ m-5 {
     justify-content: space-evenly;
 }
 
+/*========Pages css (dashboard)====== */
+/* my profile */
+.nav {
+    box-shadow: 0 10px 10px -10px #f4f4f4, 0 10px 10px -10px #cbcbcb;
+    padding: 20px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0;
+}
+
+#user-img {
+    width: 100%;
+    display: flex;
+}
+
+.user-img {
+    width: 120px;
+    border-radius: 64px;
+    margin: auto;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    color: var(--font-color);
+    font-size: 12px;
+}
+
+.card-dashboard-profile {
+    background: #fff;
+    border-radius: 8px;
+    margin: 12px 8px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+#profile-form {
+    margin: auto;
+    width: 470px;
+}
+
+.error-msg {
+    font-size: 12px;
+    position: relative;
+    left: 0;
+    color: red;
+}
+
+#user-error-tick,
+#tick-lastname {
+    display: none;
+    color: green;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#form-val {
+    display: block;
+}
+
 /* =====Dashboard HomePage Css======== */
 
 /* =====Dashbaord Homepage css end==== */
@@ -931,9 +996,26 @@ m-5 {
         margin-top: 20px;
     }
 
-    #flex {
+    .flex {
         display: block;
         margin-top: 24px;
+    }
+
+    #table {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .col-4-table {
+        margin: 0 0 0 36px;
+    }
+
+    .header {
+        font-size: 12px;
+    }
+
+    .head-sub-title {
+        font-size: 8px;
     }
 }
 
