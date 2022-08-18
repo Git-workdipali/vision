@@ -169,6 +169,11 @@ function validateform() {
   var username = document.myform.name.value;
   var lastname = document.myform.lastname.value;
   var password = document.myform.password.value;
+  var x = document.myform.email.value;
+  var atposition = x.indexOf("@");
+  var dotposition = x.lastIndexOf(".");
+  var num = document.myform.num.value;
+
 
   if (username == null || username == "") {
     document.getElementById("user-error-tick").style.display = "none";
@@ -189,7 +194,23 @@ function validateform() {
   if (password.length < 6) {
     document.getElementById("password-error").innerHTML = "Password must be at least 6 characters long";
 
+  } else {
+    document.getElementById("password-error").style.display = "none";
+  }
+
+  if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
+    document.getElementById("email-error").innerHTML = "please enter valid email";
+  }
+  else {
+    document.getElementById("email-error").style.display = "none";
+  }
+  if (isNaN(num)) {
+    document.getElementById("num-error").innerHTML = "Enter Numeric value only";
+  } else {
+    document.getElementById("num-error").style.display = "none";
   }
   return false;
 
 }
+
+// =====Email validation===== 

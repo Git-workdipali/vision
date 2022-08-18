@@ -333,7 +333,7 @@
     font-size: 14px;
     padding: 0;
     display: block;
-    width: 100%;
+    width: calc(100% - 8px);
     position: relative;
     height: 30px;
     background-color: transparent;
