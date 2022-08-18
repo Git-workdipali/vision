@@ -1,0 +1,48 @@
+<html lang="en" class=""><head>
+
+    <meta charset="UTF-8">
+    <title>CodePen Demo</title>
+    <script>
+        
+var fullName = "fname";
+
+var inputname = document.getElementById('fname').String;
+console.log('#someButton was clicked');
+
+
+var getInitials = (name) => {
+  let initials = name.split(' ');
+  
+  if(initials.length > 1) {
+    initials = initials.shift().charAt(0) + initials.pop().charAt(0);
+  } else {
+    initials = name.substring(0, 2);
+  }
+  
+  return initials.toUpperCase();
+  
+}
+
+alert(getInitials(fullName)) // FN
+alert(getInitials(inputname)) // JW
+    </script>
+  
+   
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  
+   
+  </head>
+  
+  <body data-new-gr-c-s-check-loaded="14.1073.0" data-gr-ext-installed="">
+    <span id="myspan" style="height: 32px;
+      width: 32px;
+      background-color: blue;
+      display: flex;
+      align-items: center;
+      justify-content: center;"></span><input type="text" id="fname" name="fname" value="Bipin Raj                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ">
+  <button type="button" onclick="alert(getInitials(fname))">Try it</button>
+    
+  
+  </body>
+  </html>
