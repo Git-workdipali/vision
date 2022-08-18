@@ -928,9 +928,23 @@ m-5 {
 }
 
 #user-error-tick,
-#tick-lastname {
+#tick-lastname,
+#tick-password,
+#tick-email,
+#tick-contact,
+#address-tick {
     display: none;
     color: green;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#wrong-user,
+#wrong-lastname,
+#error-add {
+    display: none;
+    color: red;
     position: absolute;
     right: 0;
     top: 0;

@@ -35,15 +35,15 @@
                                 <img src="/assets/img/user-profile.jfif" alt="" class="user-img">
                             </div>
                             <div class="user-details">
-                                <form name="myform" method="post" onChange="return validateform()">
+                                <form name="myform" method="post">
                                     <div class="floating-form" id="profile-form">
-
                                         <div class="floating-label">
                                             <input class="floating-input" type="text" name="name" placeholder=" "
-                                                onChange="return validateform()" maxlength="20">
+                                                maxlength="20" onChange="return validateform()">
                                             <label>First Name</label>
                                             <span id="user-error" class="error-msg"></span>
                                             <span id="user-error-tick"><i class="fa-solid fa-circle-check"></i></span>
+                                            <span id="wrong-user"><i class="fa-solid fa-circle-xmark"></i></span>
                                         </div>
                                         <div class="floating-label">
                                             <input class="floating-input" type="text" name="lastname" placeholder=" "
@@ -51,31 +51,39 @@
                                             <label>Last Name</label>
                                             <span id="last-error" class="error-msg"></span>
                                             <span id="tick-lastname"><i class="fa-solid fa-circle-check"></i></span>
+                                            <span id="wrong-lastname"><i class="fa-solid fa-circle-xmark"></i></span>
                                         </div>
                                         <div class="floating-label">
                                             <input class="floating-input" type="password" name="password"
                                                 placeholder=" " onChange="return validateform()">
                                             <label>Password</label>
                                             <span id="password-error" class="error-msg"></span>
+                                            <span id="tick-password"><i class="fa-solid fa-circle-check"></i></span>
                                         </div>
 
                                         <div class="floating-label">
                                             <input class="floating-input" type="text" placeholder=" " size="30"
                                                 name="email" onChange="return validateform()" maxlength="50">
-                                            <span id="email-error" class="error-msg"></span>
                                             <label>Email</label>
+                                            <span id="email-error" class="error-msg"></span>
+                                            <span id="tick-email"><i class="fa-solid fa-circle-check"></i></span>
                                         </div>
                                         <div class="floating-label">
                                             <input class="floating-input" type="text" name="num" placeholder=" "
                                                 onChange="return validateform()" maxlength="10">
-                                            <span class="highlight"></span>
-                                            <span id="num-error" class="error-msg"></span>
                                             <label>Contact No</label>
+                                            <span id="num-error" class="error-msg"></span>
+                                            <span id="tick-contact"><i class="fa-solid fa-circle-check"></i></span>
+
                                         </div>
                                         <div class="floating-label">
-                                            <input class="floating-input" type="text" placeholder=" " maxlength="100">
+                                            <input class="floating-input" type="text" placeholder=" " name="address"
+                                                maxlength="100">
                                             <span class="highlight"></span>
                                             <label>Address</label>
+                                            <span id="address-error" class="error-msg"></span>
+                                            <span id="address-tick"><i class="fa-solid fa-circle-check"></i></span>
+                                            <span id="error-add"><i class="fa-solid fa-circle-xmark"></i></span>
                                         </div>
                                         <div class="d-flex">
                                             <div class="floating-label">

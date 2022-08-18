@@ -173,42 +173,74 @@ function validateform() {
   var atposition = x.indexOf("@");
   var dotposition = x.lastIndexOf(".");
   var num = document.myform.num.value;
+  var address = document.myform.address.value;
 
 
   if (username == null || username == "") {
+    document.getElementById("wrong-user").style.display = "block";
     document.getElementById("user-error-tick").style.display = "none";
     document.getElementById("user-error").innerHTML = "Username can not be empty";
   } else {
+    document.getElementById("wrong-user").style.display = "none";
     document.getElementById("user-error-tick").style.display = "block";
     document.getElementById("user-error").style.display = "none";
   }
 
+
+
   if (lastname == null || lastname == "") {
+    document.getElementById("wrong-lastname").style.display = "block";
     document.getElementById("tick-lastname").style.display = "none";
     document.getElementById("last-error").innerHTML = "Lastname can not be empty";
   } else {
+    document.getElementById("wrong-lastname").style.display = "none";
     document.getElementById("tick-lastname").style.display = "block";
     document.getElementById("last-error").style.display = "none";
   }
 
+
+
   if (password.length < 6) {
+    document.getElementById("tick-password").style.display = "none";
     document.getElementById("password-error").innerHTML = "Password must be at least 6 characters long";
 
   } else {
+    document.getElementById("tick-password").style.display = "block";
     document.getElementById("password-error").style.display = "none";
   }
 
+
+
   if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
+    document.getElementById("tick-email").style.display = "none";
     document.getElementById("email-error").innerHTML = "please enter valid email";
   }
   else {
+    document.getElementById("tick-email").style.display = "block";
     document.getElementById("email-error").style.display = "none";
   }
+
+
   if (isNaN(num)) {
+    document.getElementById("tick-contact").style.display = "none";
     document.getElementById("num-error").innerHTML = "Enter Numeric value only";
   } else {
+    document.getElementById("tick-contact").style.display = "block";
     document.getElementById("num-error").style.display = "none";
   }
+
+
+  if (address == null || address == "") {
+    document.getElementById("error-add").style.display = "block";
+    document.getElementById("address-tick").style.display = "none";
+    document.getElementById("address-error").innerHTML = "Address can not be empty";
+  } else {
+    document.getElementById("error-add").style.display = "none";
+    document.getElementById("address-tick").style.display = "block";
+    document.getElementById("address-error").style.display = "none";
+  }
+
+
   return false;
 
 }
