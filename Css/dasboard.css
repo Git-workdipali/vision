@@ -927,12 +927,20 @@ m-5 {
     color: red;
 }
 
+#error-msg {
+    font-size: 12px;
+    position: relative;
+    left: 0;
+    color: red;
+}
+
 #user-error-tick,
 #tick-lastname,
 #tick-password,
 #tick-email,
 #tick-contact,
-#address-tick {
+#address-tick,
+#tick-pin {
     display: none;
     color: green;
     position: absolute;
@@ -942,7 +950,8 @@ m-5 {
 
 #wrong-user,
 #wrong-lastname,
-#error-add {
+#error-add,
+#error-pin {
     display: none;
     color: red;
     position: absolute;

@@ -39,7 +39,7 @@
                                     <div class="floating-form" id="profile-form">
                                         <div class="floating-label">
                                             <input class="floating-input" type="text" name="name" placeholder=" "
-                                                maxlength="20" onChange="return validateform()">
+                                                maxlength="20" onkeyup="return validateform()">
                                             <label>First Name</label>
                                             <span id="user-error" class="error-msg"></span>
                                             <span id="user-error-tick"><i class="fa-solid fa-circle-check"></i></span>
@@ -47,7 +47,7 @@
                                         </div>
                                         <div class="floating-label">
                                             <input class="floating-input" type="text" name="lastname" placeholder=" "
-                                                onChange="return validateform()" maxlength="20">
+                                                onkeyup="return validateform()" maxlength="20">
                                             <label>Last Name</label>
                                             <span id="last-error" class="error-msg"></span>
                                             <span id="tick-lastname"><i class="fa-solid fa-circle-check"></i></span>
@@ -55,7 +55,7 @@
                                         </div>
                                         <div class="floating-label">
                                             <input class="floating-input" type="password" name="password"
-                                                placeholder=" " onChange="return validateform()">
+                                                placeholder=" " onkeyup="return validateform()">
                                             <label>Password</label>
                                             <span id="password-error" class="error-msg"></span>
                                             <span id="tick-password"><i class="fa-solid fa-circle-check"></i></span>
@@ -63,14 +63,14 @@
 
                                         <div class="floating-label">
                                             <input class="floating-input" type="text" placeholder=" " size="30"
-                                                name="email" onChange="return validateform()" maxlength="50">
+                                                name="email" onkeyup="return validateform()" maxlength="50">
                                             <label>Email</label>
                                             <span id="email-error" class="error-msg"></span>
                                             <span id="tick-email"><i class="fa-solid fa-circle-check"></i></span>
                                         </div>
                                         <div class="floating-label">
                                             <input class="floating-input" type="text" name="num" placeholder=" "
-                                                onChange="return validateform()" maxlength="10">
+                                                onkeyup="return validateform()" maxlength="10">
                                             <label>Contact No</label>
                                             <span id="num-error" class="error-msg"></span>
                                             <span id="tick-contact"><i class="fa-solid fa-circle-check"></i></span>
@@ -87,9 +87,14 @@
                                         </div>
                                         <div class="d-flex">
                                             <div class="floating-label">
-                                                <input class="floating-input" type="text" placeholder=" "
-                                                    maxlength="20">
-                                                <span class="highlight"></span>
+                                                <select class="floating-select"
+                                                    onclick="this.setAttribute('value', this.value);" value="">
+                                                    <option value=""></option>
+                                                    <option value="1">Mumbai</option>
+                                                    <option value="2">Bangalore</option>
+                                                    <option value="3">Hydrabad</option>
+                                                    <option value="4">Surat</option>
+                                                </select>
                                                 <label>City</label>
                                             </div>
                                             <div class="floating-label">
@@ -107,9 +112,12 @@
                                         </div>
                                         <div class="d-flex">
                                             <div class="floating-label">
-                                                <input class="floating-input" type="Number" placeholder=" ">
-                                                <span class="highlight"></span>
-                                                <label>Zip Code</label>
+                                                <input class="floating-input" type="text" onKeyUp="validateInput()"
+                                                    id="zipCode" placeholder=" ">
+                                                <label>Pin Code</label>
+                                                <span id="error-msg"></span>
+                                                <span id="tick-pin"><i class="fa-solid fa-circle-check"></i></span>
+                                                <span id="error-pin"><i class="fa-solid fa-circle-xmark"></i></span>
                                             </div>
                                             <div class="floating-label">
                                                 <select class="floating-select"

@@ -173,7 +173,6 @@ function validateform() {
   var atposition = x.indexOf("@");
   var dotposition = x.lastIndexOf(".");
   var num = document.myform.num.value;
-  var address = document.myform.address.value;
 
 
   if (username == null || username == "") {
@@ -229,20 +228,27 @@ function validateform() {
     document.getElementById("num-error").style.display = "none";
   }
 
-
-  if (address == null || address == "") {
-    document.getElementById("error-add").style.display = "block";
-    document.getElementById("address-tick").style.display = "none";
-    document.getElementById("address-error").innerHTML = "Address can not be empty";
-  } else {
-    document.getElementById("error-add").style.display = "none";
-    document.getElementById("address-tick").style.display = "block";
-    document.getElementById("address-error").style.display = "none";
-  }
-
-
   return false;
 
 }
+function isUSAZipCode(str) {
+  return /^\d{5}(-\d{4})?$/.test(str);
+}
 
+function validateInput() {
+  console.log("validateInput");
+  let zipCode = document.getElementById("zipCode").value;
+  let message = "";
+  if (isUSAZipCode(zipCode)) {
+    message = "Valid Zip Code";
+    document.getElementById("error-pin").style.display = "none";
+    document.getElementById("tick-pin").style.display = "block";
+  } else {
+    message = "Invalid Zip Code";
+    document.getElementById("error-pin").style.display = "block";
+    document.getElementById("tick-pin").style.display = "block";
+  }
+  document.getElementById("error-msg").innerHTML = message;
+
+}
 // =====Email validation===== 
