@@ -167,13 +167,6 @@ function hideUser() {
 // form validation
 function validateform() {
   var username = document.myform.name.value;
-  var lastname = document.myform.lastname.value;
-  var password = document.myform.password.value;
-  var x = document.myform.email.value;
-  var atposition = x.indexOf("@");
-  var dotposition = x.lastIndexOf(".");
-  var num = document.myform.num.value;
-
 
   if (username == null || username == "") {
     document.getElementById("wrong-user").style.display = "block";
@@ -184,8 +177,12 @@ function validateform() {
     document.getElementById("user-error-tick").style.display = "block";
     document.getElementById("user-error").style.display = "none";
   }
+  return false;
 
+}
 
+function validatelastname() {
+  var lastname = document.myform.lastname.value;
 
   if (lastname == null || lastname == "") {
     document.getElementById("wrong-lastname").style.display = "block";
@@ -196,8 +193,11 @@ function validateform() {
     document.getElementById("tick-lastname").style.display = "block";
     document.getElementById("last-error").style.display = "none";
   }
+  return false;
+}
 
-
+function passwordvalidation() {
+  var password = document.myform.password.value;
 
   if (password.length < 6) {
     document.getElementById("tick-password").style.display = "none";
@@ -207,30 +207,43 @@ function validateform() {
     document.getElementById("tick-password").style.display = "block";
     document.getElementById("password-error").style.display = "none";
   }
+  return false;
+}
 
-
-
+function emailvalidation() {
+  var x = document.myform.email.value;
+  var atposition = x.indexOf("@");
+  var dotposition = x.lastIndexOf(".");
   if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
     document.getElementById("tick-email").style.display = "none";
     document.getElementById("email-error").innerHTML = "please enter valid email";
+    document.getElementById("e-error").style.display = "block";
   }
   else {
     document.getElementById("tick-email").style.display = "block";
     document.getElementById("email-error").style.display = "none";
+    document.getElementById("e-error").style.display = "none";
   }
+  return false;
+}
 
 
+function contactvalidation() {
+  var num = document.myform.num.value;
   if (isNaN(num)) {
-    document.getElementById("tick-contact").style.display = "none";
+    document.getElementById("contact-error").style.display = "block";
     document.getElementById("num-error").innerHTML = "Enter Numeric value only";
+    document.getElementById("contact-tick").style.display = "none";
   } else {
-    document.getElementById("tick-contact").style.display = "block";
+    document.getElementById("contact-tick").style.display = "block";
+    document.getElementById("contact-error").style.display = "none";
     document.getElementById("num-error").style.display = "none";
   }
-
   return false;
-
 }
+
+
+// =====pincode validation====
 function isUSAZipCode(str) {
   return /^\d{5}(-\d{4})?$/.test(str);
 }
@@ -240,7 +253,7 @@ function validateInput() {
   let zipCode = document.getElementById("zipCode").value;
   let message = "";
   if (isUSAZipCode(zipCode)) {
-    message = "Valid Zip Code";
+    // message = "Valid Zip Code";
     document.getElementById("error-pin").style.display = "none";
     document.getElementById("tick-pin").style.display = "block";
   } else {

@@ -11,11 +11,9 @@
 :root {
     --peach: #fb9898;
     --primary: #687285;
-    --secondary: #efefef;
-    --active-tabs: #fff7d4;
     --font-color: #202020;
-    --svg-color: #8e98b1;
-    --active-side-tab: #afafaf;
+    --error: red;
+    --correct: green;
 }
 
 ::-webkit-scrollbar {
@@ -180,7 +178,7 @@
 }
 
 #inverse-4 {
-    color: red;
+    color: var(--error);
     background: rgb(240, 174, 174);
 }
 
@@ -549,7 +547,7 @@ m-5 {
 
 #inverse-2-rounded {
     border-radius: 18px;
-    color: red;
+    color: var(--error);
     background: rgb(240, 174, 174);
 }
 
@@ -924,14 +922,14 @@ m-5 {
     font-size: 12px;
     position: relative;
     left: 0;
-    color: red;
+    color: var(--error);
 }
 
 #error-msg {
     font-size: 12px;
     position: relative;
     left: 0;
-    color: red;
+    color: var(--error);
 }
 
 #user-error-tick,
@@ -940,22 +938,25 @@ m-5 {
 #tick-email,
 #tick-contact,
 #address-tick,
-#tick-pin {
+#tick-pin,
+#contact-tick {
     display: none;
-    color: green;
+    color: var(--correct);
     position: absolute;
-    right: 0;
+    right: 12px;
     top: 0;
 }
 
 #wrong-user,
 #wrong-lastname,
 #error-add,
-#error-pin {
+#error-pin,
+#contact-error,
+#e-error {
     display: none;
-    color: red;
+    color: var(--error);
     position: absolute;
-    right: 0;
+    right: 12px;
     top: 0;
 }
 
@@ -965,7 +966,17 @@ m-5 {
 
 #the-count {
     font-size: 12px;
-    color: green;
+    color: var(--correct);
+}
+
+.btn {
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: white;
+    background: var(--peach);
+    padding: 6px 8px;
+    border-radius: 6px;
 }
 
 /* =====Dashboard HomePage Css======== */
