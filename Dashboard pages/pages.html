@@ -77,13 +77,15 @@
 
                                         </div>
                                         <div class="floating-label">
-                                            <input class="floating-input" type="text" placeholder=" " name="address"
-                                                maxlength="100">
-                                            <span class="highlight"></span>
+                                            <textarea class="floating-input" name="the-textarea" id="the-textarea"
+                                                maxlength="300" type="text"></textarea>
                                             <label>Address</label>
-                                            <span id="address-error" class="error-msg"></span>
-                                            <span id="address-tick"><i class="fa-solid fa-circle-check"></i></span>
-                                            <span id="error-add"><i class="fa-solid fa-circle-xmark"></i></span>
+                                            <div id="the-count">
+                                                <span id="current">0</span>
+                                                <span id="maximum">/ 300</span>
+                                            </div>
+
+
                                         </div>
                                         <div class="d-flex">
                                             <div class="floating-label">
@@ -139,6 +141,7 @@
                 </div>
             </div>
     </body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="/Js/app.js"></script>
 
 </html>
