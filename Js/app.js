@@ -201,11 +201,13 @@ function passwordvalidation() {
 
   if (password.length < 6) {
     document.getElementById("tick-password").style.display = "none";
+    document.getElementById("ps-error").style.display = "block";
     document.getElementById("password-error").innerHTML = "Password must be at least 6 characters long";
 
   } else {
     document.getElementById("tick-password").style.display = "block";
     document.getElementById("password-error").style.display = "none";
+    document.getElementById("ps-error").style.display = "none";
   }
   return false;
 }

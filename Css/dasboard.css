@@ -952,7 +952,8 @@ m-5 {
 #error-add,
 #error-pin,
 #contact-error,
-#e-error {
+#e-error,
+#ps-error {
     display: none;
     color: var(--error);
     position: absolute;
