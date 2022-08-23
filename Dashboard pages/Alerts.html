@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="/Css/dasboard.css">
         <!-- CSS only -->
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body>
@@ -16,66 +19,75 @@
             <div class="main-pannel">
                 <h4 class="m-5">Alerts</h4>
                 <div class="content-wrapper">
-                    <div class="card-dashboard">
+                    <div class="card-dashboard d-flex justify-around">
                         <div class="d-block">
+                            <h3>Alerts With Icons</h3>
                             <div id="alert" class="bg-blue">
-                                <span class="title">Yes Everything Worked!</span><br>
-                                <span id="">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                                    Similique vero labore qui numquam natus iusto!</span>
-
-                                <svg height="24px" viewBox="0 0 24 24" width="24px" class="alert-svg"
-                                    xmlns="http://www.w3.org/2000/svg" fill="#115ebb">
-                                    <path
-                                        d="m5.0722656 0c-2.8098893 0-5.0722656 2.2623763-5.0722656 5.0722656v13.8554684c0 2.80989 2.2623763 5.072266 5.0722656 5.072266h13.8554684c2.80989 0 5.072266-2.262376 5.072266-5.072266v-13.8554684c0-2.8098893-2.262376-5.0722656-5.072266-5.0722656zm7.9101564 4h.017578c.694529 0 1.250789.2125344 1.585938.6152344.335141.4027.414062.9045062.414062 1.3789062v3h3c.554653 0 1.082301.2171313 1.476562.5820313.394261.3648.657847.9389621.507813 1.5390621l-1 4c-.114649.4586-.304975.906625-.626953 1.265625s-.802769.613282-1.357422.613282h-6c-.365733 0-.704097-.105697-1-.279297v.785156a.50004994.50004994 0 0 1 -.5.5h-3a.50004994.50004994 0 0 1 -.5-.5v-9a.50004994.50004994 0 0 1 .5-.5h3a.50004994.50004994 0 0 1 .5.5v.4414062c1.147925-.2315999 2.0032-1.238025 2-2.453125v-2.4492187l.462891-.0332031c.22329-.016.432646 0 .503906 0h.015625zm.017578.9960938v1.484375c.004678 1.7567-1.304288 3.2120843-3 3.4589843v4.0976559.953125c0 .5627.437338 1 1 1h6c.276357 0 .44339-.09185.613281-.28125.169892-.1895.315444-.492243.402344-.839843l1-4c.051506-.206-.020368-.380853-.21875-.564453s-.520518-.3144536-.796875-.3144536h-3.998047l-.001953-1v-3c0-.3565-.068288-.6020813-.181641-.7382813-.113352-.1362-.306887-.2558593-.818359-.2558593zm-6 4v8.0000002h2v-2.00586-.953125-5.0410152z" />
-                                </svg>
+                                <span class="font-12">Hi! A simple <b>icon</b> alert —check it out!</span>
+                                <i class="fa-solid fa-thumbs-up alert-icons "></i>
                             </div>
                             <div id="alert" class="bg-green">
-                                <span class="title">Did You Know?</span><br>
-                                <span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                                    Similique vero labore qui numquam natus iusto!</span>
-                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" height="24px" width="24px" fill="#068f31"
-                                    class="alert-svg" viewBox="0 0 408.576 408.576"
-                                    style="enable-background:new 0 0 408.576 408.576;" xml:space="preserve">
-                                    <g>
-                                        <g>
-                                            <path d="M204.288,0C91.648,0,0,91.648,0,204.288s91.648,204.288,204.288,204.288s204.288-91.648,204.288-204.288
-			S316.928,0,204.288,0z M318.464,150.528l-130.56,129.536c-7.68,7.68-19.968,8.192-28.16,0.512L90.624,217.6
-			c-8.192-7.68-8.704-20.48-1.536-28.672c7.68-8.192,20.48-8.704,28.672-1.024l54.784,50.176L289.28,121.344
-			c8.192-8.192,20.992-8.192,29.184,0C326.656,129.536,326.656,142.336,318.464,150.528z" />
-                                        </g>
-                                </svg>
+                                <span class="font-12">Hi! A simple <b>icon</b> alert —check it out!</span>
+                                <i class="fa-solid fa-circle-exclamation alert-icons "></i>
                             </div>
                             <div id="alert" class="bg-yellow">
-                                <span class="title">Something Wend Wrong !</span><br>
-                                <span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                                    Similique vero labore qui numquam natus iusto!</span>
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" class="alert-svg" viewBox="0 0 512 512"
-                                    fill="#db830f" height="24px" width="24px" style="enable-background:new 0 0 512 512;"
-                                    xml:space="preserve">
-                                    <g>
-                                        <g>
-                                            <path d="M501.362,383.95L320.497,51.474c-29.059-48.921-99.896-48.986-128.994,0L10.647,383.95
-			c-29.706,49.989,6.259,113.291,64.482,113.291h361.736C495.039,497.241,531.068,433.99,501.362,383.95z M256,437.241
-			c-16.538,0-30-13.462-30-30c0-16.538,13.462-30,30-30c16.538,0,30,13.462,30,30C286,423.779,272.538,437.241,256,437.241z
-			 M286,317.241c0,16.538-13.462,30-30,30c-16.538,0-30-13.462-30-30v-150c0-16.538,13.462-30,30-30c16.538,0,30,13.462,30,30
-			V317.241z" />
-                                        </g>
-                                </svg>
-
+                                <span class="font-12">Hi! A simple <b>icon</b> alert —check it out!</span>
+                                <i class="fa-solid fa-triangle-exclamation alert-icons "></i>
                             </div>
                             <div id="alert" class="bg-red">
-                                <span class="title">Virus Found !</span><br>
-                                <span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                                    Similique vero labore qui numquam natus iusto!</span>
-                                <svg height="24px" viewBox="0 0 32 32" width="24px" fill="#b32f0a" class="alert-svg"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="Layer_2" data-name="Layer 2">
-                                        <path
-                                            d="m16 1a15 15 0 1 0 15 15 15 15 0 0 0 -15-15zm0 26.3a2 2 0 1 1 2-2 2 2 0 0 1 -2 2zm3.45-16.9-2.45 9.98a1 1 0 0 1 -1.93 0l-2.47-10a3.55 3.55 0 0 1 3.45-4.38 3.54 3.54 0 0 1 3.4 4.4z" />
-                                    </g>
-                                </svg>
+                                <span class="font-12">Hi! A simple <b>icon</b> alert —check it out!</span>
+                                <i class="fa-solid fa-circle-exclamation alert-icons "></i>
+                            </div>
+                        </div>
+                        <div class="d-block">
+                            <h3>Alerts With Border</h3>
+                            <div id="alert" class="bg-blue border">
+                                <span class="font-12">Hi! A simple <b>Primary</b> alert —check it out!</span>
+                            </div>
+                            <div id="alert" class="bg-green border">
+                                <span class="font-12">Hi! A simple <b>Success</b> alert —check it out!</span>
+                            </div>
+                            <div id="alert" class="bg-yellow border">
+                                <span class="font-12">Hi! A simple <b>Warning</b> alert —check it out!</span>
+                            </div>
+                            <div id="alert" class="bg-red border">
+                                <span class="font-12">Hi! A simple <b>Alert</b> alert —check it out!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-dashboard d-flex justify-around">
+                        <div class="d-block">
+                            <h3>Dismiss Alerts</h3>
+                            <div id="alert" class="bg-blue">
+                                <span class="font-12">Hi! A simple <b>Dismiss</b> alert —check it out!</span>
+                                <i class="fa-solid fa-xmark dismiss"></i>
+                            </div>
+                            <div id="alert" class="bg-green">
+                                <span class="font-12">Hi! A simple <b>Dismiss</b> alert —check it out!</span>
+                                <i class="fa-solid fa-xmark dismiss"></i>
+                            </div>
+                            <div id="alert" class="bg-yellow">
+                                <span class="font-12">Hi! A simple <b>Dismiss</b> alert —check it out!</span>
+                                <i class="fa-solid fa-xmark dismiss"></i>
+                            </div>
+                            <div id="alert" class="bg-red">
+                                <span class="font-12">Hi! A simple <b>Dismiss</b> alert —check it out!</span>
+                                <i class="fa-solid fa-xmark dismiss"></i>
+                            </div>
+                        </div>
+                        <div class="d-block">
+                            <h3>Primary Outline Alert</h3>
+                            <div id="alert" class="bg-blue border-blue">
+                                <span class="font-12">Hi! A simple <b>Primary</b> alert —check it out!</span>
+                            </div>
+                            <div id="alert" class="bg-green border-green">
+                                <span class="font-12">Hi! A simple <b>Success</b> alert —check it out!</span>
+                            </div>
+                            <div id="alert" class="bg-yellow border-yellow">
+                                <span class="font-12">Hi! A simple <b>Warning</b> alert —check it out!</span>
+                            </div>
+                            <div id="alert" class="bg-red border-red">
+                                <span class="font-12">Hi! A simple <b>Alert</b> alert —check it out!</span>
                             </div>
                         </div>
                     </div>

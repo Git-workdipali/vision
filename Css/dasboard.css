@@ -5,34 +5,29 @@
     margin: 0;
     padding: 0;
     font-size: 100%;
-
 }
 
 :root {
     --theame: #E3F1FA;
     --theme-secondary: #fb9898;
-    --primary: #687285;
     --font-color: #333333;
     --error: red;
     --correct: green;
+    --dark-theme: rgb(19, 19, 19);
 }
 
 /*====fonts==== */
-.head-sub-title {
-    font-size: 12px;
+.sub-title {
+    font-size: 16px;
     color: var(--primary);
 }
 
-.small-font {
+.font-14 {
     font-size: 14px;
     color: var(--font-color);
 }
 
-.font-11 {
-    font-size: 11px;
-}
-
-.header {
+.font-12 {
     font-size: 12px;
 }
 
@@ -498,13 +493,14 @@ label {
 }
 
 /* Gallery.html css Ends */
-/* alert.html starts */
+/*====Alerts starts==== */
 #alert {
+    position: relative;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-    width: calc(100% - 38%);
-    padding: 17px 13px;
-    border-radius: 12px;
-    margin: 36px 5px;
+    width: 456px;
+    padding: 12px 8px;
+    border-radius: 8px;
+    margin: 12px 6px;
 }
 
 .d-block {
@@ -531,10 +527,12 @@ label {
     border-left: 3px solid #b32f0a;
 }
 
-.alert-svg {
-    position: relative;
-    top: -26px;
-    right: -232px;
+.alert-icons,
+.dismiss {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: var(--font-color);
 }
 
 .mt-5,
@@ -542,7 +540,36 @@ m-5 {
     margin: 5px 0;
 }
 
-/* alert.html ends */
+.justify-around {
+    justify-content: space-around;
+}
+
+.border {
+    box-shadow: 0px 0px 0px 1px rgb(40 44 53 / 57%), rgb(0 0 0 / 24%) 0px 3px 8px !important;
+    border: none;
+}
+
+.border-blue {
+    border: 1px solid #5b71e1d5;
+    box-shadow: none !important;
+}
+
+.border-green {
+    border: 1px solid #086317d7;
+    box-shadow: none !important;
+}
+
+.border-yellow {
+    border: 1px solid #c7c419;
+    box-shadow: none !important;
+}
+
+.border-red {
+    border: 1px solid #9c1212;
+    box-shadow: none !important;
+}
+
+/* Alerts*/
 /* chips,html starts */
 .chips {
     height: 28px;
