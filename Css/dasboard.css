@@ -916,6 +916,8 @@ m-5 {
 #profile-form {
     margin: auto;
     width: 470px;
+    margin-top: 12px;
+    margin-bottom: 12px !important;
 }
 
 .error-msg {
@@ -979,6 +981,13 @@ m-5 {
     padding: 6px 8px;
     border-radius: 6px;
     border: none;
+}
+
+.login-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
 }
 
 /* =====Dashboard HomePage Css======== */
