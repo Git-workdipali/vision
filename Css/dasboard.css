@@ -141,6 +141,9 @@ code {
     word-wrap: break-word;
     font-weight: 500;
     letter-spacing: .5pt;
+    -webkit-user-select: all;
+    -moz-user-select: all;
+    user-select: all;
 }
 
 /* =====bg colors===== */
