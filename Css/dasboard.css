@@ -56,6 +56,72 @@
     margin: 0 0 1rem 0;
 }
 
+.fs-1 {
+    font-size: 2.03125rem !important;
+}
+
+.fs-2 {
+    font-size: 1.625rem !important;
+}
+
+.fs-3 {
+    font-size: 1.421875rem !important;
+}
+
+.fs-4 {
+    font-size: 1.21875rem !important;
+}
+
+.fs-5 {
+    font-size: 1.015625rem !important;
+}
+
+.fs-6 {
+    font-size: .8125rem !important;
+}
+
+/*  font-weight */
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+.fw-bolder {
+    font-weight: bolder !important;
+}
+
+.fw-normal {
+    font-weight: 400 !important;
+}
+
+.fw-light {
+    font-weight: 300 !important;
+}
+
+.fw-lighter {
+    font-weight: lighter !important;
+}
+
+.fst-italic {
+    font-style: italic !important;
+}
+
+.fst-normal {
+    font-style: normal !important;
+}
+
+/* text case */
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
 /* ====Flex==== */
 .flex {
     display: flex;
@@ -305,8 +371,6 @@ code {
     font-weight: 300;
 }
 
-/* =====bg colors===== */
-/*====end fonts==== */
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
