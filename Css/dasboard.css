@@ -18,8 +18,10 @@
     --green: #3eb390;
     --yellow: #f9a803;
     --dark-blue: #0a84ff;
-    --warning: rgb(235, 235, 45);
-    --alert: rgb(247, 10, 10);
+    --warning: rgb(235, 207, 45);
+    --danger: #DC3545;
+    --info: #17A2B8;
+    --success: #28A745;
 
     --active: #0a43ff;
     --desabled: #ffffff66;
@@ -200,11 +202,11 @@
 }
 
 .bg-secondary {
-    background-color: var(--purple);
+    background-color: var(--info);
 }
 
 .bg-success {
-    background-color: var(--green);
+    background-color: var(--success);
 }
 
 .bg-info {
@@ -212,7 +214,7 @@
 }
 
 .bg-warning {
-    background-color: var(--yellow);
+    background-color: var(--warning);
 }
 
 .bg-danger {
@@ -397,14 +399,14 @@ code {
 }
 
 .custom-blockquote.blockquote.blockquote-success {
-    color: var(--green);
-    border-color: var(--green);
+    color: var(--success);
+    border-color: var(--success);
     background-color: rgba(69, 203, 133, .15);
 }
 
 .custom-blockquote.blockquote.blockquote-danger {
-    color: var(--orange);
-    border-color: var(--orange);
+    color: var(--danger);
+    border-color: var(--danger);
     background-color: rgba(240, 101, 72, .15);
 }
 
@@ -603,22 +605,22 @@ label {
 }
 
 .badge-soft-success {
-    color: var(--green);
+    color: var(--success);
     background-color: rgba(69, 203, 133, .1);
 }
 
 .badge-soft-info {
-    color: var(--purple);
-    background-color: #b6a7c97c;
+    color: var(--info);
+    background-color: #43cde2b7;
 }
 
 .badge-soft-warning {
-    color: var(--yellow);
+    color: var(--warning);
     background-color: rgba(255, 190, 11, .1);
 }
 
 .badge-soft-danger {
-    color: var(--orange);
+    color: var(--danger);
     background-color: rgba(240, 101, 72, .1);
 }
 
@@ -641,26 +643,26 @@ label {
 }
 
 .badge-outline-success {
-    color: var(--green);
-    border: 1px solid var(--green);
+    color: var(--success);
+    border: 1px solid var(--success);
     background-color: transparent;
 }
 
 .badge-outline-info {
-    color: var(--purple);
-    border: 1px solid var(--purple);
+    color: var(--info);
+    border: 1px solid var(--info);
     background-color: transparent;
 }
 
 .badge-outline-warning {
-    color: var(--yellow);
-    border: 1px solid var(--yellow);
+    color: var(--warning);
+    border: 1px solid var(--warning);
     background-color: transparent;
 }
 
 .badge-outline-danger {
-    color: var(--orange);
-    border: 1px solid var(--orange);
+    color: var(--danger);
+    border: 1px solid var(--danger);
     background-color: transparent;
 }
 
@@ -689,7 +691,57 @@ label {
     left: calc(100% - 14px) !important;
 }
 
-/*=======Badges.html ends=====*/
+
+/* ========Alerts======== */
+.alert {
+    position: relative;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-primary {
+    color: var(--dark-blue);
+    background-color: #a0cfff65;
+    border-color: var(--dark-blue);
+}
+
+.alert-secondary {
+    color: var(--blue);
+    background-color: #98dcec7e;
+    border-color: var(--blue);
+}
+
+.alert-success {
+    color: var(--success);
+    background-color: #a2dac97a;
+    border-color: var(--success);
+}
+
+.alert-danger {
+    color: var(--danger);
+    background-color: rgba(238, 153, 127, 0.712);
+    border-color: var(--danger);
+}
+
+.alert-warning {
+    color: var(--warning);
+    background-color: rgba(245, 237, 130, 0.767);
+    border-color: var(--warning);
+}
+
+.alert-info {
+    color: var(--info);
+    background-color: #17a3b863;
+    border-color: var(--info);
+}
+
+.alert-dark {
+    color: var(--theme-dark);
+    background-color: rgba(168, 168, 168, 0.527);
+    border-color: var(--theme-dark);
+}
 
 /*========Pages css (dashboard)====== */
 /* my profile */

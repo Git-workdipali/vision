@@ -6,93 +6,340 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alerts</title>
-        <link rel="stylesheet" href="/Css/dasboard.css">
+        <link rel="stylesheet" href="/Css/style.css">
         <!-- CSS only -->
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body>
-        <div class="container mt-5">
-            <div class="main-pannel">
-                <h4 class="m-5">Alerts</h4>
-                <div class="content-wrapper">
-                    <div class="card-dashboard d-flex justify-around">
-                        <div class="d-block">
-                            <h3>Alerts With Icons</h3>
-                            <div id="alert" class="bg-blue">
-                                <span class="font-12">Hi! A simple <b>icon</b> alert —check it out!</span>
-                                <i class="fa-solid fa-thumbs-up alert-icons "></i>
+        <div class="container theme-light">
+            <div class="title">Alerts</div>
+            <div class="card card-shadow">
+
+                <div class="card-title">Default Alerts</div>
+                <div class="txt-info">Use the <code>alert</code> class to show a default alert.</div>
+
+                <div class="preview" id="block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-primary shadow" role="alert">
+                                <bold> Hi! </bold> A simple <b>Primary alert</b> —check it out!
                             </div>
-                            <div id="alert" class="bg-green">
-                                <span class="font-12">Hi! A simple <b>icon</b> alert —check it out!</span>
-                                <i class="fa-solid fa-circle-exclamation alert-icons "></i>
+
+                            <div class="alert alert-secondary shadow" role="alert">
+                                <bold> How are you! </bold> A simple <b>secondary alert</b> —check it out!
                             </div>
-                            <div id="alert" class="bg-yellow">
-                                <span class="font-12">Hi! A simple <b>icon</b> alert —check it out!</span>
-                                <i class="fa-solid fa-triangle-exclamation alert-icons "></i>
+
+                            <div class="alert alert-success shadow" role="alert">
+                                <bold> Yey! Everything worked! </bold> A simple <b>success alert</b> —check it out!
                             </div>
-                            <div id="alert" class="bg-red">
-                                <span class="font-12">Hi! A simple <b>icon</b> alert —check it out!</span>
-                                <i class="fa-solid fa-circle-exclamation alert-icons "></i>
-                            </div>
-                        </div>
-                        <div class="d-block">
-                            <h3>Alerts With Border</h3>
-                            <div id="alert" class="bg-blue border">
-                                <span class="font-12">Hi! A simple <b>Primary</b> alert —check it out!</span>
-                            </div>
-                            <div id="alert" class="bg-green border">
-                                <span class="font-12">Hi! A simple <b>Success</b> alert —check it out!</span>
-                            </div>
-                            <div id="alert" class="bg-yellow border">
-                                <span class="font-12">Hi! A simple <b>Warning</b> alert —check it out!</span>
-                            </div>
-                            <div id="alert" class="bg-red border">
-                                <span class="font-12">Hi! A simple <b>Alert</b> alert —check it out!</span>
+
+                            <div class="alert alert-danger shadow" role="alert">
+                                <bold> Something is very wrong! </bold> A simple <b>danger alert</b> —check it out!
                             </div>
                         </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-warning shadow" role="alert">
+                                <bold> Uh oh, something went wrong </bold> A simple <b>warning alert</b> —check it out!
+                            </div>
+
+                            <div class="alert alert-info shadow" role="alert">
+                                <bold> Don't forget' it ! </bold> A simple <b>info alert</b> —check it out!
+                            </div>
+
+                            <div class="alert alert-dark shadow" role="alert">
+                                <bold> Did you know? </bold> A simple <b>dark alert</b> —check it out!
+                            </div>
+
+                            <div class="alert alert-light shadow" role="alert">
+                                <bold> Did you know? </bold> A simple <b>dark alert</b> —check it out!
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="card-dashboard d-flex justify-around">
-                        <div class="d-block">
-                            <h3>Dismiss Alerts</h3>
-                            <div id="alert" class="bg-blue">
-                                <span class="font-12">Hi! A simple <b>Dismiss</b> alert —check it out!</span>
-                                <i class="fa-solid fa-xmark dismiss"></i>
+                </div>
+            </div>
+            <div class="card card-shadow">
+                <div class="card-title">Borderless Alerts</div>
+                <div class="txt-info">Use the <code>alert-borderless</code> class to set alert without border.</div>
+
+                <div class="preview" id="block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-borderless shadow alert-primary" role="alert">
+                                <strong> Hi! </strong> A simple <b>Primary alert</b> —check it out!
                             </div>
-                            <div id="alert" class="bg-green">
-                                <span class="font-12">Hi! A simple <b>Dismiss</b> alert —check it out!</span>
-                                <i class="fa-solid fa-xmark dismiss"></i>
+                            <div class="alert alert-borderless shadow alert-secondary" role="alert">
+                                <strong> How are you! </strong> A simple <b>secondary alert</b> —check it out!
                             </div>
-                            <div id="alert" class="bg-yellow">
-                                <span class="font-12">Hi! A simple <b>Dismiss</b> alert —check it out!</span>
-                                <i class="fa-solid fa-xmark dismiss"></i>
+                            <div class="alert alert-borderless shadow alert-success" role="alert">
+                                <strong> Yey! Everything worked! </strong> A simple <b>success alert</b> —check it out!
                             </div>
-                            <div id="alert" class="bg-red">
-                                <span class="font-12">Hi! A simple <b>Dismiss</b> alert —check it out!</span>
-                                <i class="fa-solid fa-xmark dismiss"></i>
+                            <div class="alert alert-borderless shadow alert-danger" role="alert">
+                                <strong> Something is very wrong! </strong> A simple <b>danger alert</b> —check it out!
                             </div>
                         </div>
-                        <div class="d-block">
-                            <h3>Primary Outline Alert</h3>
-                            <div id="alert" class="bg-blue border-blue">
-                                <span class="font-12">Hi! A simple <b>Primary</b> alert —check it out!</span>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-borderless shadow alert-warning" role="alert">
+                                <strong> Uh oh, something went wrong </strong> A simple <b>warning alert</b> —check it
+                                out!
                             </div>
-                            <div id="alert" class="bg-green border-green">
-                                <span class="font-12">Hi! A simple <b>Success</b> alert —check it out!</span>
+                            <div class="alert alert-borderless shadow alert-info" role="alert">
+                                <strong> Don't forget' it ! </strong> A simple <b>info alert</b> —check it out!
                             </div>
-                            <div id="alert" class="bg-yellow border-yellow">
-                                <span class="font-12">Hi! A simple <b>Warning</b> alert —check it out!</span>
+                            <div class="alert alert-borderless shadow alert-dark" role="alert">
+                                <bold> Did you know? </bold> A simple <b>dark alert</b> —check it out!
                             </div>
-                            <div id="alert" class="bg-red border-red">
-                                <span class="font-12">Hi! A simple <b>Alert</b> alert —check it out!</span>
+                            <div class="alert alert-borderless shadow alert-light" role="alert">
+                                <strong> Mind Your Step! </strong> A simple <b>light alert</b> —check it out!
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="card card-shadow">
+
+                <div class="card-title">Dismissing Alerts</div>
+                <div class="txt-info">Use the <code>alert-dismissible</code> class to add dismissing button to the
+                    alert.</div>
+
+                <div class="preview" id="block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-primary alert-dismissible shadow fade show" role="alert">
+                                <strong> Hi! </strong> A simple <b>Dismissible primary Alert </b> — check it out!
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><i
+                                        class="fa-solid fa-xmark"></i></button>
+                            </div>
+
+                            <div class="alert alert-secondary alert-dismissible shadow fade show" role="alert">
+                                <strong> How are you! </strong> A simple <b>Dismissible secondary Alert </b> — check it
+                                out!
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><i
+                                        class="fa-solid fa-xmark"></i></button>
+                            </div>
+                            <div class="alert alert-success alert-dismissible shadow fade show" role="alert">
+                                <strong> Yey! worked! </strong> A simple <b>Dismissible success Alert </b> —
+                                check it out!
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><i
+                                        class="fa-solid fa-xmark"></i></button>
+                            </div>
+            <div class="alert alert-danger alert-dismissible shadow fade show" role="alert">
+                <strong> Something is wrong! </strong> A simple <b>Dismissible danger Alert </b> —
+                check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="alert alert-warning alert-dismissible shadow fade show" role="alert">
+                <strong> Welcome Back! </strong> A simple <b>Dismissible warning Alert </b> — check it
+                out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="alert alert-info alert-dismissible shadow fade show" role="alert">
+                <strong> Don't forget' it ! </strong> A simple <b>Dismissible info Alert </b> — check it
+                out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="alert alert-dark alert-dismissible shadow fade show" role="alert">
+                <strong> Did you know? </strong> A simple <b>Dismissible dark Alert </b> — check it out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="alert alert-light alert-dismissible shadow fade show" role="alert">
+                <strong> Mind Your Step! </strong> A simple <b>Dismissible light Alert </b> — check it
+                out!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+
+
+        </div>
+
+        </div>
+        </div>
+        </div> -->
+            <div class="card card-shadow">
+
+                <div class="card-title">Left Border Alert</div>
+                <div class="txt-info">Use the <code>alert-border-left</code> class to set an alert with the left border
+                    & outline.
+                </div>
+
+                <div class="preview">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-primary alert-border-left alert-dismissible fade shadow show"
+                                role="alert">
+                                <i class="fa-solid fa-check-double me-3"></i><strong>Primary</strong> - Left
+                                border alert
+                            </div>
+                            <div class="alert alert-secondary alert-border-left alert-dismissible fade shadow show"
+                                role="alert">
+                                <i class="fa-solid fa-bell me-3 align-middle"></i> <strong>Secondary</strong> - Left
+                                border alert
+                            </div>
+                            <div class="alert alert-success alert-border-left alert-dismissible fade shadow show"
+                                role="alert">
+                                <i class="fa-solid fa-face-smile me-3 align-middle"></i> <strong>Success</strong> -
+                                Left border alert
+                            </div>
+                            <div class="alert alert-danger alert-border-left alert-dismissible fade shadow show"
+                                role="alert">
+                                <i class="fa-solid fa-circle-exclamation me-3 align-middle"></i> <strong>Danger</strong>
+                                - Left
+                                border alert
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-warning alert-border-left alert-dismissible fade shadow show"
+                                role="alert">
+                                <i
+                                    class="fa-solid fa-triangle-exclamation me-3 align-middle"></i><strong>Warning</strong>
+                                - Left border
+                                alert
+                            </div>
+                            <div class="alert alert-info alert-border-left alert-dismissible fade shadow show"
+                                role="alert">
+                                <i class="fa-solid fa-circle-info me-3 align-middle"></i><strong>Info</strong> - Left
+                                border
+                                alert
+                            </div>
+                            <div class="alert alert-dark alert-border-left alert-dismissible fade shadow show"
+                                role="alert">
+                                <i class="fa-solid fa-arrow-rotate-right me-3 align-middle"></i> <strong>Dark</strong> -
+                                Left border
+                                alert
+                            </div>
+                            <div class="alert alert-light alert-border-left alert-dismissible fade shadow show"
+                                role="alert">
+                                <i class="fa-solid fa-envelope me-3 align-middle"></i><strong>Light</strong> - Left
+                                border
+                                alert
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card card-shadow">
+
+                <div class="card-title">Additional Content Alert</div>
+                <div class="txt-info">Use the <code>alert-additional</code> class and Use the <code>alert-</code> class
+                    to HTML
+                    elements like headings, paragraphs, dividers etc.</div>
+
+                <div class="preview" id="block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-primary alert-dismissible alert-additional shadow fade show"
+                                role="alert">
+                                <div class="alert-body">
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <i class="ri-user-smile-line fs-16 align-middle"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h5 class="alert-heading">Well done !</h5>
+                                            <p class="mb-0">Aww yeah, you successfully read this important alert
+                                                message. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert-content">
+                                    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things
+                                        nice and tidy.</p>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-danger alert-dismissible alert-additional shadow fade show"
+                                role="alert">
+                                <div class="alert-body">
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <i class="ri-error-warning-line fs-16 align-middle"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h5 class="alert-heading">Something is very wrong!</h5>
+                                            <p class="mb-0">Change a few things up and try submitting again. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert-content">
+                                    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things
+                                        nice and tidy.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-success alert-dismissible alert-additional shadow fade show"
+                                role="alert">
+                                <div class="alert-body">
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <i class="ri-notification-off-line fs-16 align-middle"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h5 class="alert-heading">Yey! Everything worked!</h5>
+                                            <p class="mb-0">This alert needs your attention, but it's not super
+                                                important. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert-content">
+                                    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things
+                                        nice and tidy.</p>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-warning alert-dismissible alert-additional shadow fade show mb-0"
+                                role="alert">
+                                <div class="alert-body">
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <i class="ri-alert-line fs-16 align-middle"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h5 class="alert-heading">Uh oh, something went wrong!</h5>
+                                            <p class="mb-0">Better check yourself, you're not looking too good. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert-content">
+                                    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things
+                                        nice and tidy.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </body>
 
 </html>
