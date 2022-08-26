@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chips</title>
-        <link rel="stylesheet" href="/Css/dasboard.css">
+        <link rel="stylesheet" href="/Css/style.css">
         <!-- CSS only -->
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -15,63 +15,199 @@
     </head>
 
     <body>
-        <div class="container mt-5">
-            <div class="main-pannel">
-                <h4 class="m-5">Chips Types</h4>
-                <div class="content-wrapper">
-                    <div class="card-dashboard">
-                        <div class="card-secondary">
-                            <h6>Basic Chips</h6>
-                            <div class="flex">
-                                <span id="inverse-1" class="chips">Save</span>
-                                <span id="inverse-2" class="chips">Add</span>
-                                <span id="inverse-3" class="chips">DownTown</span>
-                                <span id="inverse-4" class="chips">Suggestion</span>
-                                <span id="inverse-5" class="chips">Cancle</span>
-                                <span id="inverse-6" class="chips">Info</span>
-                            </div>
-                        </div>
-                        <div class="card-secondary">
-                            <h6>Rounded Chips</h6>
-                            <div class="flex">
-                                <span id="inverse-1-rounded" class="chips">Save</span>
-                                <span id="inverse-2-rounded" class="chips">Add</span>
-                                <span id="inverse-3-rounded" class="chips">DownTown</span>
-                                <span id="inverse-4-rounded" class="chips">Suggestion</span>
-                                <span id="inverse-5-rounded" class="chips">Cancle</span>
-                                <span id="inverse-6-rounded" class="chips">Info</span>
-                            </div>
-                        </div>
-                        <div class="card-secondary">
-                            <h6>Chips with icon</h6>
-                            <div class="flex">
-                                <span id="inverse-1" class="chips">Save <i class="fa-solid fa-bookmark"></i> </span>
-                                <span id="inverse-2" class="chips">Add <i class="fa-solid fa-plus"></i></span>
-                                <span id="inverse-3" class="chips">DownTown <i
-                                        class="fa-solid fa-circle-down"></i></span>
-                                <span id="inverse-4" class="chips">Suggestion <i class="fa-solid fa-message"></i></span>
-                                <span id="inverse-5" class="chips">Cancle <i class="fa-solid fa-ban"></i></span>
-                                <span id="inverse-6" class="chips">Info<i class="fa-solid fa-circle-info"></i></span>
-                            </div>
-                        </div>
-                        <div class="card-secondary">
-                            <h6>Inverse chips with icon</h6>
-                            <div class="flex">
-                                <span id="inverse-1-rounded" class="chips">Add to Cart <i
-                                        class="fa-solid fa-cart-shopping"></i></span>
-                                <span id="inverse-2-rounded" class="chips">New Content<i
-                                        class="fa-solid fa-pen"></i></span>
-                                <span id="inverse-3-rounded" class="chips">Schedule <i
-                                        class="fa-solid fa-calendar"></i></span>
-                                <span id="inverse-4-rounded" class="chips">Email To <i
-                                        class="fa-solid fa-envelope-open"></i></span>
-                                <span id="inverse-5-rounded" class="chips">Filter Demo<i
-                                        class="fa-solid fa-filter"></i></span>
-                                <span id="inverse-6-rounded" class="chips">To Assist <i
-                                        class="fa-solid fa-flag"></i></span>
-                            </div>
-                        </div>
-                    </div>
+        <div class="container theme-light">
+            <div class="title">Chips</div>
+            <div class="card card-shadow">
+
+                <div class="card-title">Default Chips</div>
+                <div class="txt-info">Use the <code>Chips</code> class to set default chips</div>
+
+                <div class="preview">
+                    <span class="chips bg-primary">Primary</span>
+                    <span class="chips bg-secondary">Secondary</span>
+                    <span class="chips bg-success">Success</span>
+                    <span class="chips bg-info">Info</span>
+                    <span class="chips bg-warning ">Warning</span>
+                    <span class="chips bg-danger">Alert</span>
+                    <span class="chips bg-dark">Dark</span>
+                </div>
+            </div>
+
+            <div class="card card-shadow">
+                <div class="card-title">Soft chips</div>
+                <div class="txt-info">Use the <code>chips-soft-</code> class with the below-mentioned variation to
+                    create a softer
+                    chips.</div>
+
+                <div class="preview">
+                    <span class="chips chips-soft-primary"><i class="fa-solid fa-check me-2"></i>Primary</span>
+
+                    <span class="chips chips-soft-secondary"><i class="fa-solid fa-check me-2"></i>Secondary</span>
+
+                    <span class="chips chips-soft-success"><i class="fa-solid fa-check me-2"></i>Success</span>
+
+                    <span class="chips chips-soft-info"><i class="fa-solid fa-check me-2"></i>Info</span>
+
+                    <span class="chips chips-soft-warning"><i class="fa-solid fa-check me-2"></i>Warning</span>
+
+                    <span class="chips chips-soft-danger"><i class="fa-solid fa-check me-2"></i>Danger</span>
+
+                    <span class="chips chips-soft-dark"><i class="fa-solid fa-check me-2"></i>Dark</span>
+                </div>
+            </div>
+
+            <div class="card card-shadow">
+                <div class="card-title">Outline chips</div>
+                <div class="txt-info">Use the <code>chips-outline-</code> class with the below-mentioned variation to
+                    create a chips
+                    with the outline.</div>
+
+                <div class="preview">
+                    <span class="chips chips-outline-primary"><i class="fa-solid fa-flask me-2"></i>Primary</span>
+
+                    <span class="chips chips-outline-secondary"><i
+                            class="fa-solid fa-thumbtack me-2"></i>Secondary</span>
+
+                    <span class="chips chips-outline-success"><i
+                            class="fa-solid fa-shield-halved me-2"></i>Success</span>
+
+                    <span class="chips chips-outline-info"><i class="fa-solid fa-share-nodes me-2"></i>Info</span>
+
+                    <span class="chips chips-outline-warning"><i class="fa-solid fa-list me-2"></i>Warning</span>
+
+                    <span class="chips chips-outline-danger"><i class="fa-solid fa-play me-2"></i>Danger</span>
+
+                    <span class="chips chips-outline-dark"><i class="fa-solid fa-play me-2"></i>Dark</span>
+                </div>
+            </div>
+
+
+            <div class="card card-shadow">
+                <div class="card-title">Rounded Pills chips</div>
+                <div class="txt-info">Use the <code>rounded-pill</code> class to make chipss more rounded with a larger
+                    border-radius.</div>
+
+                <div class="preview">
+                    <span class="chips rounded-pill bg-primary">Primary</span>
+
+                    <span class="chips rounded-pill bg-secondary">Secondary</span>
+
+                    <span class="chips rounded-pill bg-success">Success</span>
+
+                    <span class="chips rounded-pill bg-info">Info</span>
+
+                    <span class="chips rounded-pill bg-warning">Warning</span>
+
+                    <span class="chips rounded-pill bg-danger">Danger</span>
+
+                    <span class="chips rounded-pill bg-dark">Dark</span>
+
+                </div>
+            </div>
+
+            <div class="card card-shadow">
+                <div class="card-title">Rounded Pills chips With Soft Effect</div>
+                <div class="txt-info">Use the <code>rounded-pill chips-soft- </code>class with the below-mentioned
+                    variation to
+                    create a chips more rounded with a soft background.</div>
+
+                <div class="preview">
+                    <span class="chips rounded-pill chips-soft-primary"><i
+                            class="fa-solid fa-tag me-2"></i>Primary</span>
+
+                    <span class="chips rounded-pill chips-soft-secondary"><i
+                            class="fa-solid fa-link me-2"></i>Secondary</span>
+
+                    <span class="chips rounded-pill chips-soft-success"><i
+                            class="fa-solid fa-paperclip me-2"></i>Success</span>
+
+                    <span class="chips rounded-pill chips-soft-info"><i
+                            class="fa-solid fa-user-tag me-2"></i>Info</span>
+
+                    <span class="chips rounded-pill chips-soft-warning"><i
+                            class="fa-solid fa-tags me-2"></i>Warning</span>
+
+                    <span class="chips rounded-pill chips-soft-danger"><i
+                            class="fa-solid fa-circle-plus me-2"></i>Danger</span>
+
+                    <span class="chips rounded-pill chips-soft-dark"><i class="fa-solid fa-minus me-2"></i>Dark</span>
+                </div>
+            </div>
+
+            <div class="card card-shadow">
+                <div class="card-title">Soft Border chips</div>
+                <div class="txt-info">Use the <code>chips-border and chips-soft-</code> with below mentioned modifier
+                    classes to make
+                    chipss with border & soft backgorund.</div>
+
+                <div class="preview">
+                    <span class="chips chips-soft-primary chips-border">Primary<i
+                            class="fa-solid fa-circle-xmark ml-2"></i></span>
+
+                    <span class="chips chips-soft-secondary chips-border">Secondary<i
+                            class="fa-solid fa-rectangle-xmark ml-2"></i></span>
+
+                    <span class="chips chips-soft-success chips-border">Success <i
+                            class="fa-solid fa-xmark ml-2"></i></span>
+
+                    <span class="chips chips-soft-info chips-border">Info
+                        <i class="fa-solid fa-circle-xmark ml-2"></i>
+                    </span>
+
+                    <span class="chips chips-soft-warning chips-border">Warning
+                        <i class="fa-solid fa-circle-xmark ml-2"></i>
+                    </span>
+
+                    <span class="chips chips-soft-danger chips-border">Danger
+                        <i class="fa-solid fa-circle-xmark ml-2"></i>
+                    </span>
+
+                    <span class="chips chips-soft-dark chips-border">Dark
+                        <i class="fa-solid fa-circle-xmark ml-2"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="card card-shadow">
+                <div class="card-title">Tag Chips</div>
+                <div class="txt-info">Use the below utilities to modify a chips and position it in the corner of a link
+                    or button.</div>
+
+                <div class="preview">
+                    <span class="chips rounded-pill chips-soft-primary">Primary <i
+                            class="fa-solid fa-tag ml-2"></i></span>
+
+                    <span class="chips rounded-pill chips-soft-secondary">Secondary <i
+                            class="fa-solid fa-tag ml-2"></i></span>
+
+                    <span class="chips rounded-pill chips-soft-success">Success<i
+                            class="fa-solid fa-tag ml-2"></i></span>
+
+                    <span class="chips rounded-pill chips-soft-info">Info <i class="fa-solid fa-tag ml-2"></i></span>
+
+                    <span class="chips rounded-pill chips-soft-warning">Warning<i
+                            class="fa-solid fa-tag ml-2"></i></span>
+
+                    <span class="chips rounded-pill chips-soft-danger">Danger <i
+                            class="fa-solid fa-tag ml-2"></i></span>
+
+                    <span class="chips rounded-pill chips-soft-dark">Dark <i class="fa-solid fa-tag ml-2"></i></span>
+                </div>
+            </div>
+
+
+            <div class="card card-shadow">
+                <div class="card-title">Color chipss</div>
+                <div class="txt-info">Use the <code>color-bdge</code> class to set color chips</div>
+
+                <div class="preview">
+                    <span class="chips bg-primary color-bdge"></span>
+                    <span class="chips bg-secondary color-bdge"></span>
+                    <span class="chips bg-success color-bdge"></span>
+                    <span class="chips bg-info color-bdge"></span>
+                    <span class="chips bg-warning color-bdge"></span>
+                    <span class="chips bg-danger color-bdge"></span>
+                    <span class="chips bg-dark color-bdge"></span>
                 </div>
             </div>
         </div>

@@ -426,6 +426,105 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* ============Chips============= */
+.chips {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: .70em;
+  font-weight: normal;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.chips-soft-primary {
+  color: var(--dark-blue);
+  background-color: var(--dark-blue-hex);
+}
+
+.chips-soft-secondary {
+  color: var(--blue);
+  background-color: var(--secondary-hex);
+}
+
+.chips-soft-success {
+  color: var(--success);
+  background-color: var(--success-hex);
+}
+
+.chips-soft-info {
+  color: var(--info);
+  background-color: var(--info-hex);
+}
+
+.chips-soft-warning {
+  color: var(--warning);
+  background-color: var(--warning-hex);
+}
+
+.chips-soft-danger {
+  color: var(--danger);
+  background-color: var(--danger-hex);
+}
+
+.chips-soft-dark {
+  color: var(--secondary);
+  background-color: var(--dark-hex);
+}
+
+.chips-outline-primary {
+  color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
+  background-color: transparent;
+}
+
+.chips-outline-secondary {
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  background-color: transparent;
+}
+
+.chips-outline-success {
+  color: var(--success);
+  border: 1px solid var(--success);
+  background-color: transparent;
+}
+
+.chips-outline-info {
+  color: var(--info);
+  border: 1px solid var(--info);
+  background-color: transparent;
+}
+
+.chips-outline-warning {
+  color: var(--warning);
+  border: 1px solid var(--warning);
+  background-color: transparent;
+}
+
+.chips-outline-danger {
+  color: var(--danger);
+  border: 1px solid var(--danger);
+  background-color: transparent;
+}
+
+.chips-outline-dark {
+  color: var(--theme-dark);
+  border: 1px solid var(--theme-dark);
+  background-color: transparent;
+}
+
+.chips-soft-primary {
+  color: var(--dark-blue);
+  background-color: var(--dark-blue-hex);
+}
+
+.chips-border {
+  border-left: 2px solid;
+}
 
 /* =========background colors======== */
 .bg-primary {
@@ -538,6 +637,10 @@ p {
 
 .me-2 {
   margin-right: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem !important;
 }
 
 .me-3 {
