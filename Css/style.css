@@ -528,6 +528,10 @@ p {
   border-radius: 0.25rem !important;
 }
 
+.me-2 {
+  margin-right: 0.5rem;
+}
+
 .me-3 {
   margin-right: 1rem !important;
 }
@@ -2154,5 +2158,15 @@ select.did-floating-select::-ms-expand {
 
   .footer-page {
     display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .text-hide {
+    display: none;
+  }
+
+  .icon-hide {
+    margin-right: 0;
   }
 }
