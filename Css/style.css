@@ -526,6 +526,50 @@ html {
   border-left: 2px solid;
 }
 
+/* ============Input Form========== */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.9rem;
+  font-size: .8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--font-color);
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid rgb(201, 201, 201);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+
 /* =========background colors======== */
 .bg-primary {
   background-color: var(--peach);
