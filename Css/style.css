@@ -520,7 +520,7 @@ p {
   gap: 0.8rem !important;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* ======margin-padding-border-radius====== */
@@ -1900,6 +1900,10 @@ select.did-floating-select::-ms-expand {
   left: calc(100% - 14px) !important;
 }
 
+.color-bdge {
+  padding: 6px 6px;
+  border-radius: 1rem;
+}
 
 /* ========Alerts======== */
 .row {
