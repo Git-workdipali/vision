@@ -14,13 +14,14 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
-    <body>
-        <div class="container theme-light">
+    <body class="theme-light">
+        <div class="container">
             <div class="title">Buttons</div>
-            <div class="card card-shadow">
+            <div class="card card-shadow" id="card">
 
                 <div class="card-title">Default Buttons</div>
-                <div class="txt-info">Use the <code>btn</code> class to show the default button style.</div>
+                <div class="txt-info">Use the <code>btn</code> class to show the default button style.
+                </div>
 
                 <div class="preview">
                     <button type="button" class="btn btn-primary waves-effect waves-light">Primary</button>
@@ -40,11 +41,13 @@
                     <button type="button" class="btn btn-link waves-effect">Link</button>
 
                     <button type="button" class="btn btn-light waves-effect">Light</button>
+
+                    <button type="button" class="btn btn-light waves-effect btn-disable" disabled>Disable</button>
                 </div>
             </div>
 
 
-            <div class="card card-shadow">
+            <div class="card card-shadow" id="card2">
                 <div class="card-title">Outline Buttons</div>
                 <div class="txt-info">Use <code>btn-outline-</code> class with the below-mentioned variation to create a
                     button with
@@ -73,6 +76,9 @@
                         class="btn btn-outline-dark waves-effect waves-light shadow-none">Dark</button>
 
                     <button type="button" class="btn btn-outline-light waves-effect shadow-none">Light</button>
+
+                    <button type="button" class="btn btn-outline-light waves-effect shadow-none btn-disable"
+                        disabled>Disable</button>
                 </div>
             </div>
 
@@ -99,6 +105,9 @@
                     <button type="button" class="btn rounded-pill btn-dark waves-effect waves-light">Dark</button>
 
                     <button type="button" class="btn rounded-pill btn-light waves-effect">Light</button>
+
+                    <button type="button" class="btn rounded-pill btn-disable waves-effect disable"
+                        disabled>Disbale</button>
                 </div>
             </div>
 
@@ -128,6 +137,9 @@
                         class="btn btn-soft-danger waves-effect waves-light shadow-none">Danger</button>
 
                     <button type="button" class="btn btn-soft-dark waves-effect waves-light shadow-none">Dark</button>
+
+                    <button type="button"
+                        class="btn btn-soft waves-effect waves-light shadow-none btn-disable">Disable</button>
                 </div>
             </div>
 
@@ -152,6 +164,9 @@
                     <button type="button" class="btn btn-dark bg-gradient waves-effect waves-light">Dark</button>
 
                     <button type="button" class="btn btn-light bg-gradient waves-effect">Light</button>
+
+                    <button type="button" class="btn btn-light bg-gradient waves-effect btn-disable"
+                        disabled>Disable</button>
                 </div>
             </div>
 
@@ -160,44 +175,37 @@
                 <div class="txt-info">Use <code>btn-label</code> class to create a button with the label.</div>
 
                 <div class="preview">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <button type="button" class="btn btn-primary btn-label waves-effect waves-light"><i
-                                    class="fa-solid fa-face-smile  me-3"></i> Primary</button>
+                    <button type="button" class="btn btn-primary btn-label waves-effect waves-light"><i
+                            class="fa-solid fa-face-smile  me-3"></i> Primary</button>
 
-                            <button type="button" class="btn btn-success btn-label waves-effect waves-light "><i
-                                    class="fa-solid fa-check-double  me-3"></i>Success</button>
+                    <button type="button" class="btn btn-success btn-label waves-effect waves-light "><i
+                            class="fa-solid fa-check-double  me-3"></i>Success</button>
 
-                            <button type="button" class="btn btn-warning btn-label waves-effect waves-light "><i
-                                    class="fa-solid fa-triangle-exclamation me-3"></i> Warning</button>
-                        </div>
+                    <button type="button" class="btn btn-warning btn-label waves-effect waves-light "><i
+                            class="fa-solid fa-triangle-exclamation me-3"></i> Warning</button>
 
-                        <div class="col-lg-4">
-                            <button type="button"
-                                class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i
-                                    class="ri-user-smile-line label-icon align-middle rounded-pill fs-16 me-2"></i>
-                                Primary</button>
+                    <button type="button" class="btn btn-primary btn-label waves-effect waves-light rounded-pill"><i
+                            class="ri-user-smile-line label-icon align-middle rounded-pill fs-16 me-2"></i>
+                        Primary</button>
 
-                            <button type="button"
-                                class="btn btn-success btn-label waves-effect waves-light rounded-pill"><i
-                                    class="ri-check-double-line label-icon align-middle rounded-pill fs-16 me-2"></i>
-                                Success</button>
+                    <button type="button" class="btn btn-success btn-label waves-effect waves-light rounded-pill"><i
+                            class="ri-check-double-line label-icon align-middle rounded-pill fs-16 me-2"></i>
+                        Success</button>
 
-                            <button type="button"
-                                class="btn btn-warning btn-label waves-effect waves-light rounded-pill"><i
-                                    class="ri-error-warning-line label-icon align-middle rounded-pill fs-16 me-2"></i>
-                                Warning</button>
-                        </div>
-                        <div class="col-lg-4">
-                            <button type="button" class="btn btn-primary btn-label waves-effect right waves-light"><i
-                                    class="ri-user-smile-line label-icon align-middle fs-16 ms-2"></i> Primary</button>
+                    <button type="button" class="btn btn-warning btn-label waves-effect waves-light rounded-pill"><i
+                            class="ri-error-warning-line label-icon align-middle rounded-pill fs-16 me-2"></i>
+                        Warning</button>
+                    <button type="button" class="btn btn-primary btn-label waves-effect right waves-light"><i
+                            class="ri-user-smile-line label-icon align-middle fs-16 ms-2"></i> Primary</button>
 
-                            <button type="button"
-                                class="btn btn-success btn-label waves-effect right waves-light rounded-pill"><i
-                                    class="ri-check-double-line label-icon align-middle rounded-pill fs-16 ms-2"></i>
-                                Success</button>
-                        </div>
-                    </div>
+                    <button type="button"
+                        class="btn btn-success btn-label waves-effect right waves-light rounded-pill"><i
+                            class="ri-check-double-line label-icon align-middle rounded-pill fs-16 ms-2"></i>
+                        Success</button>
+
+                    <button type="button" class="btn btn-disable waves-effect waves-light rounded-pill"><i
+                            class="ri-check-double-line label-icon align-middle rounded-pill fs-16 ms-2 " disabled></i>
+                        Success</button>
                 </div>
             </div>
 
@@ -250,6 +258,11 @@
                             </span>
                         </span>
                     </button>
+                    <button type="button" class="btn btn-outline btn-disable" disabled>
+                        <span class="d-flex align-items-center">
+                            <i class="fa-solid fa-arrows-spin animation me-3"></i>Loading
+                        </span>
+                    </button>
                 </div>
             </div>
             <div class="card card-shadow">
@@ -272,6 +285,8 @@
                     <button type="button"
                         class="btn btn-outline-warning btn-icon waves-effect waves-light shadow-none"><i
                             class="fa-solid fa-circle-exclamation"></i></button>
+                    <button type="button" class="btn btn-outline btn-icon btn-disable"><i
+                            class="fa-solid fa-ban"></i></button>
                 </div>
             </div>
             <div class="card card-shadow">
@@ -279,7 +294,6 @@
                 <div class="txt-info">Use <code>bg-icon</code> class to create an icon button.</div>
 
                 <div class="preview">
-                    <!-- Animation Buttons -->
                     <button type="button" class="btn btn-primary btn-animation waves-effect waves-light"
                         data-text="Primary"><i class="fa-solid fa-lock me-2 icon-hide"></i><span
                             class="text-hide">Primary</span></button>
@@ -307,8 +321,39 @@
                     <button type="button" class="btn btn-dark btn-animation waves-effect waves-light"
                         data-text="Dark"><i class="fa-brands fa-firefox me-2 icon-hide"></i><span
                             class="text-hide">Dark</span></button>
+
+                    <button type="button" class="btn btn-disable" data-text="Dark"><i
+                            class="fa-solid fa-ban me-2"></i><span class="text-hide">Disable</span></button>
                 </div>
             </div>
+            <div class="card card-shadow">
+                <div class="card-title">Toggle Buttons</div>
+                <div class="txt-info">Use <code>btn-toggle</code> class to create an icon button.</div>
+
+                <div class="preview">
+                    <button type="button" class="btn btn-primary "><a class="purple-head hover-black"
+                            onclick="changeIcon(this)" id="myBtn">
+                            <i id="faPlus" class="fa fa-expand me-2"></i>
+                            <span>Full-Screen</span></button>
+
+                    <button type="button" class="btn btn-secondary" onclick="darkMode()">Dark Theme</button>
+
+                    <button type="button" class="btn btn-success ">Success</button>
+
+                    <button type="button" class="btn btn-info ">Info</button>
+
+                    <button type="button" class="btn btn-warning ">Warning</button>
+
+                    <button type="button" class="btn btn-danger ">Danger</button>
+
+                    <button type="button" class="btn btn-dark ">Dark</button>
+
+                    <button type="button" class="btn btn-light">Light</button>
+
+                    <button type="button" class="btn btn-light btn-disable" disabled>Disable</button>
+                </div>
+
+                <script src="/Js/app.js"></script>
     </body>
 
 </html>

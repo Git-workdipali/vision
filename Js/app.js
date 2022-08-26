@@ -266,8 +266,8 @@ function validateInput() {
   document.getElementById("error-msg").innerHTML = message;
 
 }
-// =====Email validation=====
-// =====text area validation
+// ==========Email validation==========
+// ==========text area validation===========
 $('textarea').keyup(function () {
 
   var characterCount = $(this).val().length,
@@ -300,6 +300,25 @@ $('textarea').keyup(function () {
     maximum.css('color', '#666');
     theCount.css('font-weight', 'normal');
   }
-
-
 });
+
+//==============Dashboard js=============
+// Buttons
+function changeIcon(anchor) {
+  var icon = anchor.querySelector("i");
+  icon.classList.toggle('icon-fullscreen');
+  icon.classList.toggle('fa-plus');
+
+  anchor.querySelector("span").textContent = icon.classList.contains('icon-fullscreen') ? "Expand" : "Exit";
+}
+
+//====dark mode====
+function darkMode() {
+  var element = document.body;
+  const count = document.getElementsByClassName("card-shadow");
+
+  for (var x = 0; x < count.length; x++) {
+    count[x].classList.toggle("card-shadow-dark");
+  }
+  element.classList.toggle("dark-mode");
+}
