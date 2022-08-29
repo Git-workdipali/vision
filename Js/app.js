@@ -43,10 +43,10 @@ function hideContent() {
     x.style.display = "none";
   }
 }
-//   Full screen end
+//Full screen end
 
 
-// Hamburger css start
+//==========Hamburger css start==========
 function openNav() {
   document.getElementById("mySidebar").style.width = "280px";
   document.getElementById("main").style.marginLeft = "";
@@ -57,29 +57,27 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 }
 // Hamburger css end 
+//========search scope popup pannel start========
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
 
+btn.onclick = function () {
+  modal.style.display = "block";
+}
+span.onclick = function () {
+  modal.style.display = "none";
+}
 
-// search scope popup pannel start
-// var modal = document.getElementById("myModal");
-// var btn = document.getElementById("myBtn");
-// var span = document.getElementsByClassName("close")[0];
-
-// btn.onclick = function () {
-//   modal.style.display = "block";
-// }
-// span.onclick = function () {
-//   modal.style.display = "none";
-// }
-
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 // search scope popup pannel end
 
 
-// toggle starts
+//=========toggle starts==========
 var show = function (t) {
   t.style.display = "block"
 },
@@ -98,32 +96,32 @@ document.addEventListener("click", function (t) {
 }, !1);
 // Toggle end
 
-//=====Change View Css======= 
-// const listViewButton = document.querySelector('.list-view-button');
-// const gridViewButton = document.querySelector('.grid-view-button');
-// const tableViewButton = document.querySelector('.table-view-button');
-// const list = document.querySelector('ol');
+//=============Change View Css============
+const listViewButton = document.querySelector('.list-view-button');
+const gridViewButton = document.querySelector('.grid-view-button');
+const tableViewButton = document.querySelector('.table-view-button');
+const list = document.querySelector('ol');
 
-// listViewButton.onclick = function () {
-//   list.classList.remove('grid-view-filter');
-//   list.classList.add('list-view-filter');
-// }
+listViewButton.onclick = function () {
+  list.classList.remove('grid-view-filter');
+  list.classList.add('list-view-filter');
+}
 
-// gridViewButton.onclick = function () {
-//   list.classList.remove('list-view-filter');
-//   list.classList.add('grid-view-filter');
-// }
+gridViewButton.onclick = function () {
+  list.classList.remove('list-view-filter');
+  list.classList.add('grid-view-filter');
+}
 
-// tableViewButton.onclick = function () {
-//   list.classList.remove('list-view-filter');
-//   list.classList.remove('grid-view-filter');
-//   list.classList.add('table-view-filter');
-// }
-//==========Change View Css End=========
+tableViewButton.onclick = function () {
+  list.classList.remove('list-view-filter');
+  list.classList.remove('grid-view-filter');
+  list.classList.add('table-view-filter');
+}
+//Change View js End
 
 
 // navbar hide icon v logo
-/* hide content and show on click */
+/*===========hide content and show on click=========*/
 function toggleText() {
   var x = document.getElementById("Myid");
   if (x.style.display === "block") {
@@ -152,7 +150,11 @@ function hideUser() {
 }
 // Hide And show content End
 
+<<<<<<< HEAD
 //=========== dropdown button for col-3-main
+=======
+//=============dropdown button for col-3-main============
+>>>>>>> c470a4435ba3762b30e1df2fd3d099e7fcdd736d
 [".collapsed-menu"].forEach((val) => {
   Array.prototype.forEach.call(document.querySelectorAll(val), (ele) => {
     ele.children[0].onclick = (e) => {
@@ -163,7 +165,11 @@ function hideUser() {
 
 //==========dropdown button for col-3 main
 
+<<<<<<< HEAD
 // ================Dashbord js===============
+=======
+//================Dashbord js=============
+>>>>>>> c470a4435ba3762b30e1df2fd3d099e7fcdd736d
 // form validation
 function validateform() {
   var username = document.myform.name.value;
@@ -245,7 +251,7 @@ function contactvalidation() {
 }
 
 
-// =====pincode validation====
+//=======pincode validation==========
 function isUSAZipCode(str) {
   return /^\d{5}(-\d{4})?$/.test(str);
 }
@@ -255,7 +261,6 @@ function validateInput() {
   let zipCode = document.getElementById("zipCode").value;
   let message = "";
   if (isUSAZipCode(zipCode)) {
-    // message = "Valid Zip Code";
     document.getElementById("error-pin").style.display = "none";
     document.getElementById("tick-pin").style.display = "block";
   } else {
@@ -266,7 +271,7 @@ function validateInput() {
   document.getElementById("error-msg").innerHTML = message;
 
 }
-// ==========Email validation==========
+// ==========Email validation================
 // ==========text area validation===========
 $('textarea').keyup(function () {
 
