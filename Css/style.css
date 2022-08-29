@@ -243,6 +243,10 @@ html {
   left: 100% !important;
 }
 
+/* ======spaces====== */
+.justify-around {
+  justify-content: space-around;
+}
 
 /* =====Buttons==== */
 .btn {
@@ -411,7 +415,7 @@ html {
 }
 
 .bg-gradient {
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)) !important;
+  background-image: linear-gradient(180deg, rgb(255 255 255 / 37%), rgb(255 255 255 / 0%)) !important;
 }
 
 .waves-effect {
@@ -424,6 +428,80 @@ html {
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+/* ============bg-soft-colors============ */
+.bg-soft-primary {
+  background-color: var(--peach);
+  opacity: 0.4;
+}
+
+.bg-soft-secondary {
+  background-color: var(--info);
+  opacity: 0.3;
+}
+
+.bg-soft-info {
+  background-color: var(--blue);
+  opacity: 0.3;
+}
+
+.bg-soft-success {
+  background-color: var(--success);
+  opacity: 0.3;
+}
+
+.bg-soft-warning {
+  background-color: var(--warning);
+  opacity: 0.3;
+}
+
+.bg-soft-danger {
+  background-color: var(--danger);
+  opacity: 0.3;
+}
+
+.bg-soft-dark {
+  background-color: var(--theme-dark);
+  opacity: 0.3;
+}
+
+.bg-soft-light {
+  background-color: var(--secondary);
+  opacity: 0.3;
+}
+
+/* =========Border Colors====== */
+.border-primary {
+  border: 2px solid var(--primary);
+}
+
+.border-secondary {
+  border: 2px solid var(--info);
+}
+
+.border-success {
+  border: 2px solid var(--success);
+}
+
+.border-info {
+  border: 2px solid var(--blue);
+}
+
+.border-warning {
+  border: 2px solid var(--warning);
+}
+
+.border-danger {
+  border: 2px solid var(--danger);
+}
+
+.border-dark {
+  border: 2px solid var(--theme-dark);
+}
+
+.border-light {
+  border: 2px solid var(--secondary);
 }
 
 /* ============Chips============= */
@@ -526,6 +604,13 @@ html {
   border-left: 2px solid;
 }
 
+/* =============Buttons========== */
+.color {
+  height: 3.25rem;
+  width: 3.25rem;
+  border-radius: 0.5rem;
+}
+
 /* ============Input Form========== */
 .form-control {
   display: block;
@@ -597,6 +682,10 @@ label {
 
 .bg-dark {
   background-color: var(--theme-dark);
+}
+
+.bg-light {
+  background-color: var(--secondary);
 }
 
 .btn-load .spinner-border,
