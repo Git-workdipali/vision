@@ -152,7 +152,7 @@ function hideUser() {
 }
 // Hide And show content End
 
-// dropdown button for col-3-main
+//=========== dropdown button for col-3-main
 [".collapsed-menu"].forEach((val) => {
   Array.prototype.forEach.call(document.querySelectorAll(val), (ele) => {
     ele.children[0].onclick = (e) => {
@@ -161,9 +161,9 @@ function hideUser() {
   });
 });
 
-// dropdown button for col-3 main
+//==========dropdown button for col-3 main
 
-// =======Dashbord js========
+// ================Dashbord js===============
 // form validation
 function validateform() {
   var username = document.myform.name.value;
