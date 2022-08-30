@@ -326,17 +326,18 @@
                             class="fa-solid fa-ban me-2"></i><span class="text-hide">Disable</span></button>
                 </div>
             </div>
+
             <div class="card card-shadow">
                 <div class="card-title">Toggle Buttons</div>
                 <div class="txt-info">Use <code>btn-toggle</code> class to create an icon button.</div>
 
                 <div class="preview">
+                    <button type="button" class="btn btn-secondary" onclick="darkMode()">Dark Theme</button>
+
                     <button type="button" class="btn btn-primary "><a class="purple-head hover-black"
                             onclick="changeIcon(this)" id="myBtn">
                             <i id="faPlus" class="fa fa-expand me-2"></i>
                             <span>Full-Screen</span></button>
-
-                    <button type="button" class="btn btn-secondary" onclick="darkMode()">Dark Theme</button>
 
                     <button type="button" class="btn btn-success ">Success</button>
 
@@ -352,8 +353,8 @@
 
                     <button type="button" class="btn btn-light btn-disable" disabled>Disable</button>
                 </div>
-
-                <script src="/Js/app.js"></script>
+            </div>
+            <script src="/Js/app.js"></script>
     </body>
 
 </html>

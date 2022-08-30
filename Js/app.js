@@ -58,22 +58,22 @@ function closeNav() {
 }
 // Hamburger css end 
 //========search scope popup pannel start========
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
+// var modal = document.getElementById("myModal");
+// var btn = document.getElementById("myBtn");
+// var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function () {
-  modal.style.display = "block";
-}
-span.onclick = function () {
-  modal.style.display = "none";
-}
+// btn.onclick = function () {
+//   modal.style.display = "block";
+// }
+// span.onclick = function () {
+//   modal.style.display = "none";
+// }
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
 // search scope popup pannel end
 
 
@@ -150,11 +150,7 @@ function hideUser() {
 }
 // Hide And show content End
 
-<<<<<<< HEAD
-//=========== dropdown button for col-3-main
-=======
 //=============dropdown button for col-3-main============
->>>>>>> c470a4435ba3762b30e1df2fd3d099e7fcdd736d
 [".collapsed-menu"].forEach((val) => {
   Array.prototype.forEach.call(document.querySelectorAll(val), (ele) => {
     ele.children[0].onclick = (e) => {
@@ -165,11 +161,7 @@ function hideUser() {
 
 //==========dropdown button for col-3 main
 
-<<<<<<< HEAD
-// ================Dashbord js===============
-=======
 //================Dashbord js=============
->>>>>>> c470a4435ba3762b30e1df2fd3d099e7fcdd736d
 // form validation
 function validateform() {
   var username = document.myform.name.value;
