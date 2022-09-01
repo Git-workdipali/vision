@@ -143,6 +143,7 @@ html {
   font-size: .8125rem !important;
 }
 
+
 /*  font-weight */
 .fw-bold {
   font-weight: 700 !important;
@@ -881,6 +882,17 @@ p {
   margin-bottom: 1rem;
 }
 
+h6 {
+  font-size: .8125rem;
+  color: var(--font-color);
+}
+
+.text-muted {
+  --vz-text-opacity: 1;
+  color: #878a99 !important;
+  font-size: 0.8rem;
+}
+
 /* ===========Cards-dashboard============ */
 .card-dashboard {
   position: relative;
@@ -937,6 +949,7 @@ p {
 
 .card-footer {
   border-top: 1px solid rgb(185, 185, 185);
+  width: 100%;
 }
 
 .card-footer:last-child {
@@ -945,7 +958,35 @@ p {
 
 .card-link {
   font-size: 0.8rem;
-  color: var(--font-color);
+  color: var(--active);
+}
+
+.col-card {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 28%;
+  background-color: var(--secondary);
+  border-radius: 0.25rem;
+
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: .7109375rem;
+  border-radius: 0.2rem;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.7rem 1rem;
+  color: var(--active);
+  text-decoration: none;
+  border-bottom: 1px solid rgb(175, 175, 175);
+  border-radius: 0;
+  text-align: center;
 }
 
 /* =====preview section======*/
@@ -1000,6 +1041,22 @@ p {
 
 .p-2 {
   padding: 0.5rem !important;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+.ms-2 {
+  margin-left: 0.5rem !important;
 }
 
 /* ======code===== */
@@ -2573,17 +2630,17 @@ select.did-floating-select::-ms-expand {
   height: 30px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #757575;
+  box-shadow: 0px 1px 0px 0px var(--font-desabled);
 }
 
 .floating-input:focus,
 .floating-select:focus {
   outline: none;
-  border-bottom: 2px solid #4b4b4f;
+  box-shadow: 0px 1px 0px 0px var(--primary);
 }
 
 label {
-  color: #999;
+  color: var(--font-secondary);
   font-size: 14px;
   font-weight: normal;
   position: absolute;
@@ -2599,14 +2656,14 @@ label {
 .floating-input:not(:placeholder-shown)~label {
   top: -18px;
   font-size: 14px;
-  color: #4b4b4f;
+  color: var(--font-primary);
 }
 
 .floating-select:focus~label,
 .floating-select:not([value=""]):valid~label {
   top: -18px;
   font-size: 14px;
-  color: #4b4b4f;
+  color: var(--font-primary);
 }
 
 .floating-input:focus~.bar:before,
@@ -2649,15 +2706,18 @@ label {
 }
 
 #icons-bg {
-  background: #4edcb7;
-  width: 34px;
-  height: 28px;
+  background: var(--font-desabled);
+  min-width: 36px;
+  max-height: 36px;
   text-align: center;
-  padding: 5px 0;
-  border-radius: 4px;
+  padding: 0;
+  border-radius: 10px;
   color: #fff;
   font-weight: bold;
   margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icons {
