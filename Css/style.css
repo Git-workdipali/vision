@@ -186,6 +186,10 @@ html {
   text-transform: capitalize !important;
 }
 
+.f-c {
+  color: var(--font-primary);
+}
+
 /* ====Flex==== */
 .flex {
   display: flex;
@@ -488,35 +492,35 @@ html {
 
 /* =========Border Colors====== */
 .border-primary {
-  border: 2px solid var(--primary);
+  box-shadow: 0px 0px 2px 0px var(--primary);
 }
 
 .border-secondary {
-  border: 2px solid var(--info);
+  box-shadow: 0px 0px 2px 0px var(--info);
 }
 
 .border-success {
-  border: 2px solid var(--success);
+  box-shadow: 0px 0px 4px 0px var(--success);
 }
 
 .border-info {
-  border: 2px solid var(--blue);
+  box-shadow: 0px 0px 4px 0px var(--blue);
 }
 
 .border-warning {
-  border: 2px solid var(--warning);
+  box-shadow: 0px 0px 4px 0px var(--warning);
 }
 
 .border-danger {
-  border: 2px solid var(--danger);
+  box-shadow: 0px 0px 4px 0px var(--danger);
 }
 
 .border-dark {
-  border: 2px solid var(--theme-dark);
+  box-shadow: 0px 0px 4px 0px var(--theme-dark);
 }
 
 .border-light {
-  border: 2px solid var(--secondary);
+  box-shadow: 0px 0px 4px 0px var(--secondary);
 }
 
 /* ============Chips============= */
@@ -2558,7 +2562,7 @@ ul.breadcrumb li+li:before {
 }
 
 ul.breadcrumb li a {
-  color: var(--active);
+  color: var(--font-primary);
   text-decoration: none;
 }
 
@@ -2566,6 +2570,17 @@ ul.breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
 }
+
+.breadcrumb-icon {
+  display: flex;
+  border-radius: -0.2rem;
+  padding: 11px 8px;
+  background: #fff;
+  width: calc(100% - 55%);
+  justify-content: space-between;
+  border-radius: 0.3rem;
+}
+
 
 /* ================grids=============== */
 .col-sm-4 {
@@ -2996,7 +3011,72 @@ label {
   .footer-page {
     display: none;
   }
+
+  /* =======dashboard responsive====== */
+  .alert-additional .alert-body {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .alert {
+    font-size: 0.8rem;
+  }
+
+  .col-xl-3 {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .row-card {
+    display: block;
+    width: 100%;
+  }
+
+  .col-card {
+    width: 100%;
+  }
+
+  .col-sm-4 {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .floating-form {
+    width: 100%;
+    padding: 26px 14px;
+    margin: 1rem 0;
+  }
+
+  .form {
+    display: block;
+  }
+
+  .shadow {
+    height: 11.25rem;
+    width: 11.25rem;
+  }
+
+  .position {
+    top: 80px;
+    left: 57px;
+  }
+
+  .shadow-b {
+    display: block;
+  }
+
+  ul.breadcrumb li {
+    font-size: 12px;
+  }
+
+  ul.breadcrumb {
+    padding: 10px 0;
+  }
 }
+
 
 @media screen and (max-width: 425px) {
   .text-hide {
