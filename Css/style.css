@@ -1814,7 +1814,7 @@ div.col-1-main {
 }
 
 li {
-  color: white;
+  color: var(--secondary);
   border-radius: 3px;
   margin-bottom: 10px;
   transition: 0.3s;
@@ -2537,6 +2537,36 @@ select.did-floating-select::-ms-expand {
   padding: 0;
 }
 
+/* ================Breadcrumbs============ */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: var(--theme-light);
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: var(--font-color);
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: var(--active);
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
 /* ================grids=============== */
 .col-sm-4 {
   -webkit-box-flex: 0;
@@ -2608,7 +2638,7 @@ select.did-floating-select::-ms-expand {
 /* ===============Input Forms========== */
 .floating-form {
   width: 354px;
-  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  box-shadow: 0px 0px 3px 0px var(--font-desabled);
   padding: 38px 20px;
   border-radius: 8px;
 }
@@ -2616,18 +2646,18 @@ select.did-floating-select::-ms-expand {
 .floating-label {
   position: relative;
   margin-bottom: 34px;
-  /* display: flex; */
   width: 100%;
 }
 
 .floating-input,
 .floating-select {
   font-size: 14px;
-  padding: 0;
+  padding-top: 6px;
   display: block;
-  width: calc(100% - 8px);
+  width: 100%;
   position: relative;
   height: 30px;
+  top: 6px;
   background-color: transparent;
   border: none;
   box-shadow: 0px 1px 0px 0px var(--font-desabled);
@@ -2646,7 +2676,7 @@ label {
   position: absolute;
   pointer-events: none;
   padding: 0;
-  top: 5px;
+  top: 11px;
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
@@ -2654,17 +2684,51 @@ label {
 
 .floating-input:focus~label,
 .floating-input:not(:placeholder-shown)~label {
-  top: -18px;
-  font-size: 14px;
+  top: 0px;
+  font-size: 12px;
   color: var(--font-primary);
 }
 
 .floating-select:focus~label,
 .floating-select:not([value=""]):valid~label {
-  top: -18px;
-  font-size: 14px;
+  top: -2px;
+  font-size: 12px;
   color: var(--font-primary);
 }
+
+
+.cselect select {
+  -webkit-appearance: none;
+}
+
+.cselect::after {
+  content: "\f107";
+  color: var(--primary);
+  font-weight: 900;
+  font-family: 'Font Awesome\ 5 Free';
+}
+
+.cselect {
+  position: relative
+}
+
+.cselect::after {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+
+.floating-select {
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+}
+
+
+
 
 .floating-input:focus~.bar:before,
 .floating-input:focus~.bar:after,
@@ -2704,6 +2768,7 @@ label {
   -moz-animation: inputHighlighter 0.3s ease;
   animation: inputHighlighter 0.3s ease;
 }
+
 
 #icons-bg {
   background: var(--font-desabled);
