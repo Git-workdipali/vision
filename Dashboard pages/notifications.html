@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notifications</title>
+        <link rel="stylesheet" href="/Css/style.css">
+        <!-- CSS only -->
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <div class="container theme-light">
+            <div class="title">Notifications</div>
+            <div class="card card-shadow">
+
+                <div class="card-title">Default Notification</div>
+                <div class="txt-info">Use Default <code>Notification</code> class</div>
+
+                <div class="preview">
+                    <div class="notification">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        <div class="fs-5 mb-1 ">Project Successfully Created</div><br>
+                        <div class="fs-6 mb-1">Your new project has been created.<br> you can view it down below</div>
+                        <div><a href="" class="btn btn-long bg-info m-t">View Project</a></div>
+                    </div>
+
+                    <div class="notification dark">
+                        <span class="closebtn closebtn-dark"
+                            onclick="this.parentElement.style.display='none';">&times;</span>
+                        <div class="fs-5 mb-1 ">Project Successfully Created</div><br>
+                        <div class="fs-6 mb-1 dark-font">Your new project has been created.<br> you can view it down
+                            below</div>
+                        <div><a href="" class="btn btn-long bg-secondary m-t">View Project</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card card-shadow">
+
+                <div class="card-title">Floating Notification</div>
+                <div class="txt-info">Use Default <code>Floating Notification</code> class</div>
+
+                <div class="preview">
+                    <div class="notification notify-float">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        <div class="fs-5 mb-1 fw-bold">Microsoft Store</div><br>
+                        <div class="fs-6 mb-1">Just got updated, check it out Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Magni, error!</div>
+                    </div>
+
+                    <div class="notification dark notify-float">
+                        <span class="closebtn closebtn-dark"
+                            onclick="this.parentElement.style.display='none';">&times;</span>
+                        <div class="fs-5 mb-1 fw-bold">Reminder</div><br>
+                        <div class="fs-6 mb-1 dark-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                            fugiat!</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card card-shadow">
+
+                <div class="card-title">Fade Notification</div>
+                <div class="txt-info">Use Default <code>Fade Notification</code> class</div>
+                <div class="gap-3" id="flex">
+                    <button onclick="fade()" class="btn bg-info">Show Microsoft store</button>
+                    <button onclick="fade2()" class="btn bg-info">Show Reminder</button>
+                </div>
+
+                <div class="preview">
+
+                    <div class="notification m-t" id="fade">
+                        <div class="fs-5 mb-1 fw-bold">Microsoft Store</div><br>
+                        <div class="fs-6 mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, mollitia
+                            officia illum asperiores dicta voluptates? Laborum maxime nesciunt facilis sit!</div>
+                    </div>
+
+                    <div class="notification dark" id="fade2">
+                        <div class="fs-5 mb-1 fw-bold">Reminder</div><br>
+                        <div class="fs-6 mb-1 dark-font">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Nostrum nulla neque, ut, vero quis facilis incidunt dignissimos, facere quos cumque
+                            suscipit!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-shadow">
+
+                <div class="card-title">Advance Notification</div>
+                <div class="txt-info">Use <code>Advance Notification</code> class</div>
+
+                <div class="preview">
+                    <div class="notification">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        <div class="justify-between" id="flex">
+                            <div class="fs-5 mb-1 fw-bold">Notifications</div>
+                        </div><br>
+                        <div class="justify-between" id="flex">
+                            <div class="">
+                                <div class="fs-5 fw-bold ">Your password has been successfully changed</div>
+                                <span class="fs-6 text-muted ">Jun 23, 2021 at 09:15AM</span>
+                            </div>
+                            <div class="icon-bg">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                        </div>
+                        <div class="justify-between border-top m-t p-1" id="flex">
+                            <div class="">
+                                <div class="fs-5 fw-bold ">Thank you for booking meeting with us.</div>
+                                <span class="fs-6 text-muted ">Kevin Dukkon, jun 14, 2021 at 5:31PM</span>
+                            </div>
+                            <div class="icon-bg">
+                                <img src="/assets/img/avatar-4.jpg" class="avatar-sm rounded-circle" alt="">
+                            </div>
+                        </div>
+                        <div class="justify-between border-top m-t p-1" id="flex">
+                            <div class="">
+                                <div class="fs-5 fw-bold ">Great news! We are launching our 5th fund</div>
+                                <span class="fs-6 text-muted ">Markus Gavrilor Jul 13,2021 at 1:43PM</span>
+                            </div>
+                            <div class="icon-bg">
+                                <img src="/assets/img/avtar-3.jpg" class="avatar-sm rounded-circle" alt="">
+                            </div>
+                        </div>
+                        <div class="justify-between border-top m-t p-1" id="flex">
+                            <span class="fs-6">View all notifications</span>
+                        </div>
+                    </div>
+
+                    <div class="notification dark">
+                        <span class="closebtn closebtn-dark"
+                            onclick="this.parentElement.style.display='none';">&times;</span>
+                        <div class="justify-between" id="flex">
+                            <div class="fs-5 mb-1 fw-bold">Notifications</div>
+                        </div><br>
+                        <div class="justify-between" id="flex">
+                            <div class="">
+                                <div class="fs-5 fw-bold ">Your password has been successfully changed</div>
+                                <span class="fs-6 dark-font">Jun 23, 2021 at 09:15AM</span>
+                            </div>
+                            <div class="icon-bg">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                        </div>
+                        <div class="justify-between border-top-dark m-t p-1" id="flex">
+                            <div class="">
+                                <div class="fs-5 fw-bold ">Thank you for booking meeting with us.</div>
+                                <span class="fs-6 dark-font">Kevin Dukkon, jun 14, 2021 at 5:31PM</span>
+                            </div>
+                            <div class="icon-bg">
+                                <img src="/assets/img/avatar-4.jpg" class="avatar-sm rounded-circle" alt="">
+                            </div>
+                        </div>
+                        <div class="justify-between border-top-dark m-t p-1" id="flex">
+                            <div class="">
+                                <div class="fs-5 fw-bold ">Great news! We are launching our 5th fund</div>
+                                <span class="fs-6 dark-font">Markus Gavrilor Jul 13,2021 at 1:43PM</span>
+                            </div>
+                            <div class="icon-bg">
+                                <img src="/assets/img/avtar-3.jpg" class="avatar-sm rounded-circle" alt="">
+                            </div>
+                        </div>
+                        <div class="justify-between border-top-dark m-t p-1" id="flex">
+                            <span class="fs-6">View all notifications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-shadow">
+
+                <div class="card-title">Notification Positions</div>
+                <div class="txt-info">Use Default <code>Positions</code> class</div>
+
+                <div class="preview">
+                    <div class="notification notify-float">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        <div class="fs-5 mb-1 fw-bold">Microsoft Store</div><br>
+                        <div class="fs-6 mb-1">Just got updated, check it out Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Magni, error!</div>
+                    </div>
+                </div>
+                <div class="preview">
+                    <div class="row justify-content-center">
+                        <div class="notification notify-float">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            <div class="fs-5 mb-1 fw-bold">Microsoft Store</div><br>
+                            <div class="fs-6 mb-1">Just got updated, check it out Lorem, ipsum dolor sit amet
+                                consectetur
+                                adipisicing elit. Magni, error!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview">
+                    <div class="row justify-content-end">
+                        <div class="notification dark notify-float">
+                            <span class="closebtn closebtn-dark"
+                                onclick="this.parentElement.style.display='none';">&times;</span>
+                            <div class="fs-5 mb-1 fw-bold">Reminder</div><br>
+                            <div class="fs-6 mb-1 dark-font">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Animi,
+                                fugiat!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/Js/app.js"></script>
+
+</html>

@@ -319,3 +319,15 @@ function darkMode() {
   }
   element.classList.toggle("dark-mode");
 }
+// ==========Notification fade js============
+function fade() {
+  var x = document.getElementById("fade");
+  x.className = "show";
+  setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+}
+
+function fade2() {
+  var x = document.getElementById("fade2");
+  x.className = "show";
+  setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+}
