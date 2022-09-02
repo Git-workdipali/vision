@@ -143,6 +143,9 @@ html {
   font-size: .8125rem !important;
 }
 
+.text-muted {
+  color: var(--font-desabled);
+}
 
 /*  font-weight */
 .fw-bold {
@@ -2575,7 +2578,6 @@ ul.breadcrumb li a:hover {
   display: flex;
   border-radius: -0.2rem;
   padding: 11px 8px;
-  background: #fff;
   width: calc(100% - 55%);
   justify-content: space-between;
   border-radius: 0.3rem;
@@ -3074,6 +3076,14 @@ label {
 
   ul.breadcrumb {
     padding: 10px 0;
+  }
+
+  .hide-text {
+    display: none;
+  }
+
+  .breadcrumb-icon {
+    width: 100%;
   }
 }
 
