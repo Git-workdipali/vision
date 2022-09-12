@@ -261,6 +261,10 @@ html {
   left: 100% !important;
 }
 
+.left {
+  left: 0;
+}
+
 /* ======spaces====== */
 .justify-around {
   justify-content: space-around;
@@ -695,6 +699,10 @@ label {
   padding: 1rem 1rem;
 }
 
+.width {
+  width: 100%;
+}
+
 /* =========background colors======== */
 .bg-primary {
   background-color: var(--peach);
@@ -793,6 +801,11 @@ label {
 .avatar-xs {
   height: 2rem;
   width: 2rem;
+}
+
+.avatar-lg {
+  height: 6rem;
+  width: 6rem;
 }
 
 .avatar-sm {
@@ -1045,6 +1058,10 @@ h6 {
 
 .mt-0 {
   margin-top: 0 !important;
+}
+
+.mt-1 {
+  margin-top: 1rem !important;
 }
 
 .rounded {
@@ -2807,6 +2824,17 @@ ul.breadcrumb li a:hover {
   border: 1px solid #dee2e6;
 }
 
+/* ================== Profile page======== */
+.change-profile {
+  font-size: 10px;
+  background: yellowgreen;
+  padding: 2px 2px;
+  color: white;
+  position: relative;
+  right: 101px;
+  bottom: 4px;
+}
+
 /* =================Progress Bars========= */
 .progress {
   display: -webkit-box;
@@ -2849,6 +2877,42 @@ ul.breadcrumb li a:hover {
   -o-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
 }
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #04AA6D;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: #0095DD;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 0.8em;
+  color: #FFF;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+button:hover {
+  background-color: #00A6EE;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 
 /* =================Tabs=============== */
 .nav {
@@ -3373,6 +3437,10 @@ label {
   display: flex;
   justify-content: space-around;
   padding: 28px 0;
+}
+
+.checked {
+  color: orange;
 }
 
 /* ================Box-Shadow=============== */

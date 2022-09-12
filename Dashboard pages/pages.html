@@ -5,201 +5,70 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pages</title>
-        <link rel="stylesheet" href="/Css/dasboard.css">
+        <title>Profile</title>
+        <link rel="stylesheet" href="/Css/style.css">
         <!-- CSS only -->
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body>
-        <div class="container mt-5">
-            <div class="main-pannel">
-                <h4 class="m-5">Profile Pages</h4>
-                <div class="content-wrapper">
-                    <div class="card-dashboard-profile">
-                        <div class="nav">
-                            <div class="">
-                                <h4>My Profile</h4>
+        <div class="container theme-light">
+            <div class="title">Profile</div>
+            <div class="card card-shadow">
+
+                <div class="card-title">Profile</div>
+                <div class="txt-info">Use the <code>profile</code> class to show a default alert.</div>
+
+                <div class="preview" id="block">
+                    <div class="floating-form">
+                        <div class="profile">
+                            <div class="" id="block">
+                                <img src="/assets/img/avatar-4.jpg" class="avatar-lg" alt="">
+                                <span class="change-profile">Change Profile Photo</span>
+                            </div>
+                            <div class="floating-label">
+                                <input class="floating-input" type="text" placeholder=" ">
+                                <span class="highlight"></span>
+                                <label>First Name</label>
+                            </div>
+                            <div class="floating-label">
+                                <input class="floating-input" type="text" placeholder=" ">
+                                <span class="highlight"></span>
+                                <label>Last Name</label>
+                            </div>
+                            <div class="floating-label">
+                                <input class="floating-input" type="text" placeholder=" ">
+                                <span class="highlight"></span>
+                                <label>Designation</label>
+                            </div>
+                            <div class="floating-label">
+                                <input class="floating-input floating-1" type="text" onclick="(this.type='date')"
+                                    placeholder=" ">
+                                <span class="highlight"></span>
+                                <label>Date</label>
                             </div>
                         </div>
-                        <div class="content">
-                            <div id="user-img">
-                                <img src="/assets/img/user-profile.jfif" alt="" class="user-img">
-                            </div>
-                            <div class="user-details">
-                                <form name="myform" method="post"
-                                    onsubmit="return !!(validateform() & validatelastname()
-                                    & passwordvalidation() & emailvalidation() & contactvalidation() & validateInput() )">
-                                    <div class="floating-form" id="profile-form">
-                                        <div class="floating-label">
-                                            <input class="floating-input" type="text" name="name" placeholder=" "
-                                                maxlength="20" onkeyup="return validateform()"
-                                                action="http://www.javatpoint.com/javascriptpages/valid.jsp">
-                                            <label>First Name</label>
-                                            <span id="user-error" class="error-msg"></span>
-                                            <span id="user-error-tick"><i class="fa-solid fa-circle-check"></i></span>
-                                            <span id="wrong-user"><i class="fa-solid fa-circle-xmark"></i></span>
-                                        </div>
-                                        <div class="floating-label">
-                                            <input class="floating-input" type="text" name="lastname" placeholder=" "
-                                                onkeyup="return validatelastname()" maxlength="20">
-                                            <label>Last Name</label>
-                                            <span id="last-error" class="error-msg"></span>
-                                            <span id="tick-lastname"><i class="fa-solid fa-circle-check"></i></span>
-                                            <span id="wrong-lastname"><i class="fa-solid fa-circle-xmark"></i></span>
-                                        </div>
-                                        <div class="floating-label">
-                                            <input class="floating-input" type="password" name="password"
-                                                placeholder=" " onkeyup="return passwordvalidation()">
-                                            <label>Password</label>
-                                            <span id="password-error" class="error-msg"></span>
-                                            <span id="tick-password"><i class="fa-solid fa-circle-check"></i></span>
-                                            <span id="ps-error"><i class="fa-solid fa-circle-xmark"></i></span>
-                                        </div>
-
-                                        <div class="floating-label">
-                                            <input class="floating-input" type="text" placeholder=" " size="30"
-                                                name="email" onkeyup="return emailvalidation()" maxlength="50">
-                                            <label>Email</label>
-                                            <span id="email-error" class="error-msg"></span>
-                                            <span id="e-error"><i class="fa-solid fa-circle-xmark"></i></span>
-                                            <span id="tick-email"><i class="fa-solid fa-circle-check"></i></span>
-                                        </div>
-                                        <div class="floating-label">
-                                            <input class="floating-input" type="text" name="num" placeholder=" "
-                                                onkeyup="return contactvalidation()" maxlength="10">
-                                            <label>Contact No</label>
-                                            <span id="num-error" class="error-msg"></span>
-                                            <span id="contact-error"><i class="fa-solid fa-circle-xmark"></i></span>
-                                            <span id="contact-tick"><i class="fa-solid fa-circle-check"></i></span>
-
-                                        </div>
-                                        <div class="floating-label">
-                                            <textarea class="floating-input" name="the-textarea" id="the-textarea"
-                                                maxlength="300" type="text"></textarea>
-                                            <label>Address</label>
-                                            <div id="the-count">
-                                                <span id="current">0</span>
-                                                <span id="maximum">/ 300</span>
-                                            </div>
-
-
-                                        </div>
-                                        <div class="d-flex">
-                                            <div class="floating-label">
-                                                <select class="floating-select"
-                                                    onclick="this.setAttribute('value', this.value);" value="">
-                                                    <option value=""></option>
-                                                    <option value="1">Mumbai</option>
-                                                    <option value="2">Bangalore</option>
-                                                    <option value="3">Hydrabad</option>
-                                                    <option value="4">Surat</option>
-                                                </select>
-                                                <label>City</label>
-                                            </div>
-                                            <div class="floating-label">
-                                                <select class="floating-select"
-                                                    onclick="this.setAttribute('value', this.value);" value="">
-                                                    <option value=""></option>
-                                                    <option value="1">Maharashtra</option>
-                                                    <option value="2">Gujrat</option>
-                                                    <option value="3">Madhya Pradesh</option>
-                                                    <option value="4">Hariyana</option>
-                                                    <option value="5">Assam</option>
-                                                </select>
-                                                <label>State</label>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <div class="floating-label">
-                                                <input class="floating-input" type="text" onKeyUp="validateInput()"
-                                                    id="zipCode" placeholder=" ">
-                                                <label>Pin Code</label>
-                                                <span id="error-msg"></span>
-                                                <span id="tick-pin"><i class="fa-solid fa-circle-check"></i></span>
-                                                <span id="error-pin"><i class="fa-solid fa-circle-xmark"></i></span>
-                                            </div>
-                                            <div class="floating-label">
-                                                <select class="floating-select"
-                                                    onclick="this.setAttribute('value', this.value);" value="">
-                                                    <option value=""></option>
-                                                    <option value="1">India</option>
-                                                    <option value="2">United States</option>
-                                                    <option value="3">United Kingdom</option>
-                                                    <option value="4">France</option>
-                                                </select>
-                                                <label>Country</label>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <input type="submit" value="submit" class="btn">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-wrapper">
-                    <div class="card-dashboard-profile">
-                        <div class="nav">
-                            <div class="">
-                                <h4>Timeline</h4>
-                            </div>
-
-                        </div>
-                        <div class="content">
-                            <div class="container-timeline">
-                                <h3>Upcoming Events</h3>
-                                <span class="sub-title">Don't miss scheduled events</span>
-
-                                <div class="col-md-4" id="outer">
-                                    <div class="card timeline">
-                                        <span class="sub-title">Time: 10am to 3pm</span>
-                                        <h4>Meeting With Client</h4>
-                                        <span class="sub-title">Lorem ipsum dolor sit amet.</span>
-                                    </div>
-                                    <div class="card timeline">
-                                        <span class="sub-title">Time: 10am to 3pm</span>
-                                        <h4>Meeting With Client</h4>
-                                        <span class="sub-title">Lorem ipsum dolor sit amet.</span>
-                                    </div>
-                                    <div class="card timeline">
-                                        <span class="sub-title">Time: 10am to 3pm</span>
-                                        <h4>Meeting With Client</h4>
-                                        <span class="sub-title">Lorem ipsum dolor sit amet.</span>
-                                    </div>
-                                    <div class="card timeline">
-                                        <span class="sub-title">Time: 10am to 3pm</span>
-                                        <h4>Meeting With Client</h4>
-                                        <span class="sub-title">Lorem ipsum dolor sit amet.</span>
-                                    </div>
-                                    <div class="card timeline">
-                                        <span class="sub-title">Time: 10am to 3pm</span>
-                                        <h4>Meeting With Client</h4>
-                                        <span class="sub-title">Lorem ipsum dolor sit amet.</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-wrapper">
-                    <div class="card-dashboard-profile">
-                        <div class="nav">
-                            <div class="">
-                                <h4>Calender</h4>
-                            </div>
-                        </div>
-                        <div class="content"></div>
                     </div>
                 </div>
             </div>
+
+            <div class="card card-shadow">
+
+                <div class="card-title">Timeline</div>
+                <div class="txt-info">Use the <code>Timeline</code> class to show a default alert.</div>
+
+                <div class="preview" id="block">
+                    <div class="floating-form">
+                        <div class="timeline">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="/Js/app.js"></script>
 
 </html>
