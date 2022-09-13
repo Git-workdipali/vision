@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Toasts</title>
+        <link rel="stylesheet" href="/Css/style.css">
+        <!-- CSS only -->
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+
+    <body>
+        <div class="container theme-light">
+            <div class="title">Toasts</div>
+            <div class="card card-shadow">
+
+                <div class="card-title">Default Toasts</div>
+                <div class="txt-info">Use Default <code>toasts</code> class</div>
+
+                <div class="preview">
+                    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <i class="fa-solid fa-square rounded me-3 bd-placeholder-img "></i>
+                            <strong class="mr-auto">Hi there?</strong>
+                            <small>11 mins ago</small>
+                            <button type="button" class="ml-2 mb-1 close-toasts" data-dismiss="toast"
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body">
+                            Hello, world! This is a toast message.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card card-shadow">
+
+                <div class="card-title">Translucent</div>
+                <div class="txt-info">Toasts are slightly translucent, too, so they blend over whatever they might
+                    appear over</div>
+
+                <div class="preview">
+                    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <i class="fa-solid fa-square rounded me-3 bd-placeholder-img "></i>
+                            <strong class="mr-auto">Translucent</strong>
+                            <small class="text-muted">11 mins ago</small>
+                            <button type="button" class="ml-2 mb-1 close-toasts" data-dismiss="toast"
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body bg-soft-primary">
+                            Hello, world! This is a toast message.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-shadow">
+
+                <div class="card-title">Stacking</div>
+                <div class="txt-info">When you have multiple toasts, we default to vertically stacking them in a
+                    readable manner.r</div>
+
+                <div class="preview" id="block">
+                    <div class="toast mb-3" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <i class="fa-solid fa-square rounded me-3 bd-placeholder-img "></i>
+                            <strong class="mr-auto">Stacking</strong>
+                            <small class="text-muted">just now</small>
+                            <button type="button" class="ml-2 mb-1 close-toasts" data-dismiss="toast"
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body">
+                            See? Just like this.
+                        </div>
+                    </div>
+
+                    <div class="toast mb-3" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <i class="fa-solid fa-square rounded me-3 bd-placeholder-img "></i>
+                            <strong class="mr-auto">Stacking</strong>
+                            <small class="text-muted">2 seconds ago</small>
+                            <button type="button" class="ml-2 mb-1 close-toasts" data-dismiss="toast"
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body">
+                            Heads up, toasts will stack automatically
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card card-shadow">
+
+                <div class="card-title">Placement</div>
+                <div class="txt-info">Place toasts with custom CSS as you need them.</div>
+
+                <div class="preview">
+                    <div aria-live="polite" aria-atomic="true">
+                        <div class="toast place">
+                            <div class="toast-header">
+                                <i class="fa-solid fa-square rounded me-3 bd-placeholder-img "></i>
+                                <strong class="mr-auto">Placement</strong>
+                                <small>11 mins ago</small>
+                                <button type="button" class="ml-2 mb-1 close-toasts" data-dismiss="toast"
+                                    aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body">
+                                Hello, world! This is a toast message.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card card-shadow">
+
+                <div class="card-title">Placement</div>
+                <div class="txt-info">Place toasts with custom CSS as you need them.</div>
+
+                <div class="preview justify-content ">
+                    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center">
+                        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <i class="fa-solid fa-square rounded me-3 bd-placeholder-img "></i>
+                                <strong class="mr-auto">Bootstrap</strong>
+                                <small>11 mins ago</small>
+                                <button type="button" class="ml-2 mb-1 close-toasts" data-dismiss="toast"
+                                    aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body">
+                                Hello, world! This is a toast message.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/Js/app.js"></script>
+
+</html>

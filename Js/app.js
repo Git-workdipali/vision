@@ -43,10 +43,10 @@ function hideContent() {
     x.style.display = "none";
   }
 }
-//   Full screen end
+//Full screen end
 
 
-// Hamburger css start
+//==========Hamburger css start==========
 function openNav() {
   document.getElementById("mySidebar").style.width = "280px";
   document.getElementById("main").style.marginLeft = "";
@@ -57,9 +57,7 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 }
 // Hamburger css end 
-
-
-// search scope popup pannel start
+//========search scope popup pannel start========
 // var modal = document.getElementById("myModal");
 // var btn = document.getElementById("myBtn");
 // var span = document.getElementsByClassName("close")[0];
@@ -79,7 +77,7 @@ function closeNav() {
 // search scope popup pannel end
 
 
-// toggle starts
+//=========toggle starts==========
 var show = function (t) {
   t.style.display = "block"
 },
@@ -98,32 +96,32 @@ document.addEventListener("click", function (t) {
 }, !1);
 // Toggle end
 
-//=====Change View Css======= 
-// const listViewButton = document.querySelector('.list-view-button');
-// const gridViewButton = document.querySelector('.grid-view-button');
-// const tableViewButton = document.querySelector('.table-view-button');
-// const list = document.querySelector('ol');
+//=============Change View Css============
+const listViewButton = document.querySelector('.list-view-button');
+const gridViewButton = document.querySelector('.grid-view-button');
+const tableViewButton = document.querySelector('.table-view-button');
+const list = document.querySelector('ol');
 
-// listViewButton.onclick = function () {
-//   list.classList.remove('grid-view-filter');
-//   list.classList.add('list-view-filter');
-// }
+listViewButton.onclick = function () {
+  list.classList.remove('grid-view-filter');
+  list.classList.add('list-view-filter');
+}
 
-// gridViewButton.onclick = function () {
-//   list.classList.remove('list-view-filter');
-//   list.classList.add('grid-view-filter');
-// }
+gridViewButton.onclick = function () {
+  list.classList.remove('list-view-filter');
+  list.classList.add('grid-view-filter');
+}
 
-// tableViewButton.onclick = function () {
-//   list.classList.remove('list-view-filter');
-//   list.classList.remove('grid-view-filter');
-//   list.classList.add('table-view-filter');
-// }
-//==========Change View Css End=========
+tableViewButton.onclick = function () {
+  list.classList.remove('list-view-filter');
+  list.classList.remove('grid-view-filter');
+  list.classList.add('table-view-filter');
+}
+//Change View js End
 
 
 // navbar hide icon v logo
-/* hide content and show on click */
+/*===========hide content and show on click=========*/
 function toggleText() {
   var x = document.getElementById("Myid");
   if (x.style.display === "block") {
@@ -152,7 +150,7 @@ function hideUser() {
 }
 // Hide And show content End
 
-// dropdown button for col-3-main
+//=============dropdown button for col-3-main============
 [".collapsed-menu"].forEach((val) => {
   Array.prototype.forEach.call(document.querySelectorAll(val), (ele) => {
     ele.children[0].onclick = (e) => {
@@ -161,40 +159,362 @@ function hideUser() {
   });
 });
 
-// dropdown button for col-3 main
+//==========dropdown button for col-3 main
 
-// =======Dashbord js========
+//================Dashbord js=============
 // form validation
 function validateform() {
   var username = document.myform.name.value;
-  var lastname = document.myform.lastname.value;
-  var password = document.myform.password.value;
 
 <<<<<<< HEAD
 // slider.html js ends
 
 =======
   if (username == null || username == "") {
+    document.getElementById("wrong-user").style.display = "block";
     document.getElementById("user-error-tick").style.display = "none";
     document.getElementById("user-error").innerHTML = "Username can not be empty";
   } else {
+    document.getElementById("wrong-user").style.display = "none";
     document.getElementById("user-error-tick").style.display = "block";
     document.getElementById("user-error").style.display = "none";
-  }
-
-  if (lastname == null || lastname == "") {
-    document.getElementById("tick-lastname").style.display = "none";
-    document.getElementById("last-error").innerHTML = "Lastname can not be empty";
-  } else {
-    document.getElementById("tick-lastname").style.display = "block";
-    document.getElementById("last-error").style.display = "none";
-  }
-
-  if (password.length < 6) {
-    document.getElementById("password-error").innerHTML = "Password must be at least 6 characters long";
-
   }
   return false;
 
 }
+<<<<<<< HEAD
 >>>>>>> d40794b74d5aa00ea236553c8cb39d66b53ec9a2
+=======
+
+function validatelastname() {
+  var lastname = document.myform.lastname.value;
+
+  if (lastname == null || lastname == "") {
+    document.getElementById("wrong-lastname").style.display = "block";
+    document.getElementById("tick-lastname").style.display = "none";
+    document.getElementById("last-error").innerHTML = "Lastname can not be empty";
+  } else {
+    document.getElementById("wrong-lastname").style.display = "none";
+    document.getElementById("tick-lastname").style.display = "block";
+    document.getElementById("last-error").style.display = "none";
+  }
+  return false;
+}
+
+function passwordvalidation() {
+  var password = document.myform.password.value;
+
+  if (password.length < 6) {
+    document.getElementById("tick-password").style.display = "none";
+    document.getElementById("ps-error").style.display = "block";
+    document.getElementById("password-error").innerHTML = "Password must be at least 6 characters long";
+
+  } else {
+    document.getElementById("tick-password").style.display = "block";
+    document.getElementById("password-error").style.display = "none";
+    document.getElementById("ps-error").style.display = "none";
+  }
+  return false;
+}
+
+function emailvalidation() {
+  var x = document.myform.email.value;
+  var atposition = x.indexOf("@");
+  var dotposition = x.lastIndexOf(".");
+  if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
+    document.getElementById("tick-email").style.display = "none";
+    document.getElementById("email-error").innerHTML = "please enter valid email";
+    document.getElementById("e-error").style.display = "block";
+  }
+  else {
+    document.getElementById("tick-email").style.display = "block";
+    document.getElementById("email-error").style.display = "none";
+    document.getElementById("e-error").style.display = "none";
+  }
+  return false;
+}
+
+
+function contactvalidation() {
+  var num = document.myform.num.value;
+  if (isNaN(num)) {
+    document.getElementById("contact-error").style.display = "block";
+    document.getElementById("num-error").innerHTML = "Enter Numeric value only";
+    document.getElementById("contact-tick").style.display = "none";
+  } else {
+    document.getElementById("contact-tick").style.display = "block";
+    document.getElementById("contact-error").style.display = "none";
+    document.getElementById("num-error").style.display = "none";
+  }
+  return false;
+}
+
+
+//=======pincode validation==========
+function isUSAZipCode(str) {
+  return /^\d{5}(-\d{4})?$/.test(str);
+}
+
+function validateInput() {
+  console.log("validateInput");
+  let zipCode = document.getElementById("zipCode").value;
+  let message = "";
+  if (isUSAZipCode(zipCode)) {
+    document.getElementById("error-pin").style.display = "none";
+    document.getElementById("tick-pin").style.display = "block";
+  } else {
+    message = "Invalid Zip Code";
+    document.getElementById("error-pin").style.display = "block";
+    document.getElementById("tick-pin").style.display = "block";
+  }
+  document.getElementById("error-msg").innerHTML = message;
+
+}
+// ==========Email validation================
+// ==========text area validation===========
+$('textarea').keyup(function () {
+
+  var characterCount = $(this).val().length,
+    current = $('#current'),
+    maximum = $('#maximum'),
+    theCount = $('#the-count');
+
+  current.text(characterCount);
+  if (characterCount < 70) {
+    current.css('color', '#666');
+  }
+  if (characterCount > 70 && characterCount < 90) {
+    current.css('color', '#6d5555');
+  }
+  if (characterCount > 90 && characterCount < 100) {
+    current.css('color', '#793535');
+  }
+  if (characterCount > 100 && characterCount < 120) {
+    current.css('color', '#841c1c');
+  }
+  if (characterCount > 120 && characterCount < 139) {
+    current.css('color', '#8f0001');
+  }
+
+  if (characterCount >= 140) {
+    maximum.css('color', '#8f0001');
+    current.css('color', '#8f0001');
+    theCount.css('font-weight', 'bold');
+  } else {
+    maximum.css('color', '#666');
+    theCount.css('font-weight', 'normal');
+  }
+});
+
+//==============Dashboard js=============
+// Buttons
+function changeIcon(anchor) {
+  var icon = anchor.querySelector("i");
+  icon.classList.toggle('icon-fullscreen');
+  icon.classList.toggle('fa-plus');
+
+  anchor.querySelector("span").textContent = icon.classList.contains('icon-fullscreen') ? "Expand" : "Exit";
+}
+
+//====dark mode====
+function darkMode() {
+  var element = document.body;
+  const count = document.getElementsByClassName("card-shadow");
+
+  for (var x = 0; x < count.length; x++) {
+    count[x].classList.toggle("card-shadow-dark");
+  }
+  element.classList.toggle("dark-mode");
+}
+// ==========Notification fade js============
+function fade() {
+  var x = document.getElementById("fade");
+  x.className = "show";
+  setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+}
+
+function fade2() {
+  var x = document.getElementById("fade2");
+  x.className = "show";
+  setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+}
+// =========Searchbox===========
+// search event
+const searchButton = document.getElementById('search-button');
+const searchInput = document.getElementById('search-input');
+searchButton.addEventListener('click', () => {
+  const inputValue = searchInput.value;
+  alert(inputValue);
+});
+// auto complete
+const basicAutocomplete = document.querySelector('#search-autocomplete');
+const data = ['One', 'Two', 'Three', 'Four', 'Five'];
+const dataFilter = (value) => {
+  return data.filter((item) => {
+    return item.toLowerCase().startsWith(value.toLowerCase());
+  });
+};
+
+new mdb.Autocomplete(basicAutocomplete, {
+  filter: dataFilter
+});
+// ================Progressbars===========
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+
+var RadialProgress = function (size, barSize, barColor, backgroundColor, textColor, zIndex) { // jshint ignore:line
+  this.radialProgress = document.createElement('div');
+  this.style = document.createElement('style');
+  this.progress = 0;
+  var requestAnimationFrame = window.requestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.oRequestAnimationFrame ||
+    window.msRequestAnimationFrame;
+
+  barSize = (barSize % 2 === 1) ? (barSize + 1) : barSize;
+  var innerSize = size - barSize;
+  var innerMargin = barSize / 2;
+
+  this.radialProgress.className = 'radial-progress';
+  this.radialProgress.innerHTML = '<div class="inner-circle">' +
+    '<div class="progress">0%<' + '/div>' +
+    '</div>' +
+    '<div class="outer-circle">' +
+    '<div class="mask full">' +
+    '<div class="fill"></div>' +
+    '</div>' +
+    '<div class="mask">' +
+    '<div class="fill"></div>' +
+    '<div class="fill fix"></div>' +
+    '</div>' +
+    '</div>';
+
+  this.style.type = 'text/css';
+  this.style.innerHTML = '.radial-progress {' +
+    'width:' + size + 'px;' +
+    'height: ' + size + 'px;' +
+    'position: absolute;' +
+    'margin: auto;' +
+    'top: 0; right: 0; bottom: 0; left: 0;' +
+    'z-index: ' + zIndex + ';' +
+    'background-color: #DDD;' +
+    'border-radius: 50%;' +
+    'box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);' +
+    '}' +
+    '.radial-progress .inner-circle {' +
+    'width: ' + innerSize + 'px;' +
+    'height: ' + innerSize + 'px;' +
+    'position: absolute;' +
+    'margin-top: ' + innerMargin + 'px;' +
+    'margin-left: ' + innerMargin + 'px;' +
+    'background-color: ' + backgroundColor + ';' +
+    'border-radius: 50%;' +
+    'z-index: 10;' +
+    '}' +
+    '.radial-progress .inner-circle .progress {' +
+    'height: 1em;' +
+    'position: absolute;' +
+    'margin: auto;' +
+    'top: 0; right: 0; bottom: 0; left: 0;' +
+    'text-align: center;' +
+    'color: ' + textColor + ';' +
+    '}' +
+    '.radial-progress .outer-circle .mask,' +
+    '.radial-progress .outer-circle .fill {' +
+    'width: ' + size + 'px;' +
+    'height: ' + size + 'px;' +
+    'position: absolute;' +
+    'border-radius: 50%;' +
+    '-webkit-backface-visibility: hidden;' +
+    '}' +
+    '.radial-progress .outer-circle .mask {' +
+    'clip: rect(0px, ' + size + 'px, ' + size + 'px, ' + size / 2 + 'px);' +
+    '}' +
+    '.radial-progress .outer-circle .mask .fill {' +
+    'clip: rect(0px, ' + size / 2 + 'px, ' + size + 'px, 0px);' +
+    'background-color: ' + barColor + ';' +
+    '}';
+
+  document.getElementsByTagName('head')[0].appendChild(this.style);
+  document.body.appendChild(this.radialProgress);
+
+  this.remove = function () {
+    var self = this;
+    var scale = 1;
+    var deltaScale = 0.1 / 10;
+
+    function step() {
+      scale += deltaScale;
+      scale = (scale < 0) ? 0 : scale;
+      self.radialProgress.style.transform = 'scale(' + scale + ')';
+
+      if (scale > 1.1) {
+        deltaScale = -1.1 / 8;
+      }
+
+      if (scale > 0) {
+        requestAnimationFrame(step);
+      } else {
+        document.getElementsByTagName('head')[0].removeChild(self.style);
+        document.body.removeChild(self.radialProgress);
+      }
+    }
+
+    requestAnimationFrame(step);
+  };
+
+  this.setProgress = function (progress, duration) {
+    progress = (progress > 100) ? 100 : progress;
+    var self = this;
+    var $maskFull = this.radialProgress.getElementsByClassName('mask full')[0];
+    var $fill = this.radialProgress.getElementsByClassName('fill');
+    var $fillFix = this.radialProgress.getElementsByClassName('fill fix')[0];
+    var $progress = this.radialProgress.getElementsByClassName('progress')[0];
+    var deltaProgress = (progress - this.progress) / (duration * 60);
+
+    function step() {
+      self.progress += deltaProgress;
+      self.progress = (self.progress > progress) ? progress : self.progress;
+      var rotate = self.progress * 1.8;
+      $maskFull.style.transform = 'rotate(' + rotate + 'deg)';
+      $progress.innerHTML = self.progress.toFixed() + '%';
+
+      for (var i = 0; i < $fill.length; ++i) {
+        $fill[i].style.transform = 'rotate(' + rotate + 'deg)';
+      }
+
+      $fillFix.style.transform = 'rotate(' + 2 * rotate + 'deg)';
+
+      if (self.progress < progress) {
+        requestAnimationFrame(step);
+      }
+
+      if (self.progress === 100) {
+        setTimeout(function () {
+          self.remove();
+        }, 1000);
+      }
+    }
+
+    requestAnimationFrame(step);
+  };
+};
+
+>>>>>>> 2fb1e208f12414d6f6ae2367707dc9de39628610

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tooltips</title>
+        <link rel="stylesheet" href="/Css/style.css">
+        <!-- CSS only -->
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+
+    <body>
+        <div class="container theme-light">
+            <div class="title">Tooltips</div>
+            <div class="card card-shadow">
+
+                <div class="card-title">Default Tooltips</div>
+                <div class="txt-info">Use Default <code>Tooltip</code> class</div>
+
+                <div class="preview mt-4">
+                    <button type="button" class="btn btn-secondary tooltip" data-toggle="tooltip"
+                        data-placement="right">Hover me right
+                        <span class="tooltiptext">Tooltip Right</span>
+                    </button>
+                    <button type="button" class="btn btn-secondary tooltip" data-toggle="tooltip"
+                        data-placement="right">Hover me top
+                        <span class="tooltiptext2">Tooltip Top</span>
+                    </button>
+                    <button type="button" class="btn btn-secondary tooltip" data-toggle="tooltip"
+                        data-placement="right">Hover me bottom
+                        <span class="tooltiptext3">Tooltip Bottom</span>
+                    </button>
+                    <button type="button" class="btn btn-secondary tooltip" data-toggle="tooltip"
+                        data-placement="right">Hover me left
+                        <span class="tooltiptext4">Tooltip left</span>
+                    </button>
+                </div>
+            </div>
+
+
+
+            <div class="card card-shadow">
+
+                <div class="card-title">Disabled elements</div>
+                <div class="txt-info">Use <code>Disabled</code> class</div>
+
+                <div class="preview mt-4">
+                    <button type="button" class="btn btn-disable tooltip" data-toggle="tooltip"
+                        data-placement="right">Disabled
+                        <span class="disabled">Tooltip Disabled</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/Js/app.js"></script>
+
+</html>
