@@ -371,7 +371,7 @@ function move() {
   }
 }
 
-var RadialProgress = function (size, barSize, barColor, backgroundColor, textColor, zIndex) { // jshint ignore:line
+var RadialProgress = function (size, barSize, barColor, backgroundColor, textColor, zIndex) {
   this.radialProgress = document.createElement('div');
   this.style = document.createElement('style');
   this.progress = 0;
@@ -510,3 +510,4 @@ var RadialProgress = function (size, barSize, barColor, backgroundColor, textCol
   };
 };
 
+// ===========calender===========
