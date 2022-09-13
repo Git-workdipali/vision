@@ -1,0 +1,141 @@
+<html lang="en" class=""><head>
+
+  <meta charset="UTF-8">
+  <title>CodePen Demo</title>
+  <link rel="stylesheet" href="/Css/dasboard.css">
+  
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+font-size: 50px;
+cursor: pointer;
+user-select: none;
+}
+
+.fa:hover {
+color: darkblue;
+}
+
+.dark-mode {
+background-color: black;
+color: white;
+}
+
+.shadow-dark{
+box-shadow: 2px 2px 8px -4px rgb(0 0 0 / 30%), -4px -4px 8px -4px rgb(245 14 14), -1px 0px 0px 1px rgb(255 48 48);
+}
+
+.avatar{
+  height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    white-space: nowrap;
+    background: var(--font-primary);
+    border-radius: 6px;
+    margin: 0 0.5rem 0 0;
+    letter-spacing: 0.8pt;
+    font-size: .8em;
+    text-align: center;
+    font-weight: 500;
+}
+</style>
+
+<script>
+function darkMode() {
+  var element = document.body;
+  const count = document.getElementsByClassName("container");
+
+  for (var x = 0; x < count.length; x++) {
+    
+  console.log(x);
+  count[x].classList.toggle("shadow-dark");
+  
+  }
+
+  element.classList.toggle("dark-mode");
+
+  console.log("hello");
+    document.getElementById("demo").innerHTML = count.length;
+  }
+
+function myFunction(y) {
+  y.classList.toggle("fa-compress");
+}
+
+</script>
+  
+</head>
+
+<body class="theme-light" data-new-gr-c-s-check-loaded="14.1073.0" data-gr-ext-installed="">
+  <div id="card"  class="container card-shadow">
+    Hello
+  </div>
+  <div id="card"  class="container card-shadow">
+    Hello
+    </div>
+    <div id="card"  class="container card-shadow">
+    Hello
+    </div>
+    <div id="card"  class="container card-shadow">
+    Hello
+    </div>
+    <div id="demo"></div>
+  <button onclick="darkMode()">Toggle dark mode</button>
+
+
+
+  <i onclick="myFunction(this)" class="fa-solid fa-expand"></i>
+
+  <div style="display: flex;padding: 10px;"><span id="myspan1"  class="avatar"></span>
+    <input id="TextInput1" type="text" value="Bipin Raj" >
+  </div>
+
+  <div style="display: flex;padding: 10px;"><span id="myspan2"  class="avatar"></span>
+    <input id="TextInput2" type="text" value="Ajay Rathore">
+  </div>
+  
+  <button type="button" onclick="getInitials()">Try it</button>
+  <div id="result"></div>
+  
+  <script>
+
+
+
+</script>
+<script>
+var inputname1 = document.getElementById("TextInput1").value;
+
+var getInitials = function(name)  {
+let initials = name.split(' ');
+let charCount = name.length;
+   
+    if(initials.length > 1) {
+      initials = initials.shift().charAt(0) + initials.pop().charAt(0);
+    } else if(charCount < 1) {
+      initials = "na";
+    } else {
+      initials = name.substring(0, 2);
+    }
+    return initials.toUpperCase();
+}
+
+myspan1.innerHTML = getInitials(inputname1);
+
+var inputHandler = function(event) { 
+myspan1.innerHTML = getInitials(event.target.value);
+}
+
+TextInput1.addEventListener('input', inputHandler);
+
+alert("success"); // FN
+
+</script>
+</body>
+</html>

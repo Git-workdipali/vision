@@ -166,6 +166,10 @@ function hideUser() {
 function validateform() {
   var username = document.myform.name.value;
 
+<<<<<<< HEAD
+// slider.html js ends
+
+=======
   if (username == null || username == "") {
     document.getElementById("wrong-user").style.display = "block";
     document.getElementById("user-error-tick").style.display = "none";
@@ -178,6 +182,9 @@ function validateform() {
   return false;
 
 }
+<<<<<<< HEAD
+>>>>>>> d40794b74d5aa00ea236553c8cb39d66b53ec9a2
+=======
 
 function validatelastname() {
   var lastname = document.myform.lastname.value;
@@ -510,4 +517,8 @@ var RadialProgress = function (size, barSize, barColor, backgroundColor, textCol
   };
 };
 
+<<<<<<< HEAD
 // ===========calender===========
+=======
+>>>>>>> 2fb1e208f12414d6f6ae2367707dc9de39628610
+>>>>>>> df0976686cf889ba224013e6914f533553120ed8
