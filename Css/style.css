@@ -1511,13 +1511,10 @@ code {
 /* search scope popup pannel end */
 .options {
   display: flex;
-<<<<<<< HEAD
-    align-items: center;
-    margin: 4px 20px;
-=======
+  align-items: center;
+  margin: 4px 20px;
   align-items: center;
   margin: 8px 4px;
->>>>>>> d40794b74d5aa00ea236553c8cb39d66b53ec9a2
 }
 
 .col-3 {
@@ -1528,22 +1525,15 @@ code {
 
 .nav-bar {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    background: var(--primary);
-    width: calc(100% - 40px);
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 3px solid #5fdeb2;
-    height: 40px;
-    top: 0;
-    padding: 0 20px;
-=======
-  background: var(--primary);
-=======
+  width: calc(100% - 40px);
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 3px solid #5fdeb2;
+  height: 40px;
+  top: 0;
+  padding: 0 20px;
   background: var(--vision-nav);
->>>>>>> 2fb1e208f12414d6f6ae2367707dc9de39628610
   height: 44px;
   width: 100%;
   text-align: center;
@@ -1552,7 +1542,6 @@ code {
   border-top: 3px solid #5fdeb2;
   height: 38px;
   top: 0;
->>>>>>> d40794b74d5aa00ea236553c8cb39d66b53ec9a2
 }
 
 #nav-tab-text {
@@ -1635,20 +1624,17 @@ code {
 }
 
 .input {
-<<<<<<< HEAD
   width: 300px;
-    background: #efefef;
-    border: none;
-    padding: 10px 10px;
-    border-radius: 2px;
-    font-size: 12px;
-=======
+  background: #efefef;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 2px;
+  font-size: 12px;
   width: 48%;
   background: #efefef;
   border: none;
   padding: 6px 11px;
   border-radius: 4px;
->>>>>>> d40794b74d5aa00ea236553c8cb39d66b53ec9a2
 }
 
 .sub-title {
