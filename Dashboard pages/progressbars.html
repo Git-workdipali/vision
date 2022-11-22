@@ -5,165 +5,728 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Progress Bars</title>
+        <title>Dasboard</title>
         <link rel="stylesheet" href="/Css/style.css">
-        <!-- CSS only -->
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
             integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     </head>
 
     <body>
-        <div class="container theme-light">
-            <div class="title">Progress Bars</div>
-            <div class="card card-shadow">
-
-                <div class="card-title">Default Progress</div>
-                <div class="txt-info">Use Default <code>Progress</code> class</div>
-
-                <div class="preview">
-                    <div class="progress">
-                        <div class="progress-bar bg-soft-secondary" role="progressbar" aria-valuenow="70"
-                            aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                            <span class="sr-only">70% Complete</span>
+        <div class="container-d">
+            <div class="header" id="header">
+                <div class="flx aic jcc">
+                    <img src="/assets/logo/clientLogo.png" alt="">
+                </div>
+                <div class="flx aic">
+                    <div class="c-tabs flx aic jcc">
+                        <i id="h-wid-icn" class="fas fa-bars"></i>
+                    </div>
+                    <div class="c-tabs act_tab flx aic jcc">
+                        <i id="h-wid-icn" class="fas fa-home-lg-alt"></i>
+                    </div>
+                    <div class="c-tabs flx aic jcc">
+                        <i id="h-wid-icn" class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="c-tabs flx aic jcc">
+                        <i id="h-wid-icn" class="fas fa-question"></i>
+                    </div>
+                    <div class="c-tabs flx aic jcc">
+                        <i id="h-wid-icn" class="fas fa-users"></i>
+                    </div>
+                    <div class="flx aic jcc">
+                        <img src="/assets/img/user-profile.jfif" alt="" class="user-img">
+                    </div>
+                    <div class="log-in">
+                        <div class="dropdown">
+                            <a class="dropbtn flx aic">Daniel</a>
+                            <div class="dropdown-content">
+                                <a href="#"><span><i id="h-wid-icn" class="fas fa-truck"></i></span> About</a>
+                                <a href="#"><span><i id="h-wid-icn" class="fas fa-map-marked-alt"></i></span> Change
+                                    Site</a>
+                                <a href="#"><span><i id="h-wid-icn" class="fas fa-key"></i></span>Change Password</a>
+                                <a href="#"><span><i id="h-wid-icn" class="fas fa-map-marker-alt"></i></span> My
+                                    Places</a>
+                                <a href="#"><span><i id="h-wid-icn" class="fas fa-chart-line"></i></span> My
+                                    Activities</a>
+                                <a href="#"><span><i id="h-wid-icn" class="fas fa-handshake"></i></span> Agreements</a>
+                                <a href="#"><span><i id="h-wid-icn" class="fas fa-sign-out-alt"></i></span> Logout</a>
+                            </div>
                         </div>
+                        <div class="desc">Proteus Technologies Pvt Ltd</div>
                     </div>
                 </div>
             </div>
-
-
-            <div class="card card-shadow">
-
-                <div class="card-title">Progress Bars With Label</div>
-                <div class="txt-info">Use Default <code>progress Label </code> class</div>
-
-                <div class="preview">
-                    <div class="progress">
-                        <div class="progress-bar bg-soft-secondary" role="progressbar" aria-valuenow="70"
-                            aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                            70%
+            <div>
+                <div class="nav-bar">
+                    <div class="nav-tab">
+                        <div id="mySidebar" class="sidebar">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <div class="slide-header">
+                                <div id="slider-header">
+                                    <div class="logo-content">
+                                        <div class="slider-logo">
+                                            <img src="/assets/logo/Proteus Logo (1).png" id="slider-logo" alt="">
+                                        </div>
+                                        <span class="slider-font">SCM Sales</span>
+                                    </div>
+                                    <div class="exchange-arrow">
+                                        <i id="h-wid-icn" class="fa-solid fa-bars"></i>
+                                    </div>
+                                </div>
+                                <div class="workflow">
+                                    <div class="explore">
+                                        <svg class="svg-icn" fill="#fff" viewBox="0 0 426.667 426.667"
+                                            style="enable-background:new 0 0 426.667 426.667;">
+                                            <g>
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M213.333,236.8c13.013,0,23.467-10.56,23.467-23.467s-10.453-23.467-23.467-23.467c-12.907,0-23.467,10.56-23.467,23.467 S200.427,236.8,213.333,236.8z" />
+                                                        <path
+                                                            d="M213.333,0C95.467,0,0,95.467,0,213.333c0,117.76,95.467,213.333,213.333,213.333s213.333-95.573,213.333-213.333 C426.667,95.467,331.2,0,213.333,0z M260.053,260.053l-174.72,81.28l81.28-174.72l174.72-81.28L260.053,260.053z" />
+                                                    </g>
+                                                </g>
+                                        </svg>
+                                        <span class="slider-font">Explore</span>
+                                    </div>
+                                    <div class="explore">
+                                        <svg enable-background="new 0 0 512 512" viewBox="0 0 512 512" class="svg-icn"
+                                            fill="#fff">
+                                            <g>
+                                                <path
+                                                    d="m306 342c8.284 0 15-6.716 15-15v-10h126c8.284 0 15-6.716 15-15v-45h35c8.284 0 15-6.716 15-15v-50c0-8.284-6.716-15-15-15h-35v-45c0-8.284-6.716-15-15-15h-176v-30h36.5c23.986 0 43.5-19.514 43.5-43.5s-19.514-43.5-43.5-43.5h-103c-23.986 0-43.5 19.514-43.5 43.5s19.514 43.5 43.5 43.5h36.5v30h-176c-8.284 0-15 6.716-15 15v45h-35c-8.284 0-15 6.716-15 15v50c0 8.284 6.716 15 15 15h35v45c0 8.284 6.716 15 15 15h126v10c0 8.284 6.716 15 15 15h35v30h-176c-8.284 0-15 6.716-15 15v45h-35c-8.284 0-15 6.716-15 15v50c0 8.284 6.716 15 15 15h100c8.284 0 15-6.716 15-15v-50c0-8.284-6.716-15-15-15h-35v-30h161v30h-35c-8.284 0-15 6.716-15 15v50c0 8.284 6.716 15 15 15h100c8.284 0 15-6.716 15-15v-50c0-8.284-6.716-15-15-15h-35v-30h161v30h-35c-8.284 0-15 6.716-15 15v50c0 8.284 6.716 15 15 15h100c8.284 0 15-6.716 15-15v-50c0-8.284-6.716-15-15-15h-35v-45c0-8.284-6.716-15-15-15h-176v-30zm-100-80c-8.284 0-15 6.716-15 15v10h-111v-30h35c8.284 0 15-6.716 15-15v-50c0-8.284-6.716-15-15-15h-35v-30h352v30h-35c-8.284 0-15 6.716-15 15v50c0 8.284 6.716 15 15 15h35v30h-111v-10c0-8.284-6.716-15-15-15z" />
+                                            </g>
+                                        </svg>
+                                        <span class="slider-font">Workflow</span>
+                                    </div>
+                                    <div class="explore">
+                                        <svg id="Capa_1" enable-background="new 0 0 512 512" class="svg-icn" fill="#fff"
+                                            viewBox="0 0 512 512">
+                                            <g>
+                                                <path
+                                                    d="m452 392c-11.126 0-21.538 3.04-30.47 8.317l-38.79-38.79c-6.417 7.694-13.519 14.796-21.213 21.213l38.79 38.79c-5.277 8.932-8.317 19.344-8.317 30.47 0 33.137 26.863 60 60 60s60-26.863 60-60-26.863-60-60-60z" />
+                                                <path
+                                                    d="m60 120c11.126 0 21.538-3.04 30.47-8.317l38.79 38.79c6.417-7.694 13.519-14.796 21.213-21.213l-38.79-38.79c5.277-8.932 8.317-19.344 8.317-30.47 0-33.137-26.863-60-60-60s-60 26.863-60 60 26.863 60 60 60z" />
+                                                <path
+                                                    d="m276.737 301h-41.474c-24.407 0-44.263 19.856-44.263 44.263v29.025c19.294 10.645 41.45 16.712 65 16.712s45.706-6.067 65-16.712v-29.025c0-24.407-19.856-44.263-44.263-44.263z" />
+                                                <path
+                                                    d="m391 256c0-74.439-60.561-135-135-135s-135 60.561-135 135c0 37.428 15.314 71.343 40 95.82v-6.557c0-31.165 19.306-57.889 46.578-68.889-7.271-9.927-11.578-22.154-11.578-35.374 0-33.084 26.916-60 60-60s60 26.916 60 60c0 13.22-4.307 25.447-11.578 35.374 27.272 11 46.578 37.725 46.578 68.889v6.557c24.686-24.477 40-58.392 40-95.82z" />
+                                                <circle cx="256" cy="241" r="30" />
+                                                <path
+                                                    d="m382.74 150.473 38.79-38.79c8.932 5.277 19.344 8.317 30.47 8.317 33.137 0 60-26.863 60-60s-26.863-60-60-60-60 26.863-60 60c0 11.126 3.04 21.538 8.317 30.47l-38.79 38.79c7.694 6.417 14.796 13.519 21.213 21.213z" />
+                                                <path
+                                                    d="m129.26 361.527-38.79 38.79c-8.932-5.277-19.344-8.317-30.47-8.317-33.137 0-60 26.863-60 60s26.863 60 60 60 60-26.863 60-60c0-11.126-3.04-21.538-8.317-30.47l38.79-38.79c-7.694-6.417-14.796-13.519-21.213-21.213z" />
+                                            </g>
+                                        </svg>
+                                        <span class="slider-font">Social</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider col3 end -->
+                        </div>
+                        <div id="main">
+                            <i id="hideHumburger" onclick="openNav()" id="h" class="fa-solid fa-bars openbtn"></i>
+                        </div>
+                        <div id="Myid">
+                            <img src="/assets/logo/vlogo.png" height="20px" width="20px" alt="">
+                        </div>
+                    </div>
+                    <div class="nav-search">
+                        <input type="text" class="input" placeholder="Search.." name="search">
+                    </div>
+                    <div id="nav-search">
+                        <span id="myBtn">Search Scope</span>
+                        <button class="full-screen" id="fullscreen-btn"
+                            onclick="myFunction();toggleText(); hideContent(); hideCol();hideLogo(); hideOptions();hideMenu();hideUser()"><i
+                                class="fa-solid fa-expand"></i>
+                        </button>
+                    </div>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <div id="close"><span class="close">&times;</span></div>
+                            <div class="card-popup">
+                                <div class="did-floating-label-content">
+                                    <input class="did-floating-input" type="text" placeholder=" ">
+                                    <label class="did-floating-label">Column Heading</label>
+                                </div>
+                                <div class="did-floating-label-content">
+                                    <select class="did-floating-select"
+                                        onclick="this.setAttribute('value', this.value);"
+                                        onchange="this.setAttribute('value', this.value);" value="">
+                                        <option value=""></option>
+                                        <option value="1">Alabama</option>
+                                        <option value="2">Boston</option>
+                                        <option value="3">Ohaio</option>
+                                        <option value="4">New York</option>
+                                        <option value="5">Washington</option>
+                                    </select>
+                                    <label class="did-floating-label">Function</label>
+                                </div>
+                                <div class="did-floating-label-content did-error-input">
+                                    <input class="did-floating-input" type="text" placeholder=" ">
+                                    <label class="did-floating-label">Expression</label>
+                                </div>
+                                <div class="did-floating-label-content did-error-input">
+                                    <input class="did-floating-input" type="text" placeholder=" ">
+                                    <label class="did-floating-label">Advance Formating</label>
+                                </div>
+                                <div class="did-floating-label-content did-error-input">
+                                    <input class="did-floating-input" type="number" placeholder=" ">
+                                    <label class="did-floating-label">Type</label>
+                                </div>
+                                <div class="did-floating-label-content did-error-input">
+                                    <input class="did-floating-input" type="text" placeholder=" ">
+                                    <label class="did-floating-label">Display Format</label>
+                                </div>
+                                <div class="did-floating-label-content did-error-input">
+                                    <input class="did-floating-input" type="text" placeholder=" ">
+                                    <label class="did-floating-label">Column Name</label>
+                                </div>
+                            </div>
+                            <div class="popup-btn">
+                                <a href="" class="btn">Search</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="top-nav">
+                    <div class="smart-filter">
+                        <i id="h-wid-icn" class="fa-solid fa-filter"></i>
+                    </div>
+                    <div class="tag">
+                        <i id="h-wid-icn" class="fa-solid fa-tags"></i>
+                    </div>
+                    <div class="active">
+                        <i id="h-wid-icn" class="fa-brands fa-creative-commons-nd"></i>
+                    </div>
+                    <div class="scope" id="myBtn">
+                        <i id="h-wid-icn" class="fa-brands fa-quinscape"></i>
+                    </div>
+                </div>
+                <div class="dashboard">
+                    <div class="col-3-main" id="myDIV">
+                        <div class="wraper">
+                            <div class="collapsed-menu  bg-0">
+                                <a class="collapsed-menu-btn styled-link">
+                                    <div><span class="material-symbols-rounded small regular-color "></span>
+                                    </div>
+                                    <div class="regular-color">
+                                        <div><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Dashboard </div>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                </a>
+                                <ol class=" collapsed-menu-list">
+                                    <div class="pop-up">
+                                        <span class="desc-bold">LTR</span>
+                                    </div>
+                                    <div class="pop-up">
+                                        <span class="desc-bold">RTR</span>
+                                    </div>
+                                    <div class="pop-up">
+                                        <span class="desc-bold">Vertical</span>
+                                    </div>
+                                    <div class="pop-up">
+                                        <span class="desc-bold">Horizontal</span>
+                                    </div>
+                                    <div class="pop-up">
+                                        <span class="desc-bold">Endless</span>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="wraper">
+                            <div class="collapsed-menu  bg-0">
+                                <a class="collapsed-menu-btn styled-link">
+                                    <div><span class="material-symbols-rounded small regular-color "></span>
+                                    </div>
+                                    <div class="regular-color">
+                                        <div><i class="fa-solid fa-sliders"></i>&nbsp;&nbsp; Media</div>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                </a>
+                                <ol class=" collapsed-menu-list">
+                                    <a href="Gallery.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Gallery</span>
+                                        </div>
+                                    </a>
+                                    <a href="Slider.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Slider</span>
+                                        </div>
+                                    </a>
+                                    <a href="Player.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Player</span>
+                                        </div>
+                                    </a>
+                                </ol>
+                            </div>
+                        </div>
 
+                        <div class="wraper">
+                            <div class="collapsed-menu  bg-0">
+                                <a class="collapsed-menu-btn styled-link">
+                                    <div><span class="material-symbols-rounded small regular-color "></span>
+                                    </div>
+                                    <div class="regular-color">
+                                        <div><i class="fa-brands fa-css3-alt"></i>&nbsp;&nbsp; Css </div>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                </a>
+                                <ol class=" collapsed-menu-list">
+                                    <a href="Alerts.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Alerts</span>
+                                        </div>
+                                    </a>
+                                    <a href="Badges.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Badges</span>
+                                        </div>
+                                    </a>
+                                    <a href="Buttons.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Buttons</span>
+                                        </div>
+                                    </a>
+                                    <a href="colors.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Colors</span>
+                                        </div>
+                                    </a>
+                                    <a href="grid.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Grids</span>
+                                        </div>
+                                    </a>
+                                    <a href="Helper.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Helper</span>
+                                        </div>
+                                    </a>
+                                    <a href="Icons.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Icons</span>
+                                        </div>
+                                    </a>
+                                    <a href="shadow.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">shadow</span>
+                                        </div>
+                                    </a>
+                                    <a href="Typography.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Typography</span>
+                                        </div>
+                                    </a>
 
-            <div class="card card-shadow">
+                                </ol>
+                            </div>
+                        </div>
 
-                <div class="card-title">Colored Progress Bars</div>
-                <div class="txt-info">Use <code>color</code> class</div>
-
-                <div class="preview">
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                            aria-valuemax="100" style="width:40%">
-                            40% Complete (success)
+                        <div class="wraper">
+                            <div class="collapsed-menu  bg-0">
+                                <a class="collapsed-menu-btn styled-link">
+                                    <div><span class="material-symbols-rounded small regular-color "></span>
+                                    </div>
+                                    <div class="regular-color">
+                                        <div><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp; UI Elements</div>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                </a>
+                                <ol class=" collapsed-menu-list">
+                                    <a href="images.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Images</span>
+                                        </div>
+                                    </a>
+                                    <a href="settings.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Settings</span>
+                                        </div>
+                                    </a>
+                                    <a href="notifications.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Notifications</span>
+                                        </div>
+                                    </a>
+                                    <a href="chat.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Chat</span>
+                                        </div>
+                                    </a>
+                                    <a href="breadcrumbs.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Breadcrumbs</span>
+                                        </div>
+                                    </a>
+                                    <a href="carousal.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Caraousal</span>
+                                        </div>
+                                    </a>
+                                    <a href="Buttons.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Buttons</span>
+                                        </div>
+                                    </a>
+                                    <a href="card.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Cards</span>
+                                        </div>
+                                    </a>
+                                    <a href="chips.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Chips</span>
+                                        </div>
+                                    </a>
+                                    <a href="collapsible.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Collapsable</span>
+                                        </div>
+                                    </a>
+                                    <a href="list.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">lists</span>
+                                        </div>
+                                    </a>
+                                    <a href="dropdown.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Dropdown</span>
+                                        </div>
+                                    </a>
+                                    <a href="modal.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Modal</span>
+                                        </div>
+                                    </a>
+                                    <a href=Nestable.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Nestable</span>
+                                        </div>
+                                    </a>
+                                    <a href="Pagination.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Pagination</span>
+                                        </div>
+                                    </a>
+                                    <a href="progressbars.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Progressbars</span>
+                                        </div>
+                                    </a>
+                                    <a href="tabs.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Tabs</span>
+                                        </div>
+                                    </a>
+                                    <a href="toasts.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Toasts</span>
+                                        </div>
+                                    </a>
+                                    <a href="tooltips.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Tooltips</span>
+                                        </div>
+                                    </a>
+                                    <a href="treeview.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Treeview</span>
+                                        </div>
+                                    </a>
+                                    <a href="Ripple.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Ripple</span>
+                                        </div>
+                                    </a>
+                                    <a href="searchbars.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Searchbars</span>
+                                        </div>
+                                    </a>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="wraper">
+                            <div class="collapsed-menu  bg-0">
+                                <a class="collapsed-menu-btn styled-link">
+                                    <div><span class="material-symbols-rounded small regular-color "></span>
+                                    </div>
+                                    <div class="regular-color">
+                                        <div><i class="fa-solid fa-chart-pie"></i>&nbsp;&nbsp; Chart </div>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                </a>
+                                <ol class=" collapsed-menu-list">
+                                    <a href="linegraph.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Line Graph</span>
+                                        </div>
+                                    </a>
+                                    <a href="bargraph.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Bar Graph</span>
+                                        </div>
+                                    </a>
+                                    <a href="breadcrumbs.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Pie Chart</span>
+                                        </div>
+                                    </a>
+                                    <a href="Doghnut.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Doghnut</span>
+                                        </div>
+                                    </a>
+                                    <a href="Multiline.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Multiline</span>
+                                        </div>
+                                    </a>
+                                    <a href="multiaxis.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Multiaxis</span>
+                                        </div>
+                                    </a>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="wraper">
+                            <div class="collapsed-menu  bg-0">
+                                <a class="collapsed-menu-btn styled-link">
+                                    <div><span class="material-symbols-rounded small regular-color "></span>
+                                    </div>
+                                    <div class="regular-color">
+                                        <div><i class="fa-solid fa-object-ungroup"></i>&nbsp;&nbsp; Layout</div>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                </a>
+                                <ol class=" collapsed-menu-list">
+                                    <a href="screen.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Web</span>
+                                        </div>
+                                    </a>
+                                    <a href="screen.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Web Fullscreen</span>
+                                        </div>
+                                    </a>
+                                    <a href="screen.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Tablet</span>
+                                        </div>
+                                    </a>
+                                    <a href="screen.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Mobile View</span>
+                                        </div>
+                                    </a>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="wraper">
+                            <div class="collapsed-menu  bg-0">
+                                <a class="collapsed-menu-btn styled-link">
+                                    <div><span class="material-symbols-rounded small regular-color "></span>
+                                    </div>
+                                    <div class="regular-color">
+                                        <div><i class="fa-solid fa-layer-group"></i>&nbsp; &nbsp;Menu Level </div>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                </a>
+                                <ol class=" collapsed-menu-list">
+                                    <a href="level.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Level 1</span>
+                                        </div>
+                                    </a>
+                                    <a href="level.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Level 2</span>
+                                        </div>
+                                    </a>
+                                    <a href="level.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Level 3</span>
+                                        </div>
+                                    </a>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="footer" id="footer">
+                            <div class="fav">
+                                <i id="h-wid-icn" class="fa-solid fa-heart"></i>
+                                <span class="desc-bold">Favourite</span>
+                            </div>
+                            <div class="show-all">
+                                <i id="h-wid-icn" class="fa-solid fa-list"></i>
+                                <span class="desc-bold">Show</span>
+                            </div>
+                            <div class="assistante">
+                                <i id="h-wid-icn" class="fa-solid fa-comment-dots"></i>
+                                <span class="desc-bold">Assistance</span>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-8-main" id="col-8-main">
+                        <div class="container theme-light">
+                            <div class="title">Progress Bars</div>
+                            <div class="card card-shadow">
 
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                            aria-valuemax="100" style="width:50%">
-                            50% Complete (info)
-                        </div>
-                    </div>
+                                <div class="card-title">Default Progress</div>
+                                <div class="txt-info">Use Default <code>Progress</code> class</div>
 
-                    <div class="progress">
-                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                            aria-valuemax="100" style="width:60%">
-                            60% Complete (warning)
-                        </div>
-                    </div>
+                                <div class="preview">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-soft-secondary" role="progressbar"
+                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                            <span class="sr-only">70% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <div class="progress">
-                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                            aria-valuemax="100" style="width:70%">
-                            70% Complete (danger)
+
+                            <div class="card card-shadow">
+
+                                <div class="card-title">Progress Bars With Label</div>
+                                <div class="txt-info">Use Default <code>progress Label </code> class</div>
+
+                                <div class="preview">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-soft-secondary" role="progressbar"
+                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                            70%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card card-shadow">
+
+                                <div class="card-title">Colored Progress Bars</div>
+                                <div class="txt-info">Use <code>color</code> class</div>
+
+                                <div class="preview">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="40"
+                                            aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                            40% Complete (success)
+                                        </div>
+                                    </div>
+
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="50"
+                                            aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                                            50% Complete (info)
+                                        </div>
+                                    </div>
+
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60"
+                                            aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                            60% Complete (warning)
+                                        </div>
+                                    </div>
+
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="70"
+                                            aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                            70% Complete (danger)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card card-shadow">
+
+                                <div class="card-title">Progress Bars With Label</div>
+                                <div class="txt-info">Use Default <code>striped-progress</code> class</div>
+
+                                <div class="preview">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary progress-bar-striped" role="progressbar"
+                                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                            40% Complete (success)
+                                        </div>
+                                    </div>
+
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info progress-bar-striped" role="progressbar"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                                            50% Complete (info)
+                                        </div>
+                                    </div>
+
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger progress-bar-striped" role="progressbar"
+                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                            60% Complete (warning)
+                                        </div>
+                                    </div>
+
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped" role="progressbar"
+                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                            70% Complete (danger)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card-shadow">
+
+                                <div class="card-title">Animated Progress Bar</div>
+                                <div class="txt-info">Use Default <code>Animated</code> class</div>
+
+                                <div class="preview">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info progress-bar-striped active" role="progressbar"
+                                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                            40%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card-shadow">
+
+                                <div class="card-title">Javscript Progressbars</div>
+                                <div class="txt-info">Use Default <code>Js</code>functions</div>
+
+                                <div class="preview">
+                                    <div id="myProgress">
+                                        <div id="myBar"></div>
+                                    </div>
+
+                                    <br>
+                                </div>
+                            </div>
+
+
+                            <div class="card card-shadow">
+
+                                <div class="card-title">rounded Progressbars</div>
+                                <div class="txt-info">Use Default <code>rounded</code>class</div>
+
+                                <div class="preview">
+                                    <button onclick="createProgress()">Click me!</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-
-            <div class="card card-shadow">
-
-                <div class="card-title">Progress Bars With Label</div>
-                <div class="txt-info">Use Default <code>striped-progress</code> class</div>
-
-                <div class="preview">
-                    <div class="progress">
-                        <div class="progress-bar bg-primary progress-bar-striped" role="progressbar" aria-valuenow="40"
-                            aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                            40% Complete (success)
-                        </div>
-                    </div>
-
-                    <div class="progress">
-                        <div class="progress-bar bg-info progress-bar-striped" role="progressbar" aria-valuenow="50"
-                            aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                            50% Complete (info)
-                        </div>
-                    </div>
-
-                    <div class="progress">
-                        <div class="progress-bar bg-danger progress-bar-striped" role="progressbar" aria-valuenow="60"
-                            aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                            60% Complete (warning)
-                        </div>
-                    </div>
-
-                    <div class="progress">
-                        <div class="progress-bar bg-success progress-bar-striped" role="progressbar" aria-valuenow="70"
-                            aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                            70% Complete (danger)
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card card-shadow">
-
-                <div class="card-title">Animated Progress Bar</div>
-                <div class="txt-info">Use Default <code>Animated</code> class</div>
-
-                <div class="preview">
-                    <div class="progress">
-                        <div class="progress-bar bg-info progress-bar-striped active" role="progressbar"
-                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                            40%
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card card-shadow">
-
-                <div class="card-title">Javscript Progressbars</div>
-                <div class="txt-info">Use Default <code>Js</code>functions</div>
-
-                <div class="preview">
-                    <div id="myProgress">
-                        <div id="myBar"></div>
-                    </div>
-
-                    <br>
-                </div>
-            </div>
-
-
-            <div class="card card-shadow">
-
-                <div class="card-title">rounded Progressbars</div>
-                <div class="txt-info">Use Default <code>rounded</code>class</div>
-
-                <div class="preview">
-                    <button onclick="createProgress()">Click me!</button>
-                </div>
             </div>
         </div>
+        <!-- mobile View -->
+        <script src="/Js/app.js"></script>
     </body>
-    <script src="/Js/app.js"></script>
 
 </html>

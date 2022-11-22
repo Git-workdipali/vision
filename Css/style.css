@@ -60,7 +60,7 @@ html {
   --font-secondary: #566886;
   --font-desabled: #9dadc0;
 
-  --theme-light: #e3f1fa;
+  --theme-light: #ffffff;
   --theme-dark: #313131;
   --font-color: #343a40;
   --dark-font: #797979;
@@ -1113,7 +1113,7 @@ h6 {
   margin-bottom: 1.5rem !important;
 }
 
-.ms-2 {
+text-ali .ms-2 {
   margin-left: 0.5rem !important;
 }
 
@@ -1127,6 +1127,14 @@ h6 {
 
 .p-1 {
   padding: 1rem 0;
+}
+
+.p-top-bot {
+  padding: 3rem 0rem;
+}
+
+.padding {
+  padding: 1rem;
 }
 
 /* ======code===== */
@@ -1146,12 +1154,12 @@ code {
 .card {
   border-radius: 0.8rem;
   margin: 0 0 1.5rem 0;
-  padding: 1rem;
+  padding: 2rem;
+  background-color: #e3f1fa;
 }
 
 .card-shadow {
-  box-shadow: 2px 2px 8px -4px rgb(0 0 0 / 30%),
-    -4px -4px 8px -4px rgb(255 255 255), -1px 0px 0px 1px rgb(255 255 255);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .card-shadow-dark {
@@ -1858,12 +1866,6 @@ div.col-1-main {
   margin: 14px 4px;
 }
 
-/* content */
-/* .card {
-  margin: 0px 18px;
-  border: 1px solid rgb(192, 192, 192);
-} */
-
 /* grid view /list view css */
 
 .filter-buttons {
@@ -1924,8 +1926,21 @@ li {
   /* padding: 7px 5px; */
 }
 
-/* grid view list view css end */
+/* grid view list view css end *
 
+/* ========helper css======= */
+.helper-title {
+  font-size: 1.2rem;
+  color: #212529;
+  font-weight: 700;
+}
+
+.helper {
+  font-size: 12px;
+  color: var(--vision-nav);
+}
+
+/* ========helper css end==== */
 .view {
   margin: -1px 4px;
 }
@@ -2067,13 +2082,13 @@ li {
 .footer {
   display: flex;
   justify-content: space-between;
-  height: 36px;
+  height: 28px;
   align-items: center;
-  width: 20%;
+  width: 21%;
   padding: 0 7px;
   background: #dddddd;
   position: fixed;
-  bottom: 0;
+  bottom: 0
 }
 
 .pagination {
@@ -2084,7 +2099,7 @@ li {
   padding: 4px 12px;
   position: fixed;
   bottom: 0;
-  width: 74%;
+  width: 76%;
 }
 
 #number {
@@ -2666,7 +2681,7 @@ ul.breadcrumb li a:hover {
 
 /* ================Notifications============= */
 .notification {
-  background: var(--secondary);
+  background: #e3f1fa;
   color: var(--font-primary);
   width: calc(100% - 70%);
   align-items: center;
@@ -2739,7 +2754,7 @@ ul.breadcrumb li a:hover {
 #fade,
 #fade2 {
   visibility: hidden;
-  background: var(--secondary);
+  background: #e3f1fa;
   color: var(--font-primary);
   width: calc(100% - 70%);
   align-items: center;
@@ -3626,6 +3641,7 @@ label {
   align-items: center;
   justify-content: center;
 }
+
 
 .icons {
   display: flex;

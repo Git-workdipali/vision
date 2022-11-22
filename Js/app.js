@@ -9,7 +9,7 @@ function hideCol() {
 }
 
 function myFunction() {
-  document.getElementById("myDIV").style.width = "26%";
+  document.getElementById("myDIV").style.width = "100%";
   document.getElementById("col-8-main").style.width = "100%";
   document.getElementById("col-8-main").style.height = "100%";
   document.getElementById("pagination").style.width = "99%";
@@ -58,25 +58,23 @@ function closeNav() {
 }
 // Hamburger css end 
 //========search scope popup pannel start========
-// var modal = document.getElementById("myModal");
-// var btn = document.getElementById("myBtn");
-// var span = document.getElementsByClassName("close")[0];
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
 
-// btn.onclick = function () {
-//   modal.style.display = "block";
-// }
-// span.onclick = function () {
-//   modal.style.display = "none";
-// }
+btn.onclick = function () {
+  modal.style.display = "block";
+}
+span.onclick = function (modal) {
+  modal.style.display = "none";
+}
 
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 // search scope popup pannel end
-
-
 //=========toggle starts==========
 var show = function (t) {
   t.style.display = "block"
@@ -97,26 +95,26 @@ document.addEventListener("click", function (t) {
 // Toggle end
 
 //=============Change View Css============
-const listViewButton = document.querySelector('.list-view-button');
-const gridViewButton = document.querySelector('.grid-view-button');
-const tableViewButton = document.querySelector('.table-view-button');
-const list = document.querySelector('ol');
+// const listViewButton = document.querySelector('.list-view-button');
+// const gridViewButton = document.querySelector('.grid-view-button');
+// const tableViewButton = document.querySelector('.table-view-button');
+// const list = document.querySelector('ol');
 
-listViewButton.onclick = function () {
-  list.classList.remove('grid-view-filter');
-  list.classList.add('list-view-filter');
-}
+// listViewButton.onclick = function () {
+//   list.classList.remove('grid-view-filter');
+//   list.classList.add('list-view-filter');
+// }
 
-gridViewButton.onclick = function () {
-  list.classList.remove('list-view-filter');
-  list.classList.add('grid-view-filter');
-}
+// gridViewButton.onclick = function () {
+//   list.classList.remove('list-view-filter');
+//   list.classList.add('grid-view-filter');
+// }
 
-tableViewButton.onclick = function () {
-  list.classList.remove('list-view-filter');
-  list.classList.remove('grid-view-filter');
-  list.classList.add('table-view-filter');
-}
+// tableViewButton.onclick = function () {
+//   list.classList.remove('list-view-filter');
+//   list.classList.remove('grid-view-filter');
+//   list.classList.add('table-view-filter');
+// }
 //Change View js End
 
 
@@ -335,14 +333,14 @@ function fade2() {
   setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
 }
 // =========Searchbox===========
-// search event
+//=======search event======
 const searchButton = document.getElementById('search-button');
 const searchInput = document.getElementById('search-input');
 searchButton.addEventListener('click', () => {
   const inputValue = searchInput.value;
   alert(inputValue);
 });
-// auto complete
+//========auto complete=======
 const basicAutocomplete = document.querySelector('#search-autocomplete');
 const data = ['One', 'Two', 'Three', 'Four', 'Five'];
 const dataFilter = (value) => {
@@ -513,4 +511,29 @@ var RadialProgress = function (size, barSize, barColor, backgroundColor, textCol
   };
 };
 
-// ===========calender===========
+// ===========name initials changes as per value===========
+var inputname1 = document.getElementById("TextInput1").value;
+
+var getInitials = function (name) {
+  let initials = name.split(' ');
+  let charCount = name.length;
+
+  if (initials.length > 1) {
+    initials = initials.shift().charAt(0) + initials.pop().charAt(0);
+  } else if (charCount < 1) {
+    initials = "na";
+  } else {
+    initials = name.substring(0, 2);
+  }
+  return initials.toUpperCase();
+}
+
+myspan1.innerHTML = getInitials(inputname1);
+
+var inputHandler = function (event) {
+  myspan1.innerHTML = getInitials(event.target.value);
+}
+
+TextInput1.addEventListener('input', inputHandler);
+
+alert("success"); // FN
