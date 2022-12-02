@@ -1,4 +1,3 @@
-
 function hideCol() {
   var x = document.getElementById("myDIV");
   if (x.style.display === "none") {
@@ -44,7 +43,60 @@ function hideContent() {
   }
 }
 //Full screen end
+// =========Ripples=========
+// function findRippleOrigin(clickEv) {
+//   const buttonRect = clickEv.currentTarget.getBoundingClientRect();
+//   const x = clickEv.clientX - buttonRect.x;
+//   const y = clickEv.clientY - buttonRect.y;
+//   return { x, y };
+// }
 
+// const button = document.querySelector(".btn-ripple");
+
+// button.addEventListener("click", ev => {
+//   const rippleEl = document.createElement("span");
+
+//   const rippleOrigin = findRippleOrigin(ev);
+//   rippleEl.style.top = `${rippleOrigin.y}px`;
+//   rippleEl.style.left = `${rippleOrigin.x}px`;
+
+//   rippleEl.classList.add("ripple");
+
+//   rippleEl.addEventListener("animationend", ev => {
+//     ev.target.remove();
+//   });
+
+//   button.appendChild(rippleEl);
+// });
+
+// ========Ripples End======
+// Collapsible
+// var coll = document.getElementsByClassName("collapsible");
+// var i;
+
+// for (i = 0; i < coll.length; i++) {
+//   coll[i].addEventListener("click", function () {
+//     this.classList.toggle("active");
+//     var content = this.nextElementSibling;
+//     if (content.style.display === "block") {
+//       content.style.display = "none";
+//     } else {
+//       content.style.display = "block";
+//     }
+//   });
+// }
+// Collapsible end
+// TreeView start
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function () {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+// Treeview end
 
 //==========Hamburger css start==========
 function openNav() {
@@ -539,6 +591,3 @@ TextInput1.addEventListener('input', inputHandler);
 alert("success"); // FN
 
 
-// ========Carousal starts=======
-
-// =======Carousal end=============
