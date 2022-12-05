@@ -303,6 +303,13 @@ html {
   text-align: center;
 }
 
+/* LRT tEST */
+.ltr {
+  position: absolute;
+  right: 0;
+}
+
+
 /* =====Buttons==== */
 .btn {
   display: inline-block;
@@ -1359,11 +1366,6 @@ h6 {
   margin-bottom: 1px;
 }
 
-.active,
-.collapsible:hover {
-  /* background-color: #555; */
-}
-
 .content {
   padding: 24px 18px;
   display: none;
@@ -1718,6 +1720,7 @@ code {
   border-radius: 6px;
 }
 
+
 /* Popup End */
 /* hamburger css full screen */
 .sidebar {
@@ -1941,22 +1944,14 @@ code {
 
 .nav-bar {
   display: flex;
-  width: calc(100% - 40px);
   text-align: center;
   align-items: center;
-  justify-content: space-between;
-  border-top: 3px solid #5fdeb2;
-  height: 40px;
-  top: 0;
-  padding: 0 20px;
+  padding: 0px 20px;
   background: var(--vision-nav);
   height: 44px;
   width: 100%;
-  text-align: center;
-  align-items: center;
   justify-content: space-between;
   border-top: 3px solid #5fdeb2;
-  height: 38px;
   top: 0;
 }
 
@@ -2040,17 +2035,12 @@ code {
 }
 
 .input {
-  width: 300px;
   background: #efefef;
   border: none;
-  padding: 10px 10px;
-  border-radius: 2px;
   font-size: 12px;
-  width: 48%;
-  background: #efefef;
-  border: none;
-  padding: 6px 11px;
-  border-radius: 4px;
+  width: 350px;
+  border-radius: 7px;
+  padding: 0.5rem;
 }
 
 .sub-title {
@@ -2074,9 +2064,9 @@ div.col-3-main {
 }
 
 .col-3-main {
-  width: 21%;
+  width: 350px;
   background: #fff;
-  height: 498px;
+  height: 525px;
 }
 
 a {
@@ -2086,10 +2076,6 @@ a {
 
 
 /* Dropdown */
-.bg-0 {
-  background-color: var(--bg-0) !important;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-}
 
 .headline-color {
   color: var(--color-0) !important;
@@ -2101,7 +2087,7 @@ a {
   font-size: 14px;
   display: flex;
   justify-content: space-between;
-  width: calc(100% - 22px);
+  width: 100%;
   align-items: center;
   margin: 12px 0px;
 }
@@ -2118,16 +2104,13 @@ a {
 .collapsed-menu {
   position: relative;
   overflow: hidden;
-  max-height: 36px;
+  max-height: 42px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   flex-direction: column;
   transition: max-height 0.2s ease;
-  border-radius: 4px;
-  padding: 2px 0;
-  margin: 6px 0px;
-  width: calc(100% - 14px);
+  border-radius: 7px;
+  margin: 6px 6px;
+  width: 100%;
 }
 
 .collapsed-menu.toggled {
@@ -2245,9 +2228,9 @@ div.col-8-main {
 }
 
 .col-8-main {
-  width: 76%;
+  width: calc(100% - 350px);
   background: #efefef;
-  height: 498px;
+  height: 525px;
 
 }
 
@@ -2331,10 +2314,7 @@ li {
 .list.grid-view-filter li {
   width: calc(50% - 183px);
   margin: 21px 3px 0px 7px;
-  /* padding: 7px 5px; */
 }
-
-/* grid view list view css end *
 
 /* ========helper css======= */
 .helper-title {
@@ -2348,7 +2328,6 @@ li {
   color: var(--vision-nav);
 }
 
-/* ========helper css end==== */
 /* col8 css */
 .top-btn {
   display: flex;
@@ -2471,13 +2450,15 @@ li {
 .footer {
   display: flex;
   justify-content: space-between;
-  height: 28px;
-  align-items: center;
-  width: 21%;
-  padding: 0 7px;
-  background: #dddddd;
+  height: 36px;
+  width: 345px;
+  background: #bebebe;
   position: fixed;
-  bottom: 0
+  bottom: 0;
+  padding: 1.5rem;
+  align-items: center;
+  text-align: center;
+  border-radius: 6px;
 }
 
 .pagination {
@@ -3940,10 +3921,10 @@ label {
   color: var(--font-primary);
 }
 
-
+/* 
 .cselect select {
   -webkit-appearance: none;
-}
+} */
 
 .cselect::after {
   content: "\f107";
@@ -4131,11 +4112,6 @@ label {
 
   .header {
     display: none;
-  }
-
-  .col-3-main {
-    display: none;
-    width: 100%;
   }
 
   .col-1-main {

@@ -1,5 +1,5 @@
 function hideCol() {
-  var x = document.getElementById("myDIV");
+  var x = document.getElementById("LTR");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -8,10 +8,9 @@ function hideCol() {
 }
 
 function myFunction() {
-  document.getElementById("myDIV").style.width = "100%";
   document.getElementById("col-8-main").style.width = "100%";
   document.getElementById("col-8-main").style.height = "100%";
-  document.getElementById("pagination").style.width = "99%";
+
   document.getElementById("footer").style.display = "none";
 }
 
@@ -35,14 +34,42 @@ function hideOptions() {
 }
 
 function hideContent() {
-  var x = document.getElementById("hidecol-1");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+  // var x = document.getElementById("hidecol-1");
+  // if (x.style.display === "none") {
+  //   x.style.display = "";
+  // } else {
+  //   x.style.display = "none";
+  // }
 }
 //Full screen end
+// Collapsible
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+// Collapsible end
+// TreeView start
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function () {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+
+// Treeview end
 // =========Ripples=========
 // function findRippleOrigin(clickEv) {
 //   const buttonRect = clickEv.currentTarget.getBoundingClientRect();
@@ -70,34 +97,6 @@ function hideContent() {
 // });
 
 // ========Ripples End======
-// Collapsible
-// var coll = document.getElementsByClassName("collapsible");
-// var i;
-
-// for (i = 0; i < coll.length; i++) {
-//   coll[i].addEventListener("click", function () {
-//     this.classList.toggle("active");
-//     var content = this.nextElementSibling;
-//     if (content.style.display === "block") {
-//       content.style.display = "none";
-//     } else {
-//       content.style.display = "block";
-//     }
-//   });
-// }
-// Collapsible end
-// TreeView start
-var toggler = document.getElementsByClassName("caret");
-var i;
-
-for (i = 0; i < toggler.length; i++) {
-  toggler[i].addEventListener("click", function () {
-    this.parentElement.querySelector(".nested").classList.toggle("active");
-    this.classList.toggle("caret-down");
-  });
-}
-// Treeview end
-
 //==========Hamburger css start==========
 function openNav() {
   document.getElementById("mySidebar").style.width = "280px";
@@ -145,32 +144,6 @@ document.addEventListener("click", function (t) {
   }
 }, !1);
 // Toggle end
-
-//=============Change View Css============
-// const listViewButton = document.querySelector('.list-view-button');
-// const gridViewButton = document.querySelector('.grid-view-button');
-// const tableViewButton = document.querySelector('.table-view-button');
-// const list = document.querySelector('ol');
-
-// listViewButton.onclick = function () {
-//   list.classList.remove('grid-view-filter');
-//   list.classList.add('list-view-filter');
-// }
-
-// gridViewButton.onclick = function () {
-//   list.classList.remove('list-view-filter');
-//   list.classList.add('grid-view-filter');
-// }
-
-// tableViewButton.onclick = function () {
-//   list.classList.remove('list-view-filter');
-//   list.classList.remove('grid-view-filter');
-//   list.classList.add('table-view-filter');
-// }
-//Change View js End
-
-
-// navbar hide icon v logo
 /*===========hide content and show on click=========*/
 function toggleText() {
   var x = document.getElementById("Myid");
@@ -199,6 +172,12 @@ function hideUser() {
   }
 }
 // Hide And show content End
+// LTR
+function myLtr() {
+  var element = document.getElementById("LTR");
+  element.classList.toggle("ltr");
+}
+// RTL
 
 //=============dropdown button for col-3-main============
 [".collapsed-menu"].forEach((val) => {
@@ -385,25 +364,6 @@ function fade2() {
   setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
 }
 // =========Searchbox===========
-//=======search event======
-const searchButton = document.getElementById('search-button');
-const searchInput = document.getElementById('search-input');
-searchButton.addEventListener('click', () => {
-  const inputValue = searchInput.value;
-  alert(inputValue);
-});
-//========auto complete=======
-const basicAutocomplete = document.querySelector('#search-autocomplete');
-const data = ['One', 'Two', 'Three', 'Four', 'Five'];
-const dataFilter = (value) => {
-  return data.filter((item) => {
-    return item.toLowerCase().startsWith(value.toLowerCase());
-  });
-};
-
-new mdb.Autocomplete(basicAutocomplete, {
-  filter: dataFilter
-});
 // ================Progressbars===========
 var i = 0;
 function move() {
@@ -563,31 +523,31 @@ var RadialProgress = function (size, barSize, barColor, backgroundColor, textCol
   };
 };
 
-// ===========name initials changes as per value===========
-var inputname1 = document.getElementById("TextInput1").value;
+// // ===========name initials changes as per value===========
+// var inputname1 = document.getElementById("TextInput1").value;
 
-var getInitials = function (name) {
-  let initials = name.split(' ');
-  let charCount = name.length;
+// var getInitials = function (name) {
+//   let initials = name.split(' ');
+//   let charCount = name.length;
 
-  if (initials.length > 1) {
-    initials = initials.shift().charAt(0) + initials.pop().charAt(0);
-  } else if (charCount < 1) {
-    initials = "na";
-  } else {
-    initials = name.substring(0, 2);
-  }
-  return initials.toUpperCase();
-}
+//   if (initials.length > 1) {
+//     initials = initials.shift().charAt(0) + initials.pop().charAt(0);
+//   } else if (charCount < 1) {
+//     initials = "na";
+//   } else {
+//     initials = name.substring(0, 2);
+//   }
+//   return initials.toUpperCase();
+// }
 
-myspan1.innerHTML = getInitials(inputname1);
+// myspan1.innerHTML = getInitials(inputname1);
 
-var inputHandler = function (event) {
-  myspan1.innerHTML = getInitials(event.target.value);
-}
+// var inputHandler = function (event) {
+//   myspan1.innerHTML = getInitials(event.target.value);
+// }
 
-TextInput1.addEventListener('input', inputHandler);
+// TextInput1.addEventListener('input', inputHandler);
 
-alert("success"); // FN
+// alert("success"); // FN
 
 

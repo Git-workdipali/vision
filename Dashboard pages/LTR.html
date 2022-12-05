@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dasboard - LTR</title>
+        <title>Dasboard - Home</title>
         <link rel="stylesheet" href="/Css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
             integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -138,7 +138,7 @@
                     <div id="nav-search">
                         <span id="myBtn">Search Scope</span>
                         <button class="full-screen" id="fullscreen-btn"
-                            onclick="myFunction();toggleText(); hideContent(); hideCol();hideLogo(); hideOptions();hideMenu();hideUser()"><i
+                            onclick="myFunction();toggleText(); hideContent(); hideCol();hideLogo();hideMenu();hideUser()"><i
                                 class="fa-solid fa-expand"></i>
                         </button>
                     </div>
@@ -205,7 +205,7 @@
                     </div>
                 </div>
                 <div class="dashboard">
-                    <div class="col-3-main" id="myDIV">
+                    <div class="col-3-main demo" id="LTR">
                         <div class="wraper">
                             <div class="collapsed-menu  bg-0">
                                 <a class="collapsed-menu-btn styled-link">
@@ -217,21 +217,29 @@
                                     </div>
                                 </a>
                                 <ol class=" collapsed-menu-list">
-                                    <div class="pop-up">
+                                    <div class="pop-up" onclick="myLtr()">
                                         <span class="desc-bold">LTR</span>
                                     </div>
-                                    <div class="pop-up">
-                                        <span class="desc-bold">RTR</span>
-                                    </div>
-                                    <div class="pop-up">
-                                        <span class="desc-bold">Vertical</span>
-                                    </div>
-                                    <div class="pop-up">
-                                        <span class="desc-bold">Horizontal</span>
-                                    </div>
-                                    <div class="pop-up">
-                                        <span class="desc-bold">Endless</span>
-                                    </div>
+                                    <a href="#">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">RTL</span>
+                                        </div>
+                                    </a>
+                                    <a href="Vertical.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Vertical View</span>
+                                        </div>
+                                    </a>
+                                    <a href="Horizontal.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Horizontal View</span>
+                                        </div>
+                                    </a>
+                                    <a href="Endless.html">
+                                        <div class="pop-up">
+                                            <span class="desc-bold">Endless</span>
+                                        </div>
+                                    </a>
                                 </ol>
                             </div>
                         </div>
@@ -639,64 +647,10 @@
                         </div>
                     </div>
                     <div class="col-8-main" id="col-8-main">
-                        <div class="container theme-light">
-                            <div class="title">Right to left align</div>
-                            <div class="card card-shadow">
-                                <div class="jce flx ">
-                                    <span class="h5 font-details m-b">Write this text Right to Left!</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container theme-light">
-                            <div class="title">Left to right align</div>
-                            <div class="card card-shadow">
-                                <div class="jcs flx ">
-                                    <span class="h5 font-details m-b">Write this text Right to Left!</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container theme-light">
-                            <div class="title">Vertical</div>
-                            <div class="card card-shadow">
-                                <div class="">
-                                    <span class="h5 font-details m-b">Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Delectus</span><br>
-                                    <span class="h5 font-details m-b">Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Delectus</span><br>
-                                    <span class="h5 font-details m-b">Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Delectus</span><br>
-                                    <span class="h5 font-details m-b">Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Delectus</span><br>
-                                    <span class="h5 font-details m-b">Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Delectus</span><br>
-                                    <span class="h5 font-details m-b">Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Delectus</span><br>
-                                    <span class="h5 font-details m-b">Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Delectus</span><br>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container theme-light">
-                            <div class="title">Horizontal</div>
-                            <div class="card card-shadow">
-                                <div class="jcs flx ">
-                                    <span class="h5 font-details m-b">Write this text Right to Left!</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container theme-light">
-                            <div class="title">Endless</div>
-                            <div class="card card-shadow">
-                                <div class="jcs flx ">
-                                    <span class="h5 font-details m-b">Write this text Right to Left!</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
         </div>
         <!-- mobile View -->
         <script src="/Js/app.js"></script>
