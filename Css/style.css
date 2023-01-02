@@ -95,6 +95,14 @@ html {
   padding: 1.5rem;
 }
 
+.width {
+  width: 100%;
+}
+
+.pixel-width {
+  width: 309px;
+}
+
 /*====fonts==== */
 .title {
   font-size: 2.2em;
@@ -308,7 +316,6 @@ html {
   position: absolute;
   right: 0;
 }
-
 
 /* =====Buttons==== */
 .btn {
@@ -728,10 +735,6 @@ label {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1rem 1rem;
-}
-
-.width {
-  width: 100%;
 }
 
 /* =========background colors======== */
@@ -1897,7 +1900,7 @@ code {
 #h-wid-icn {
   height: 18px;
   width: 22px;
-  color: #3e3e3e;
+  color: #6a6a6b;
 }
 
 .desc {
@@ -2203,7 +2206,7 @@ code {
 .dropbtn {
   font-size: 14px;
   font-family: GSans Med;
-  color: var(--font-color);
+  color: grey;
   padding: 6px;
   border-radius: 2px;
 }
@@ -2280,7 +2283,7 @@ div.col-3-main {
 }
 
 .col-3-main {
-  width: 350px;
+  width: 330px;
   background: #fff;
   height: 525px;
 }
@@ -2444,7 +2447,7 @@ div.col-8-main {
 }
 
 .col-8-main {
-  width: calc(100% - 350px);
+  width: calc(100% - 330px);
   background: #efefef;
   height: 525px;
 
@@ -2667,7 +2670,7 @@ li {
   display: flex;
   justify-content: space-between;
   height: 36px;
-  width: 345px;
+  width: 324px;
   background: #bebebe;
   position: fixed;
   bottom: 0;
@@ -3413,6 +3416,39 @@ ul.breadcrumb li a:hover {
   }
 }
 
+/* ================Login============== */
+.login-description {
+  width: 70%;
+}
+
+.login-form {
+  width: 30%;
+}
+
+.field-container {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  background-color: rgb(222 222 222 / 33%);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: 290px;
+}
+
+.login-label {
+  color: var(--font-secondary);
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  padding: 0;
+  margin-left: 16px;
+  top: 25px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
 /* ================Chat============== */
 .chat {
   display: flex;
@@ -3524,7 +3560,7 @@ ul.breadcrumb li a:hover {
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background-color: var(--green);
+  background-color: var(--peach);
   content: "";
   top: 50%;
   right: 26px;
@@ -3563,7 +3599,7 @@ ul.breadcrumb li a:hover {
   transition-duration: 500ms;
   width: 30px;
   height: 30px;
-  background-color: var(--green);
+  background-color: var(--peach);
   -webkit-box-flex: 0;
   -ms-flex: 0 0 30px;
   flex: 0 0 30px;
@@ -3590,7 +3626,7 @@ ul.breadcrumb li a:hover {
 
 .single-timeline-area .single-timeline-content:hover .timeline-icon,
 .single-timeline-area .single-timeline-content:focus .timeline-icon {
-  background-color: var(--blue);
+  background-color: var(--orange);
 }
 
 .single-timeline-area .single-timeline-content:hover .timeline-text h6,
@@ -3706,6 +3742,34 @@ button:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 } */
 
+/* ================Error-404=========== */
+.error-404 {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.button-404 {
+  padding: 14px;
+  color: #7070707a;
+  font-size: 168px;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+.page-not-found {
+  font-size: 26px;
+  color: #656565;
+  margin-bottom: 2rem;
+}
+
+.error-page {
+  color: #6a6a6a;
+  font-size: 17px;
+  font-weight: 500
+}
 
 /* =================Tabs=============== */
 .nav {

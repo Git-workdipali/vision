@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dasboard Input Types</title>
+        <title>Dasboard - Login</title>
         <link rel="stylesheet" href="/Css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
             integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -458,6 +458,7 @@
                                 </ol>
                             </div>
                         </div>
+
                         <div class="wraper">
                             <div class="collapsed-menu  bg-0">
                                 <a class="collapsed-menu-btn styled-link">
@@ -646,363 +647,30 @@
                         </div>
                     </div>
                     <div class="col-8-main" id="col-8-main">
-                        <div class="container mt-5">
-                            <div class="container theme-light">
-                                <div class="title">Forms</div>
-                                <div class="card card-shadow">
+                        <div class="container theme-light">
+                            <div class="title">Login</div>
+                            <div class="card card-shadow">
+                                <section class="flx width">
+                                    <div class="login-description"></div>
+                                    <div class="login-form">
+                                        <form action="">
 
-                                    <div class="card-title">Input Types</div>
-                                    <div class="txt-info">Basic Inputs with floating labels</div>
 
-                                    <div class="preview" id="block">
-                                        <div class="form flex">
-                                            <div class="floating-form">
-                                                <div class="floating-label">
-                                                    <input class="floating-input" type="text" placeholder=" ">
-                                                    <span class="highlight"></span>
-                                                    <label>Text</label>
-                                                </div>
 
-                                                <div class="floating-label">
-                                                    <input class="floating-input floating-1" type="text"
-                                                        onclick="(this.type='time')" placeholder=" ">
-                                                    <span class="highlight"></span>
-                                                    <label>Time</label>
-                                                </div>
-
-                                                <div class="floating-label">
-                                                    <input class="floating-input floating-1" type="text"
-                                                        onclick="(this.type='date')" placeholder=" ">
-                                                    <span class="highlight"></span>
-                                                    <label>Date</label>
-                                                </div>
-                                                <div class="floating-label">
-                                                    <input class="floating-input floating-1" type="password"
-                                                        placeholder=" ">
-                                                    <span class="highlight"></span>
-                                                    <label>Password</label>
-                                                </div>
-                                                <div class="floating-label">
-                                                    <select class="floating-select"
-                                                        onclick="this.setAttribute('value', this.value);" value="">
-                                                        <option value=""></option>
-                                                        <option value="1">Alabama</option>
-                                                        <option value="2">Boston</option>
-                                                        <option value="3">Ohaio</option>
-                                                        <option value="4">New York</option>
-                                                        <option value="5">Washington</option>
-                                                    </select>
-                                                    <label>Select</label>
-                                                </div>
-
-                                                <div class="floating-label">
-                                                    <textarea class="floating-input floating-1 floating-textarea"
-                                                        placeholder=" "></textarea>
-                                                    <span class="highlight"></span>
-                                                    <label>Textarea</label>
-                                                </div>
-
-                                            </div>
-                                            <div class="floating-form">
-                                                <div class="floating-label">
-                                                    <input class="floating-input floating-1"
-                                                        onclick="(this.type='color')" type="" placeholder=" ">
-                                                    <span class="highlight"></span>
-                                                    <label>color</label>
-                                                </div>
-
-                                                <div class="floating-label">
-                                                    <input class="floating-input floating-1" type="text"
-                                                        onclick="(this.type='image')" placeholder=" ">
-                                                    <span class="highlight"></span>
-                                                    <label>Upload Image</label>
-                                                </div>
-
-                                                <div class="floating-label">
-                                                    <input class="floating-input floating-1" type="text"
-                                                        onclick="(this.type='range')" placeholder=" ">
-                                                    <span class="highlight"></span>
-                                                    <label>Range</label>
-                                                </div>
-                                                <div class="floating-label">
-                                                    <input class="floating-input floating-1" type="url"
-                                                        onclick="(this.type='url')" placeholder=" ">
-                                                    <span class="highlight"></span>
-                                                    <label>url</label>
-                                                </div>
-                                                <div class="floating-label">
-                                                    <input class="floating-input floating-1" type="url"
-                                                        onclick="(this.type='file')" placeholder=" ">
-                                                    <span class="highlight"></span>
-                                                    <label>Choose File</label>
-                                                </div>
-
-                                            </div>
-                                            <div class="floating-form">
-                                                <div class="floating-label">
-                                                    <input class="floating-input floating-1"
-                                                        onclick="(this.type='week')" type="" placeholder=" ">
-                                                    <span class="highlight"></span>
-                                                    <label>Week</label>
-                                                </div>
-
-                                                <div class="floating-label">
-                                                    <input class="floating-input floating-1" type="datetime"
-                                                        onclick="(this.type='datetime')" placeholder=" ">
-                                                    <span class="highlight"></span>
-                                                    <label>Date & Time</label>
-                                                </div>
-
-                                                <div class="floating-label">
-                                                    <input class="floating-input floating-1" type="text"
-                                                        onclick="(this.type='date')" placeholder=" ">
-                                                    <span class="highlight"></span>
-                                                    <label>Date</label>
-                                                </div>
-                                                <div class="floating-label">
-                                                    <input class="floating-input floating-1" type="password"
-                                                        onclick="(this.type='number')" placeholder=" ">
-                                                    <span class="highlight"></span>
-                                                    <label>Number</label>
-                                                </div>
-                                                <div class="floating-label">
-                                                    <select class="floating-select"
-                                                        onclick="this.setAttribute('value', this.value);" value="">
-                                                        <option value=""></option>
-                                                        <option value="1">001</option>
-                                                        <option value="2">002</option>
-                                                        <option value="3">003</option>
-                                                        <option value="4">004</option>
-                                                        <option value="5">005</option>
-                                                    </select>
-                                                    <span class="highlight"></span>
-                                                    <label>Select Digit</label>
-                                                </div>
-
-                                            </div>
-                                        </div>
+                                        </form>
                                     </div>
-                                </div>
-
-
-                                <div class="card card-shadow">
-
-                                    <div class="card-title">Input types with icon</div>
-                                    <div class="txt-info">Basic Inputs with floating labels with Icon</div>
-
-                                    <div class="preview" id="block">
-                                        <div class="form flex">
-
-                                            <div class="floating-form">
-                                                <div id="flex">
-                                                    <span id="myspan1" class="avatar"></span>
-                                                    <input id="TextInput1" type="text" value="Bipin Raj">
-
-
-                                                </div>
-
-                                                <div id="flex">
-                                                    <div id="icons-bg">
-                                                        <span><i class="fa-solid fa-clock"></i></span>
-                                                    </div>
-                                                    <div class="floating-label">
-                                                        <input class="floating-input" type="text"
-                                                            onclick="(this.type='time')" placeholder=" ">
-                                                        <label>Time</label>
-                                                    </div>
-                                                </div>
-                                                <div id="flex">
-                                                    <div id="icons-bg">
-                                                        <span><i class="fa-solid fa-calendar-check"></i></span>
-                                                    </div>
-                                                    <div class="floating-label">
-                                                        <input class="floating-input" type="text"
-                                                            onclick="(this.type='date')" placeholder=" ">
-                                                        <label>Date</label>
-                                                    </div>
-                                                </div>
-                                                <div id="flex">
-                                                    <div id="icons-bg">
-                                                        <span><i class="fa-solid fa-lock"></i></span>
-                                                    </div>
-                                                    <div class="floating-label">
-                                                        <input class="floating-input" type="password" placeholder=" ">
-                                                        <label>Password</label>
-                                                    </div>
-                                                </div>
-                                                <div id="flex">
-                                                    <div id="icons-bg">
-                                                    </div>
-                                                    <div class="floating-label">
-                                                        <div class="cselect">
-                                                            <select class="floating-select"
-                                                                onclick="this.setAttribute('value', this.value);"
-                                                                value="">
-                                                                <option value=""></option>
-                                                                <option value="1">Alabama</option>
-                                                                <option value="2">Boston</option>
-                                                                <option value="3">Ohaio</option>
-                                                                <option value="4">New York</option>
-                                                                <option value="5">Washington</option>
-                                                            </select>
-                                                            <span class="highlight"></span>
-                                                            <label>Select</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div id="flex">
-                                                    <div id="icons-bg">
-                                                        <span><i class="fa-solid fa-align-center"></i></span>
-                                                    </div>
-                                                    <div class="floating-label">
-                                                        <textarea class="floating-input floating-textarea"
-                                                            placeholder=" "></textarea>
-                                                        <span class="highlight"></span>
-                                                        <label>Textarea</label>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="floating-form">
-                                                <div id="flex">
-                                                    <div id="icons-bg">
-                                                        <span><i class="fa-solid fa-palette"></i></span>
-                                                    </div>
-                                                    <div class="floating-label">
-                                                        <input class="floating-input" onclick="(this.type='color')"
-                                                            type="" placeholder=" ">
-                                                        <span class="highlight"></span>
-                                                        <label>color</label>
-                                                    </div>
-                                                </div>
-
-                                                <div id="flex">
-                                                    <div id="icons-bg">
-                                                        <span><i class="fa-solid fa-image"></i></span>
-                                                    </div>
-                                                    <div class="floating-label">
-                                                        <input class="floating-input" type="text"
-                                                            onclick="(this.type='image')" placeholder=" ">
-                                                        <span class="highlight"></span>
-                                                        <label>Upload Image</label>
-                                                    </div>
-                                                </div>
-
-                                                <div id="flex">
-                                                    <div id="icons-bg">
-                                                        <span><i class="fa-solid fa-arrows-left-right"></i></span>
-                                                    </div>
-                                                    <div class="floating-label">
-                                                        <input class="floating-input" type="text"
-                                                            onclick="(this.type='range')" placeholder=" ">
-                                                        <span class="highlight"></span>
-                                                        <label>Range</label>
-                                                    </div>
-                                                </div>
-                                                <div id="flex">
-                                                    <div id="icons-bg">
-                                                        <span><i class="fa-solid fa-link"></i></span>
-                                                    </div>
-                                                    <div class="floating-label">
-                                                        <input class="floating-input" type="url"
-                                                            onclick="(this.type='url')" placeholder=" ">
-                                                        <span class="highlight"></span>
-                                                        <label>url</label>
-                                                    </div>
-                                                </div>
-                                                <div id="flex">
-                                                    <div id="icons-bg">
-                                                        <span><i class="fa-solid fa-file"></i></span>
-                                                    </div>
-                                                    <div class="floating-label">
-                                                        <input class="floating-input" type="url"
-                                                            onclick="(this.type='file')" placeholder=" ">
-                                                        <span class="highlight"></span>
-                                                        <label>Choose File</label>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="floating-form">
-                                                <div id="flex">
-                                                    <div id="icons-bg">
-                                                        <span><i class="fa-solid fa-calendar-week"></i></span>
-                                                    </div>
-                                                    <div class="floating-label">
-                                                        <input class="floating-input" onclick="(this.type='week')"
-                                                            type="" placeholder=" ">
-                                                        <span class="highlight"></span>
-                                                        <label>Week</label>
-                                                    </div>
-                                                </div>
-
-                                                <div id="flex">
-                                                    <div id="icons-bg">
-                                                        <span><i class="fa-solid fa-calendar-clock"></i></span>
-                                                    </div>
-                                                    <div class="floating-label">
-                                                        <input class="floating-input" type="datetime"
-                                                            onclick="(this.type='datetime')" placeholder=" ">
-                                                        <span class="highlight"></span>
-                                                        <label>Date & Time</label>
-                                                    </div>
-                                                </div>
-
-                                                <div id="flex">
-                                                    <div id="icons-bg">
-                                                        <span><i class="fa-solid fa-calendar-day"></i></span>
-                                                    </div>
-                                                    <div class="floating-label">
-                                                        <input class="floating-input" type="text"
-                                                            onclick="(this.type='date')" placeholder=" ">
-                                                        <span class="highlight"></span>
-                                                        <label>Date</label>
-                                                    </div>
-                                                </div>
-                                                <div id="flex">
-                                                    <div id="icons-bg">
-                                                        <span><i class="fa-solid fa-list-ol"></i></span>
-                                                    </div>
-                                                    <div class="floating-label">
-                                                        <input class="floating-input" type="password"
-                                                            onclick="(this.type='number')" placeholder=" ">
-                                                        <span class="highlight"></span>
-                                                        <label>Number</label>
-                                                    </div>
-                                                </div>
-                                                <div id="flex">
-                                                    <div id="icons-bg">
-                                                        <span><i class="fa-solid fa-arrow-pointer"></i></span>
-                                                    </div>
-                                                    <div class="floating-label">
-                                                        <select class="floating-select"
-                                                            onclick="this.setAttribute('value', this.value);" value="">
-                                                            <option value=""></option>
-                                                            <option value="1">001</option>
-                                                            <option value="2">002</option>
-                                                            <option value="3">003</option>
-                                                            <option value="4">004</option>
-                                                            <option value="5">005</option>
-                                                        </select>
-                                                        <span class="highlight"></span>
-                                                        <label>Select Digit</label>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
+                                </section>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <!-- mobile View -->
-            <script src="/Js/app.js"></script>
+
+        </div>
+        </div>
+        <!-- mobile View -->
+        <script src="/Js/app.js"></script>
+
     </body>
 
 </html>
