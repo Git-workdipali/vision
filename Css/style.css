@@ -4301,6 +4301,167 @@ label {
   color: orange;
 }
 
+/* ================table===================== */
+#table {
+  width: 100%;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  color: var(--theme-dark);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.header-table {
+  border-bottom: 1px solid rgb(192, 192, 192);
+  width: calc(100% - 20px);
+  display: flex;
+  justify-content: space-around;
+  padding: 7px 0;
+  position: sticky;
+}
+
+.cell {
+  border-bottom: 1px solid rgb(192, 192, 192);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+}
+
+.cell-hover {
+  border-bottom: 1px solid rgb(192, 192, 192);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+}
+
+.cell-hover:hover {
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  background: #bfdef7ea;
+}
+
+.cell-colored {
+  border-bottom: 1px solid rgb(236, 236, 236);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  background: rgb(189, 189, 189);
+}
+
+.col-4-table {
+  width: 40%;
+  margin: 0 0 0 49px;
+}
+
+.head-sub-title {
+  font-size: 12px;
+  color: var(--primary);
+}
+
+#numbers {
+  padding: 0px 5px;
+}
+
+.cell-blue {
+  border-bottom: 1px solid rgb(236, 236, 236);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  background: #BFDEF7;
+}
+
+.cell-yellow {
+  border-bottom: 1px solid rgb(236, 236, 236);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  background: #FFF4BD;
+}
+
+.cell-red {
+  border-bottom: 1px solid rgb(236, 236, 236);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  background: #FFDAE2;
+}
+
+.cell-green {
+  border-bottom: 1px solid rgb(236, 236, 236);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  background: #BFF2EA;
+}
+
+.cell-purple {
+  border-bottom: 1px solid rgb(236, 236, 236);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  background: #EBD6FF;
+}
+
+.table-desc {
+  font-size: 12px;
+  color: var(--theme-dark);
+}
+
+/* ==============Pie Chart=============== */
+
+.pie-chartone {
+  background:
+    radial-gradient(circle closest-side,
+      transparent 59%,
+      white 0),
+    conic-gradient(#0948b3 0,
+      #0948b3 72.7%,
+      #ee5050 0,
+      #ee5050 90.9%,
+      #05a677 0,
+      #05a677 100%);
+  position: relative;
+  width: 500px;
+  min-height: 350px;
+  margin: 0;
+  outline: 1px solid #ccc;
+}
+
+.pie-chartone h1 {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 1rem;
+}
+
+.pie-chartone h3 {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: smaller;
+  text-align: right;
+  font-weight: 400;
+}
+
+.pie-chartone span:after {
+  display: inline-block;
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.4em;
+  height: 0.8em;
+  border-radius: 5px;
+  background: currentColor;
+}
+
 /* ================Box-Shadow=============== */
 .shadow {
   height: 7.25rem;
